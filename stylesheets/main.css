@@ -101,11 +101,11 @@ ul {
     flex: 1;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .profile_pic img {
-    width: auto;
-    height: 500px;
+    width: 100%;
 }
 
 .bounding_box {
@@ -535,7 +535,6 @@ button:focus {
     .profile_pic {
         height: 350px;
         width: 100%;
-        overflow: hidden;
         margin-bottom: 30px;
         border: 1px solid aliceblue;
     }
