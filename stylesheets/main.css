@@ -99,13 +99,15 @@ ul {
 
 .profile_pic {
     flex: 1;
+    height: 500px;
+    overflow: hidden;
     display: flex;
     align-items: center;
-    overflow: hidden;
 }
 
 .profile_pic img {
     width: 100%;
+    height: auto;
 }
 
 .bounding_box {
@@ -537,11 +539,6 @@ button:focus {
         width: 100%;
         margin-bottom: 30px;
         border: 1px solid aliceblue;
-    }
-
-    .profile_pic img {
-        width: 100%;
-        height: auto;
     }
 
     .competencies li {
