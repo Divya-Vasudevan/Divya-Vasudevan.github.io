@@ -1,0 +1,785 @@
+@font-face {
+    font-family: caviar-bold;
+    src: url(../fonts/CaviarDreams_Bold.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#top_bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 10;
+    height: 350px;
+    background-image: linear-gradient(to right, #03f598, #00b3e6);
+    justify-content: center;
+}
+
+#hi {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+}
+
+#hi p {
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    color: black;
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 45px;
+    font-family: 'caviar-bold';
+}
+
+#main_menu {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#main_menu ul {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#main_menu li {
+    flex: 1;
+    text-align: center;
+}
+
+.sticky {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+
+#main_menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    padding-top: 5px;
+    letter-spacing: 1px;
+}
+
+#main_menu a:hover {
+    border-top: #f7b633 solid 2px;
+}
+
+#main_menu .active {
+    font-weight: 500;
+    color: white;
+    border-top: #f7b633 solid 2px;
+}
+
+#fullpage {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_pic {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.profile_pic img {
+    width: auto;
+    height: 500px;
+}
+
+.bounding_box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#intro .bounding_box {
+    display: flex;
+    background-color: aliceblue;
+}
+
+.intro_content {
+    flex: 1.2;
+}
+
+.about p {
+    display: inline-block;
+    align-self: end;
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.project {
+    padding-bottom: 20px;
+}
+
+.altColor {
+    background-color: aliceblue;
+}
+
+.altColor .link {
+    border: 11px solid aliceblue;
+}
+
+.project_content {
+    margin-top: 50px;
+    display: flex;
+}
+
+.about_project {
+    margin-right: 60px;
+}
+
+.details_link {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.resume_link {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.border_line {
+    border-bottom: 1px solid #f7b633;
+    margin-top: -20px;
+}
+
+.link {
+    display: table;
+    margin: 0 auto;
+    z-index: 2;
+    border: 11px solid white;
+}
+
+.rlink {
+    display: table;
+    margin: 0 auto;
+    z-index: 2;
+    border: 11px solid aliceblue;
+}
+
+.details_link a {
+    text-decoration: none;
+    border: 1px solid #f7b633;
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+    font-family: 'caviar-bold';
+    letter-spacing: 1px;
+    background-color: white;
+}
+
+.details_link a:hover {
+    background-color: #f7b633;
+    transition: 1s;
+}
+
+.rlink {
+    display: table;
+    margin: 0 auto;
+    z-index: 2;
+    border: 11px solid aliceblue;
+}
+
+.resume_link a {
+    text-decoration: none;
+    border: 1px solid #f7b633;
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+    font-family: 'caviar-bold';
+    letter-spacing: 1px;
+    background-color: white;
+}
+
+.resume_link a:hover {
+    background-color: #f7b633;
+    transition: 1s;
+}
+
+.content {
+    color: black;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.tools {
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.project_intro_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1.2;
+}
+
+.project_title_container {
+    margin-right: 60px;
+}
+
+.project_title_container .title {
+    color: black;
+    font-size: 36px;
+    font-family: 'caviar-bold';
+    line-height: 45px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.project_title_container .contributors {
+    color: black;
+    font-size: 18px;
+    font-family: 'caviar-bold';
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.competencies .heading {
+    color: black;
+    font-size: 18px;
+    font-family: 'caviar-bold';
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.competencies ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.competencies li {
+    flex: 1 0 20%;
+}
+
+.about b {
+    color: #f7b633;
+    font-family: 'Raleway', sans-serif;
+}
+
+#contact {
+    background-image: linear-gradient(to right, #03f598, #00b3e6);
+}
+
+#contact .content {
+    margin: 0;
+}
+
+.heading {
+    color: black;
+    font-size: 24px;
+    font-family: 'caviar-bold';
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.contact_container {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact_details {
+    flex: 1;
+}
+
+.message {
+    flex: 1;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.half {
+    display: flex;
+}
+
+.single_line {
+    flex: 1;
+    padding-left: 5px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: aliceblue;
+}
+
+.single_line::placeholder {
+    color: lightgray;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.full {
+    display: flex;
+    flex-direction: column;
+}
+
+.multi_line {
+    flex: 1;
+    padding-left: 5px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    ;
+}
+
+.multi_line::placeholder {
+    color: lightgray;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.button {
+    background-color: #f7b633;
+    color: black;
+    font-size: 16px;
+    font-family: 'caviar-bold';
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.button:hover {
+    color: #f7b633;
+    background-color: black;
+    transition: 1s;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 1120px) {
+
+    .bounding_box {
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+
+    .about p {
+        font-size: 20px;
+    }
+
+    .resume_link {
+        margin-top: 15px;
+    }
+
+    .project_content {
+        margin-top: 30px;
+    }
+
+    .project_title_container {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .project_title_container .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .project_title_container .contributors {
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    .competencies .heading {
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    .resume_link a {
+        font-size: 14px;
+    }
+
+    .details_link a {
+        font-size: 14px;
+    }
+
+    .about_project {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .content {
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    .single_line {
+        font-size: 14px;
+    }
+
+    .single_line::placeholder {
+        font-size: 14px;
+    }
+
+    .multi_line {
+        font-size: 14px;
+        ;
+    }
+
+    .multi_line::placeholder {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    #main_menu a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+    #main_menu ul {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .project_content {
+        flex-direction: column-reverse;
+    }
+
+    .contact_container {
+        flex-direction: column;
+    }
+
+    .contact_details {
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+
+    .details_link {
+        margin-top: 30px;
+    }
+
+    .about p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 35px;
+    }
+
+    .profile_pic {
+        height: 350px;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 30px;
+        border: 1px solid aliceblue;
+    }
+
+    .profile_pic img {
+        width: 100%;
+        height: auto;
+    }
+
+    .competencies li {
+        flex: 1 0 25%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #hi {
+        flex: 4;
+    }
+
+    #top_bar {
+        height: 250px;
+    }
+
+    #hi p {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .contact_container {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+
+    .competencies li {
+        flex: 1 0 30%;
+    }
+
+    #hi p {
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+
+    #main_menu ul {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .sticky {
+        height: 50px;
+    }
+
+    .profile_pic {
+        height: 300px;
+    }
+
+    .bounding_box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact_container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #main_menu a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #hi p {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 35px;
+    }
+
+    #main_menu ul {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .about p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .bounding_box {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    #top_bar {
+        height: 200px;
+    }
+
+    #main_menu a {
+        font-size: 12px;
+    }
+
+    .sticky {
+        height: 40px;
+    }
+
+    .project_title_container .contributors {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .competencies .heading {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .project_title_container .title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .content {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .profile_pic {
+        height: 250px;
+    }
+
+    .details_link {
+        margin-top: 15px;
+    }
+
+    .details_link a {
+        font-size: 12px;
+    }
+
+    .resume_link a {
+        font-size: 12px;
+    }
+
+    .resume_link {
+        margin-top: 5px;
+    }
+
+    .heading {
+        font-size: 20px;
+        line-height: 15px;
+    }
+
+    .contact_container {
+        padding-top: 10px;
+    }
+
+    .single_line {
+        font-size: 12px;
+    }
+
+    .single_line::placeholder {
+        font-size: 12px;
+    }
+
+    .multi_line {
+        font-size: 12px;
+        ;
+    }
+
+    .multi_line::placeholder {
+        font-size: 12px;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+    .competencies li {
+        flex: 1 0 35%;
+    }
+
+    .bounding_box {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+    .project_title_container .title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .project_title_container .contributors {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .competencies .heading {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .about_project .content {
+        display: none;
+    }
+
+    .contact_container {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 20px;
+    }
+
+    #top_bar {
+        height: 150px;
+    }
+
+    #hi p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .heading {
+        font-size: 18px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    #hi p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .content {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .about p {
+        font-size: 12px;
+        line-height: 25px;
+    }
+}
