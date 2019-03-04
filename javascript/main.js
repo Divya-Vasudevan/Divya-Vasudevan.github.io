@@ -30,7 +30,6 @@ function scrollSpy(project_pos, contact_pos) {
         links[2].classList.remove("active");
     }
     if ( /*window.pageYOffset >= contact_pos*/ (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        console.log("contact");
         const links = document.getElementsByClassName("main_menu_link");
         links[0].classList.remove("active");
         links[1].classList.remove("active");
@@ -40,9 +39,9 @@ function scrollSpy(project_pos, contact_pos) {
 
 for (let i = 0; i < links.length; i++) {
     links[i].addEventListener("click", event => {
-        links.forEach(function (el) {
-            el.classList.remove("active")
-        });
+        for(let i=0;i<3;i++){
+            links[i].classList.remove("active");
+        }
         links[i].classList.add("active");
     });
 }
