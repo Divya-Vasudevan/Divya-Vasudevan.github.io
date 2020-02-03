@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Divya Vasudevan</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="styles/hamburgers.css" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+</head>
+
+<body>
+    <div id="main_container">
+        <div id="change">
+            <div id="image_container" class="head">
+                <p class="page_heading">contact.</p>
+                <p class="content">Phone: 313 452 0089</p>
+                <p class="content">Email: dvasudevan@collegeforcreativestudies.edu</p>
+            </div>
+        </div>
+        <div id="constant">
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">PROJECTS</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li class="active"><a href="contact.html">CONTACT</a></li class="active">
+                </ul>
+            </nav>
+            <div>
+                <form id="myForm" action="https://formspree.io/dvasudevan@collegeforcreativestudies.edu" method="POST">
+
+                    <input class="single_line" type="text" name="name" placeholder="Name" required>
+                    <input class="single_line" type="text" name="email" placeholder="Email" required>
+
+
+                    <textarea class="multi_line" rows="4" cols="50" name="message" placeholder="Message"
+                        required></textarea>
+                    <input type="submit" name="submit" class="button">
+                </form>
+            </div>
+        </div>
+        <div id="touch">
+            <div id="touch_menu">
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">PROJECTS</a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                        <li class="active"><a href="contact.html">CONTACT</a></li class="active">
+                    </ul>
+                </nav>
+            </div>
+            <div id="image_container" class="head">
+                <p class="page_heading">contact.</p>
+                <p class="content">Phone: 313 452 0089</p>
+                <p class="content">Email: dvasudevan@collegeforcreativestudies.edu</p>
+            </div>
+            <form id="myForm" action="https://formspree.io/dvasudevan@collegeforcreativestudies.edu" method="POST">
+
+                <input class="single_line" type="text" name="name" placeholder="Name" required>
+                <input class="single_line" type="text" name="email" placeholder="Email" required>
+
+
+                <textarea class="multi_line" rows="4" cols="50" name="message" placeholder="Message"
+                    required></textarea>
+                <input type="submit" name="submit" class="button">
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -5,118 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Divya Vasudevan Portfolio</title>
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <script src="javascript/main.js" defer></script>
-    <script src="javascript/projects.js" defer></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+    <title>Divya Vasudevan</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="styles/hamburgers.css" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
 </head>
 
 <body>
-    <div id="top_bar">
-        <div id="hi">
-            <img src="images/front_page-01.jpg" alt="Hi">
+    <div id="main_container">
+        <div id="change">
+            <div id="image_container">
+                <img data-key="0" src="images/profile.png" class="show" alt="image for profile">
+                <img data-key="1" src="images/CG.png" alt="image for profile">
+                <img data-key="2" src="images/OI.png" alt="image for profile">
+                <img data-key="3" src="images/RCP.png" alt="image for profile">
+                <img data-key="4" src="images/QR.png" alt="image for profile">
+            </div>
         </div>
-        <div id="main_menu" class="bg_gradient">
-            <ul>
-                <li>
-                    <a href="#intro" class="main_menu_link active">
-                        About Me
+        <div id="constant">
+            <nav id="menu">
+                <ul>
+                    <li class="active"><a href="index.html">PROJECTS</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div id="proj_list">
+                <ul>
+                    <li data-key="1" class="projlink">
+                        <a href="CG.html">Culinary Garden</a>
+                    </li>
+                    <li data-key="2" class="projlink">
+                        <a href="OI.html">Organic Interactions</a>
+
+                    </li>
+                    <li data-key="3" class="projlink">
+                        <a href="RCP.html">River Crossing Puzzle</a>
+
+                    </li>
+                    <li data-key="4" class="projlink">
+                        <a href="QR.html">Quora Redesign</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="touch">
+            <div id="touch_menu">
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="index.html">PROJECTS</a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="touch_proj_list">
+                <div id="first">
+                    <img src="images/touch_profile.png" alt="image for profile">
+                </div>
+                <div id="proj1">
+                    <a href="CG.html">
+                        <img src="images/touchCG.png" alt="link to culinary garden">
+                        <p class="touch_proj_name">Culinary Garden</p>
                     </a>
-                </li>
-                <li>
-                    <a href="#all_projects" class="main_menu_link">
-                        Projects
+                </div>
+                <div id="proj2">
+                    <a href="OI.html">
+                        <img src="images/touchOI.png" alt="link to corganic interactions">
+                        <p class="touch_proj_name">Organic Interactions</p>
                     </a>
-                </li>
-                <li>
-                    <a href="#contact" class="main_menu_link">
-                        Contact
+                </div>
+                <div id="proj3">
+                    <a href="RCP.html">
+                        <img src="images/touchRCP.png" alt="link to criver crossing puzzle">
+                        <p class="touch_proj_name">River Crossing Puzzle</p>
                     </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div id="fullpage">
-        <div id="intro" class="section">
-            <div class="bounding_box">
-                <div class="intro_content">
-                    <div class="about">
-                        <p>I am a <b>UX / UI and Graphic Designer</b> from India, currently pursuing my masters
-                            in Interaction Design at the College for Creative Studies in
-                            Detroit, Michigan. I have a background in engineering, specifically backend software
-                            development and am capable of and frequently do both design and coding.
-                        </p>
-                        <!--div class="competencies">
-                            <p class="heading">Core Competencies</p>
-                            <ul>
-                                <li class="content">UX / UI Design</li>
-                                <li class="content">Design Research</li>
-                                <li class="content">Prototyping</li>
-                                <li class="content">Wireframing</li>
-                                <li class="content">HTML / CSS</li>
-                                <li class="content">Javascript</li>
-                                <li class="content">Photoshop</li>
-                                <li class="content">Illustrator</li>
-                                <li class="content">Sketch App</li>
-                                <li class="content">InVision</li>
-                            </ul>
-                        </div-->
-                    </div>
                 </div>
-                <div class="resume_link">
-                    <div class="rlink">
-                        <a href="resume.pdf" target="_blank">Resume</a>
-                    </div>
-                    <div class="border_line"></div>
-                </div>
-            </div>
-        </div>
-        <div id="all_projects">
-            <div id="project1" class="section project">
-                <div class="bounding_box">
-                </div>
-            </div>
-            <div id="project2" class="section project altColor">
-                <div class="bounding_box">
-                </div>
-            </div>
-            <div id="project3" class="section project">
-                <div class="bounding_box">
-                </div>
-            </div>
-            <div id="project4" class="section project altColor">
-                <div class="bounding_box">
-                </div>
-            </div>
-            <div id="project5" class="section project">
-                <div class="bounding_box">
-                </div>
-            </div>
-            <div id="project6" class="section project altColor">
-                <div class="bounding_box">
-                </div>
-            </div>
-        </div>
-        <div id="contact" class="section">
-            <div class="contact_container">
-                <div class="contact_details">
-                    <p class="heading">Get in Touch</p>
-                    <p class="content"><b>Email: </b>dvasudevan@collegeforcreativestudies.edu</p>
-                    <p class="content"><b>Mobile: </b>+1 (313) 452 0089</p>
-                </div>
-                <div class="message">
-                    <form id="myForm" action="https://formspree.io/dvasudevan@collegeforcreativestudies.edu" method="POST">
-                        <div class="half">
-                            <input class="single_line" type="text" name="name" placeholder="Name" required>
-                            <input class="single_line" type="text" name="email" placeholder="Email" required>
-                        </div>
-                        <div class="full">
-                            <textarea class="multi_line" rows="4" cols="50" name="message" placeholder="Message"
-                                required></textarea>
-                            <input type="submit" name="submit" class="button">
-                        </div>
-                    </form>
+                <div id="proj4">
+                    <a href="QR.html">
+                        <img src="images/touchQR.png" alt="link to cquora redesign">
+                        <p class="touch_proj_name">Quora Redesign</p>
+                    </a>
                 </div>
             </div>
         </div>

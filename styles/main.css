@@ -1,0 +1,410 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main_container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.head {
+    flex: 1;
+    height: 100vh;
+    background-image: linear-gradient(#ffafbd, #ffc3a0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.details {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.content_heading {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.page_heading {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.content {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+#about_content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.about_inner {
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 150px;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.single_line {
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    border-bottom: solid 1px black;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.multi_line {
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    border-bottom: solid 1px black;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.button {
+    border: none;
+    width: auto;
+    background-color: #f3f3f3;
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/***************************************************/
+
+#touch {
+    display: none;
+}
+
+#change {
+    flex: 1;
+    height: 100vh;
+    background-color: antiquewhite;
+    position: relative;
+    display: flex;
+}
+
+#image_container img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+#image_container .show {
+    display: block;
+}
+
+#constant {
+    flex: 1;
+    height: 100vh;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+#menu {
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    right: 0px;
+}
+
+#menu ul {
+    font-weight: 400;
+    font-size: 14px;
+    justify-content: flex-end;
+    padding-top: 40px;
+    padding-right: 40px;
+    letter-spacing: 1px;
+}
+
+#menu ul .active {
+    font-weight: 800;
+}
+
+#menu ul li {
+    padding-left: 30px;
+}
+
+#proj_list {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#proj_list ul {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+#proj_list ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#proj_list ul li a {
+    font-weight: 800;
+    font-size: 46px;
+    letter-spacing: 3px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    #main_container {
+        overflow: scroll;
+    }
+
+    #change {
+        display: none;
+    }
+
+    #constant {
+        display: none;
+    }
+
+    #touch {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .head {
+        height: 50vh;
+        text-align: center;
+    }
+
+    #about_content {
+        padding-top: 0;
+    }
+
+    #myForm {
+        height: 50vh;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    #touch_proj_list div {
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+        position: relative;
+        text-align: center;
+    }
+
+    #touch_proj_list img {
+        width: 100%;
+        height: auto;
+    }
+
+    .touch_proj_name {
+        position: absolute;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+        letter-spacing: 1px;
+        color: white;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #touch_menu .hamburger {
+        position: fixed;
+        z-index: 3;
+        top: 30px;
+        right: 30px;
+    }
+
+    #touch_menu nav {
+        display: none;
+        opacity: 0;
+    }
+
+    #touch_menu .show {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 2;
+        background-color: white;
+    }
+
+    #touch_menu nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #touch_menu nav ul li {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    #touch_menu nav ul .active {
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .touch_proj_name {
+        font-size: 30px;
+    }
+
+    .page_heading {
+        font-size: 30px;
+    }
+
+    .content {
+        font-size: 18px;
+    }
+
+    .single_line {
+        font-size: 14px;
+    }
+
+    .multi_line {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .touch_proj_name {
+        font-size: 16px;
+    }
+
+    #touch_menu .hamburger {
+        top: 10px;
+        right: 0px;
+    }
+
+    #touch_menu img {
+        height: auto;
+    }
+
+    #touch_menu nav ul li {
+        font-size: 18px;
+    }
+
+    .head {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #myForm {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .page_heading {
+        font-size: 20px;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+
+    .single_line {
+        font-size: 12px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .multi_line {
+        font-size: 12px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .button {
+        font-size: 12px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+}
