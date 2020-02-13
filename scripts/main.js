@@ -26,6 +26,7 @@ for (let i = 0; i < projects.length; i++) {
         }
     }, false);
     projects[i].addEventListener("click", function (event) {
+
         event.preventDefault();
         // animate page transition to project
         anime({
@@ -45,7 +46,11 @@ for (let i = 0; i < projects.length; i++) {
             duration: 500
         });
         setTimeout(() => {
-            window.location.href = event.target.href;
+            if (event.target.href != null) {
+                window.location.href = event.target.href;
+            } else {
+                window.location.href = event.target.firstElementChild.href;
+            }
         }, 500);
         //once page changed to new one set home page back to normal - might not need this
     }, false);
