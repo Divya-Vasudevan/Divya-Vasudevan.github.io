@@ -54,7 +54,7 @@ ul {
 
 .proj_content_container {
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
     opacity: 0;
 }
 
@@ -127,8 +127,9 @@ ul {
 .general {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     letter-spacing: 1px;
+    line-height: 28px;
     color: #808080;
 }
 
@@ -138,10 +139,16 @@ ul {
 }
 
 .text {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     padding-left: 250px;
     padding-right: 250px;
+}
+
+#ii-vid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /**************UNIQUE***********************/
@@ -268,7 +275,7 @@ img {
 .other_projects {
     border-top: solid 1px grey;
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     padding-right: 50px;
     text-align: end;
 }
@@ -361,10 +368,6 @@ img {
         font-size: 36px;
     }
 
-    .general {
-        font-size: 20px;
-    }
-
     .full {
         padding: 0px;
     }
@@ -430,7 +433,8 @@ img {
     }
 
     .general {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .text {
@@ -494,7 +498,8 @@ img {
     }
 
     .general {
-        font-size: 12px;
+        font-size: 10px;
+        line-height: 16px;
     }
 
     .text {
@@ -513,5 +518,11 @@ img {
         padding-right: 10px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+
+    .other_projects {
+        padding-right: 0px;
+        text-align: center;
     }
 }

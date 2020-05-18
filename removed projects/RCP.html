@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Divya Vasudevan</title>
+    <link rel="stylesheet" href="styles/projects.css">
+    <link href="styles/hamburgers.css" rel="stylesheet">
+    <script src="scripts/projects.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+</head>
+
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div id="touch_menu">
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="proj_content_container">
+        <div class="intro">
+            <div>
+                <img src="images/RCP/head.png">
+            </div>
+            <div class="intro_content">
+                <p class="hashtags">puzzle + arduino + firebase</p>
+                <p class="intro_highlight">Goal: To create a physical interactive puzzle
+                </p>
+                <br><br>
+                <div class="intro_details">
+                    <p class="intro_heading">duration</p>
+                    <p class="intro_text">3 weeks</p>
+                    <br>
+                    <p class="intro_heading">my role</p>
+                    <p class="intro_text">ideation, electronics, programming, set up</p>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <p class="heading">selected puzzle</p>
+            <p class="highlight">river crossing puzzle with 6 characters: 3 tigers & 3 goats.</p>
+            <p class="general">A river crossing puzzle is a type of puzzle in which the object is to carry items from
+                one river bank to another. The difficulty of the puzzle may arise from restrictions on which or how many
+                items can be transported at the same time, or which or how many items may be safely left together. The
+                puzzle selected required 3 goats and 3 tigers to be transported without ever having more tigers than
+                goats on a side.
+            </p>
+        </div>
+        <div class="full"><img src="images/RCP/1.png"></div>
+        <div class="text">
+            <p class="heading">ideation</p>
+            <p class="highlight">physical forms and sensors.</p>
+            <p class="general">We experimented with different ways to create the puzzle physically. Tested different
+                sensors to identify which bank the totems (tigers and goats) are on and created rough prototypes of the
+                same.
+            </p>
+        </div>
+        <div class="full"><img src="images/RCP/2.png"></div>
+        <div class="text">
+            <p class="highlight">outline of software supporting the interactions.</p>
+            <p class="general">Arduino was programmed with C to update Firebase, which is a mobile and web application
+                development platform. As totems were moved around physically updates would happen in Firebase to reflect
+                current status. The logic of the puzzle was enforced through these status updates. A website on the
+                screen also reflected the changes in the physical puzzle for additional feedback.
+            </p>
+        </div>
+        <div class="full">
+            <div class="lgrey"><img src="images/RCP/3.png"></div>
+        </div>
+        <div class="full"><img src="images/RCP/4.png"></div>
+        <div class="text">
+            <p class="heading">final concept</p>
+            <p class="highlight">created a plan and executed it.</p>
+            <p class="general">Totems are of two types - red (tigers) and white (goats). There are two bases: north and
+                south, where these totems can be placed. Totems are moved between the bases to solve the puzzle. The
+                button on the totem is pressed to place the totem on the boat.
+            </p>
+        </div>
+        <div class="full"><img src="images/RCP/5.png"></div>
+        <div class="full"><img src="images/RCP/6.png"></div>
+        <div class="text">
+            <p class="heading">making and installation</p>
+            </p>
+        </div>
+        <div class="full"><img src="images/RCP/7.png"></div>
+
+    </div>
+
+    <div class="other_projects general"><a href="OI.html">Next Project: Organic Interactions ></a></div>
+</body>
+
+</html>
