@@ -4,109 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Divya Vasudevan</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/mine.js" defer></script>
     <link rel="stylesheet" href="styles/main.css">
-    <link href="styles/hamburgers.css" rel="stylesheet">
-    <script src="scripts/main.js" defer></script>
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@900&display=swap"
-        rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
 </head>
 
 <body>
-    <div id="main_container">
-        <div id="change">
-            <div id="image_container">
-                <img data-key="0" src="images/profile.png" class="show" alt="image for profile">
-                <img data-key="1" src="images/CG.png" alt="image for profile">
-                <img data-key="2" src="images/OI.png" alt="image for profile">
-                <img data-key="3" src="images/BTS.png" alt="image for profile">
-                <img data-key="4" src="images/QR.png" alt="image for profile">
-                <img data-key="5" src="images/BITM.png" alt="image for profile">
-            </div>
+    <div id="header">
+        <!-- <div id="header_inner">
+            <div class="name">DIVYA VASUDEVAN</div>
+            <div class="menu_icon"><img src="images/menu.png" alt="menu"> </div>
+            <ul id="menu">
+                <li><a href="index.html">work</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </div> -->
+    </div>
+    <div class="content">
+        <div class="intro">
+            <p class="highlight">Hi, I am Divya Vasudevan</p>
+            <p> an interaction designer who enjoys turning complex
+                problems into simple and delightful experiences.</p>
         </div>
-        <div id="constant">
-            <nav id="menu">
-                <ul>
-                    <li class="active"><a href="index.html">PROJECTS</a></li>
-                    <li><a href="about.html">ABOUT ME</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-            <div id="proj_list">
-                <ul>
-                    <li data-key="3" class="projlink">
-                        <a href="BTS.html">Beneath the Surface</a>
-                    </li>
-                    <li data-key="2" class="projlink">
-                        <a href="OI.html">Organic Interactions</a>
-                    </li>
-                    <li data-key="4" class="projlink">
-                        <a href="QR.html">Quora Redesign</a>
-                    </li>
-                    <li data-key="5" class="projlink">
-                        <a href="BITM.html">Raising Bookworms</a>
-                    </li>
-                    <li data-key="1" class="projlink">
-                        <a href="CG.html">Culinary Garden</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div id="touch">
-            <div id="touch_menu">
-                <button class="hamburger hamburger--collapse" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-                <nav>
-                    <ul>
-                        <li class="active"><a href="index.html">PROJECTS</a></li>
-                        <li><a href="about.html">ABOUT ME</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="touch_proj_list">
-                <div id="first">
-                    <img src="images/touch_profile.png" alt="image for profile">
-                </div>
-                <div id="proj3">
-                    <a href="BTS.html">
-                        <img src="images/touchBTS.png" alt="link to beneath the surface">
-                        <p class="touch_proj_name">Beneath the Surface</p>
-                    </a>
-                </div>
-                <div id="proj2">
-                    <a href="OI.html">
-                        <img src="images/touchOI.png" alt="link to corganic interactions">
-                        <p class="touch_proj_name">Organic Interactions</p>
-                    </a>
-                </div>
-                <div id="proj4">
-                    <a href="QR.html">
-                        <img src="images/touchQR.png" alt="link to cquora redesign">
-                        <p class="touch_proj_name">Quora Redesign</p>
-                    </a>
-                </div>
-                <div id="proj5">
-                    <a href="BITM.html">
-                        <img src="images/touchBITM.png" alt="link to cquora redesign">
-                        <p class="touch_proj_name">Raising Bookworms</p>
-                    </a>
-                </div>
-                <div id="proj1">
-                    <a href="CG.html">
-                        <img src="images/touchCG.png" alt="link to culinary garden">
-                        <p class="touch_proj_name">Culinary Garden</p>
-                    </a>
-                </div>
-            </div>
+        <div class="project_list">
+            <p class="section_heading">work</p>
+            <ul class="project_list_inner">
+                <li>
+                    <a href="PDP.html"><img src="images/pdp-main.png" alt="Peppercorn Discovery"></a>
+                </li>
+                <li>
+                    <a href="DAI.html"><img src="images/dai-main.png" alt="DAI Alarms Console"></a>
+                </li>
+                <li>
+                    <a href="QR.html"><img src="images/qr-main.png" alt="Quora Redesign"></a>
+                </li>
+                <!-- <li>
+                    <a href="BTS.html"><img src="images/OI@2x.png" alt="Beneath the Surface"></a>
+                </li> -->
+            </ul>
         </div>
     </div>
+    <div id="footer">
+        <div w3-include-html="footer.html"></div>
+    </div>
 </body>
+
+<script>
+    includeHTML();
+</script>
 
 </html>

@@ -1,100 +1,31 @@
-const touch_menu = document.getElementsByClassName("hamburger")[0];
-const touch_nav = document.querySelector("#touch_menu nav");
-const projects = document.getElementsByClassName("projlink");
-
-anime({
-    targets: '#main_container',
-    opacity: {
-        value: 1,
-        duration: 500
-    },
-    easing: 'linear'
-});
-
-for (let i = 0; i < projects.length; i++) {
-    projects[i].addEventListener("mouseenter", function (event) {
-        // highlight the mouseover target
-        if (projects[i] !== event.target) return;
-        event.target.firstElementChild.style.color = "black";
-        //change image
-        let onShow = document.getElementsByClassName("show")[0];
-        let code = event.target.getAttribute("data-key");
-        let toShow = document.querySelector(`img[data-key="${code}"]`);
-        if (onShow && toShow) {
-            onShow.classList.remove("show");
-            toShow.classList.add("show");
-        }
-    }, false);
-    projects[i].addEventListener("click", function (event) {
-
-        event.preventDefault();
-        // animate page transition to project
-        anime({
-            targets: ['#proj_list',
-                '#menu'
-            ],
-            opacity: {
-                value: 0,
-                duration: 300
-            },
-            easing: 'linear'
-        });
-        anime({
-            targets: '#change',
-            flexGrow: '0',
-            easing: 'easeInOutQuad',
-            duration: 500
-        });
-        setTimeout(() => {
-            if (event.target.href != null) {
-                window.location.href = event.target.href;
-            } else {
-                window.location.href = event.target.firstElementChild.href;
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {
+                        elmnt.innerHTML = this.responseText;
+                    }
+                    if (this.status == 404) {
+                        elmnt.innerHTML = "Page not found.";
+                    }
+                    /* Remove the attribute, and call this function once more: */
+                    elmnt.removeAttribute("w3-include-html");
+                    includeHTML();
+                }
             }
-        }, 500);
-        //once page changed to new one set home page back to normal - might not need this
-    }, false);
-}
-for (let i = 0; i < projects.length; i++) {
-    projects[i].addEventListener("mouseleave", function (event) {
-        event.target.firstElementChild.style.color = "white";
-    }, false);
-}
-
-touch_menu.addEventListener("click", function (event) {
-    // highlight the mouseover target
-    touch_menu.classList.toggle("is-active");
-    if (touch_nav.classList.contains("show")) {
-        anime({
-            targets: touch_nav,
-            opacity: {
-                value: 0,
-                duration: 300
-            },
-            easing: 'linear'
-        });
-        setTimeout(() => {
-            touch_nav.classList.remove("show");
-        }, 300);
-    } else {
-        touch_nav.classList.add("show");
-        anime({
-            targets: touch_nav,
-            opacity: {
-                value: 1,
-                duration: 300
-            },
-            easing: 'linear'
-        });
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+        }
     }
-}, false);
-
-document.querySelectorAll("#proj_list ul")[0].addEventListener("mouseleave", function (event) {
-    //change image
-    let onShow = document.getElementsByClassName("show")[0];
-    let toShow = document.querySelector(`img[data-key="0"]`);
-    if (onShow && toShow) {
-        onShow.classList.remove("show");
-        toShow.classList.add("show");
-    }
-}, false);
+}
