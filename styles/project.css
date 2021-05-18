@@ -169,6 +169,14 @@ h2 {
     left: 17.5%;
 }
 
+.mobile_screenshot {
+    text-align: center;
+}
+
+.mobile_screenshot img {
+    width: 45%;
+}
+
 @media only screen and (max-width: 800px) {
     .margin_content {
         margin-left: 50px;
@@ -263,5 +271,9 @@ h2 {
 
     .section_container .caption {
         font: 10px;
+    }
+
+    .mobile_screenshot img {
+        width: 75%;
     }
 }
