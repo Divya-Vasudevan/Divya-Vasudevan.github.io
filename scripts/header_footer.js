@@ -25,3 +25,16 @@ menu_icon.addEventListener("click", function (e) {
         menu_icon.innerHTML = '<img src="images/menu.png" alt="menu">';
     }
 });
+
+//insert footer
+let footer = document.getElementById('footer');
+content = `<div id="footer_inner">`;
+content += `<p class="section_heading">contact</p>`;
+content += `<ul class="sm_links">`;
+content += `<li><a href="https://www.linkedin.com/in/divya-vasudevan" target="_blank"><img src="images/linkedin-icon.png" alt="linkedin"></a></li>`;
+content += `<li><a href="https://github.com/Divya-Vasudevan" target="_blank"><img src="images/github-icon.png" alt="github"></a></li>`;
+content += `</ul>`;
+content += '<p class="email">divya.vasudevan1939@gmail.com</p>';
+content += '<p class="copyright">Site designed and coded by Divya Vasudevan</p>';
+content += '</div>';
+footer.insertAdjacentHTML('beforeend', content);
