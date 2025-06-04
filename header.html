@@ -1,7 +1,82 @@
-<!-- <div id="header_inner">
-    <div class="name">DIVYA VASUDEVAN</div>
-    <ul id="menu">
-        <li><a href="index.html">work</a></li>
-        <li><a href="about.html">about</a></li>
-    </ul>
-</div> -->
+<html>
+  <style>
+    nav {
+      background-color: var(--bg-pink);
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      position: sticky;
+      top: 0;
+      left: 0;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    nav a {
+      color: var(--primary-base);
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
+      font-family: "Josefin Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--primary-base);
+      text-decoration: underline;
+    }
+
+    /* Active state */
+    nav a.active {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    nav img {
+      width: 24px;
+    }
+
+    @media screen and (min-width: 550px) and (max-width: 850px) {
+      nav {
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      nav img {
+        width: 20px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      nav {
+        gap: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 60px;
+      }
+    }
+  </style>
+  <body>
+    <nav>
+      <img src="./images/Rectangle.svg" />
+      <div class="line"></div>
+
+      <div>
+        <a href="index.html#work">WORK</a>
+        <a href="index.html#about">ABOUT</a>
+        <!-- <a href="index.html#contact">CONTACT</a> -->
+      </div>
+
+      <div class="line"></div>
+      <img src="./images/Rectangle.svg" />
+    </nav>
+  </body>
+</html>

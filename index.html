@@ -1,45 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Divya Vasudevan</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divya Vasudevan</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="icon" type="image/x-icon" href="/images/favicon.jpg" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
-    <!-- <script src="scripts/main.js"></script> -->
-    <script src="scripts/header_footer.js" defer></script>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
+      <link rel="stylesheet" href="styles/main.css" />
+      <script src="https://unpkg.com/htmlincludejs"></script>
+      <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+      <include src="./header.html"></include>
+      <div class="page_content">
+        <div class="page_content_patterned">
+          <section id="home">
+            <div>
+              <h1>Hi, I'm Divya</h1>
+              <p class="body_lg">
+                A UX/UI designer who enjoys turning complex problems into simple
+                and delightful experiences.
+              </p>
+            </div>
+            <include src="./sm_section.html"></include>
+          </section>
 
-<body>
-    <div id="header">
-    </div>
-    <div class="content">
-        <div class="intro">
-            <p class="highlight">Hi, I'm Divya!</p>
-            <p> A product designer and problem solver. I love fun UI and collaboration, and appreciate the complexity of creating the “simple” interface.
-            </p>
+          <!-- work -->
+          <section id="work" class="white_container">
+            <div class="section_heading">
+              <img src="./images/Rectangle.svg" />
+              <div class="heading_line"></div>
+              <h2>Work</h2>
+              <div class="heading_line"></div>
+              <img src="./images/Rectangle.svg" />
+            </div>
+            <div class="inner">
+              <a href="">
+                <div class="project_container">
+                  <img src="images/projlist-image.png" class="right" />
+                  <div class="about_project">
+                    <h3>ActablEDU</h3>
+                    <p class="body_base">
+                      Designing the first version ActablEDU's product to
+                      streamline college applications for students in the USA.
+                    </p>
+                    <div class="services">
+                      <p class="body_sm">Research and Strategic Insights</p>
+                      <div class="circle"></div>
+                      <p class="body_sm">Design Discovery</p>
+                      <div class="circle"></div>
+                      <p class="body_sm">Web App UX/UI</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="project_container">
+                  <img src="images/projlist-image.png" />
+                  <div class="about_project">
+                    <h3>Fanatics</h3>
+                    <p class="body_base">
+                      Designing the first version ActablEDU's product to
+                      streamline college applications for students in the USA.
+                    </p>
+                    <div class="services">
+                      <p class="body_sm">Research and Strategic Insights</p>
+                      <div class="circle"></div>
+                      <p class="body_sm">Design Discovery</p>
+                      <div class="circle"></div>
+                      <p class="body_sm">Web App UX/UI</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="project_container">
+                  <img src="images/projlist-image.png" class="right" />
+                  <div class="about_project">
+                    <h3>HBR</h3>
+                    <p class="body_base">
+                      Designing the first version ActablEDU's product to
+                      streamline college applications for students in the USA.
+                    </p>
+                    <div class="services">
+                      <p class="body_sm">Research and Strategic Insights</p>
+                      <div class="circle"></div>
+                      <p class="body_sm">Design Discovery</p>
+                      <div class="circle"></div>
+                      <p class="body_sm">Web App UX/UI</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="project_container">
+                  <img src="images/projlist-image.png" />
+                  <div class="about_project">
+                    <h3>DAI</h3>
+                    <p class="body_base">
+                      Designing the first version ActablEDU's product to
+                      streamline college applications for students in the USA.
+                    </p>
+                    <div class="services">
+                      <p class="body_sm">Research and Strategic Insights</p>
+                      <div class="circle"></div>
+                      <p class="body_sm">Design Discovery</p>
+                      <div class="circle"></div>
+                      <p class="body_sm">Web App UX/UI</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <!-- about -->
+          <section id="about" class="white_container">
+            <div class="section_heading">
+              <img src="./images/Rectangle.svg" />
+              <div class="heading_line"></div>
+              <h2>About</h2>
+              <div class="heading_line"></div>
+              <img src="./images/Rectangle.svg" />
+            </div>
+            <div class="inner">
+              <p>Welcome to our website!</p>
+            </div>
+          </section>
+          <include src="./footer.html"></include>
         </div>
-        <div class="project_list">
-            <p class="section_heading">work</p>
-            <ul class="project_list_inner">
-                <li>
-                    <a href="PDP.html"><img src="images/pdp-main.png" alt="Peppercorn Discovery"></a>
-                </li>
-                <li>
-                    <a href="DAI.html"><img src="images/dai-main.png" alt="DAI Alarms Console"></a>
-                </li>
-                <li>
-                    <a href="QR.html"><img src="images/qr-main.png" alt="Quora Redesign"></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div id="footer">
-    </div>
-</body>
-
+      </div>
+    </body>
+  </html>
 </html>

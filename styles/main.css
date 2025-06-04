@@ -1,322 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+
+:root {
+  --white: white;
+  --black: black;
+  --grey-1000: #181818;
+  --grey-700: #484848;
+  --grey-500: #888888;
+  --grey-300: #d0d0d0; /*not used?*/
+  --grey-100: #e8e8e8; /*not used?*/
+}
+
 html,
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.name {
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    font-size: 16px;
+h1 {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: var(--white);
+  margin: 0;
+  line-height: 80px;
 }
 
-.menu_icon {
-    display: none;
+h2 {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: var(--white);
+  margin: 0;
 }
 
-.menu_icon img {
-    width: 20px;
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--grey-100);
+  font-size: 20px;
+  margin: 0;
 }
 
-#menu li a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    color: black;
+p {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
 }
 
-#menu .selected a {
-    font-weight: 500;
-    text-decoration: line-through;
+.body_lg {
+  font-size: 24px;
+  line-height: 38px;
+  color: var(--grey-100);
 }
 
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+.body_base {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--grey-100);
 }
 
-#header_inner {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: 35px;
-    margin-right: 35px;
-    display: flex;
-    justify-content: space-between;
+.body_sm {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-300);
 }
 
-#header_inner ul {
-    display: flex;
+.page_content {
+  background-color: var(--black);
 }
 
-#header_inner ul li {
-    padding-left: 40px;
-}
-
-.intro {
-    padding-top: 150px;
-    padding-bottom: 100px;
-    padding-left: 400px;
-    padding-right: 400px;
-}
-
-.intro .highlight {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 15px;
-}
-
-.intro p {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 36px;
-}
-
-.download_button {
-    display: flex;
-    justify-content: center;
-}
-
-.download_button .button_text {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 1px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border: black solid 1px;
-    color: black;
-    margin-top: 80px;
-    display: inline-block;
-}
-
-.section_heading {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    font-size: 32px;
-    letter-spacing: 1px;
-}
-
-#footer_inner {
-    /* padding-top: 100px; */
-    text-align: center;
-}
-
-.sm_links {
-    display: flex;
-    justify-content: center;
-}
-
-.sm_links img {
-    width: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.email {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.copyright {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: #727272;
-}
-
-.project_list_inner {
-    width: 100%;
-    text-align: center;
-}
-
-.project_list_inner li {
-    padding-bottom: 100px;
-}
-
-.project_list_inner li img {
+@media screen and (min-width: 550px) and (max-width: 850px) {
+  #home div {
     width: 75%;
-    transition: width 500ms;
-}
-
-.project_list_inner li img:hover {
-    width: 80%;
-    transition: width 500ms;
-}
-
-@media only screen and (max-width: 1024px) {
-
-    .project_list_inner li img {
-        width: 95%;
-    }
-
-    .intro {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-}
-
-@media only screen and (max-width: 820px) {
-
-    #header_inner {
-        padding-top: 25px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .name {
-        font-size: 14px;
-    }
-
-    .intro {
-        padding-top: 100px;
-        padding-bottom: 50px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .intro .highlight {
-        font-size: 32px;
-        line-height: 10px;
-    }
-
-    .intro p {
-        font-size: 16px;
-        line-height: 28px;
-    }
-
-    .section_heading {
-        font-size: 32px;
-    }
-
-    #header_inner ul li {
-        padding-left: 50px;
-    }
-
-    .email {
-        font-size: 14px;
-    }
-
-    .copyright {
-        font-size: 12px;
-    }
-
-    .project_list_inner li {
-        padding-bottom: 50px;
-    }
-
-    .download_button .button_text {
-        font-size: 12px;
-        margin-top: 50px;
-    }
+  }
 }
 
 @media screen and (max-width: 550px) {
+  h1 {
+    font-size: 40px;
+  }
 
-    #header_inner {
-        padding-top: 15px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+  h2 {
+    font-size: 24px;
+  }
 
-    .menu_icon {
-        display: block;
-        z-index: 10;
-    }
+  h3 {
+    font-size: 18px;
+  }
+  .body_lg {
+    font-size: 20px;
+  }
 
-    #header ul {
-        display: none;
-    }
+  .body_base {
+    font-size: 16px;
+  }
 
-    #header .show {
-        background-color: white;
-        z-index: 5;
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #header_inner ul li {
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-left: 0;
-    }
-
-    .intro {
-        padding-top: 60px;
-        padding-bottom: 32px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .intro .highlight {
-        font-size: 24px;
-        line-height: 10px;
-    }
-
-    .intro p {
-        font-size: 12px;
-        line-height: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .section_heading {
-        font-size: 24px;
-    }
-
-    .sm_links img {
-        width: 30px;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    .email {
-        font-size: 12px;
-    }
-
-    .copyright {
-        font-size: 10px;
-    }
-
-    .download_button .button_text {
-        font-size: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        margin-top: 50px;
-    }
-
-    #menu li a {
-        font-size: 24px;
-    }
+  .body_sm {
+    font-size: 14px;
+  }
 }
