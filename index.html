@@ -19,124 +19,34 @@
     </head>
     <body>
       <include src="./header.html"></include>
-      <div class="page_content">
-        <div class="page_content_patterned">
-          <section id="home">
-            <div>
-              <h1>Hi, I'm Divya</h1>
-              <p class="body_lg">
-                A UX/UI designer who enjoys turning complex problems into simple
-                and delightful experiences.
-              </p>
-            </div>
-            <include src="./sm_section.html"></include>
-          </section>
+      <div className="banner flex flex-col gap-24 py-24 px-24 w-full">
+        <h1 className="font-['Work_Sans',Helvetica] text-whitewhite-500 text-[100px] leading-[90px] tracking-[-2px]">
+          <span className="font-semibold">
+            Hi, I&apos;m <br />
+            Divya Vasudevan
+          </span>
+        </h1>
 
-          <!-- work -->
-          <section id="work" class="white_container">
-            <div class="section_heading">
-              <img src="./images/Rectangle.svg" />
-              <div class="heading_line"></div>
-              <h2>Work</h2>
-              <div class="heading_line"></div>
-              <img src="./images/Rectangle.svg" />
-            </div>
-            <div class="inner">
-              <a href="">
-                <div class="project_container">
-                  <img src="images/projlist-image.png" class="right" />
-                  <div class="about_project">
-                    <h3>ActablEDU</h3>
-                    <p class="body_base">
-                      Designing the first version ActablEDU's product to
-                      streamline college applications for students in the USA.
-                    </p>
-                    <div class="services">
-                      <p class="body_sm">Research and Strategic Insights</p>
-                      <div class="circle"></div>
-                      <p class="body_sm">Design Discovery</p>
-                      <div class="circle"></div>
-                      <p class="body_sm">Web App UX/UI</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="">
-                <div class="project_container">
-                  <img src="images/projlist-image.png" />
-                  <div class="about_project">
-                    <h3>Fanatics</h3>
-                    <p class="body_base">
-                      Designing the first version ActablEDU's product to
-                      streamline college applications for students in the USA.
-                    </p>
-                    <div class="services">
-                      <p class="body_sm">Research and Strategic Insights</p>
-                      <div class="circle"></div>
-                      <p class="body_sm">Design Discovery</p>
-                      <div class="circle"></div>
-                      <p class="body_sm">Web App UX/UI</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="">
-                <div class="project_container">
-                  <img src="images/projlist-image.png" class="right" />
-                  <div class="about_project">
-                    <h3>HBR</h3>
-                    <p class="body_base">
-                      Designing the first version ActablEDU's product to
-                      streamline college applications for students in the USA.
-                    </p>
-                    <div class="services">
-                      <p class="body_sm">Research and Strategic Insights</p>
-                      <div class="circle"></div>
-                      <p class="body_sm">Design Discovery</p>
-                      <div class="circle"></div>
-                      <p class="body_sm">Web App UX/UI</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="">
-                <div class="project_container">
-                  <img src="images/projlist-image.png" />
-                  <div class="about_project">
-                    <h3>DAI</h3>
-                    <p class="body_base">
-                      Designing the first version ActablEDU's product to
-                      streamline college applications for students in the USA.
-                    </p>
-                    <div class="services">
-                      <p class="body_sm">Research and Strategic Insights</p>
-                      <div class="circle"></div>
-                      <p class="body_sm">Design Discovery</p>
-                      <div class="circle"></div>
-                      <p class="body_sm">Web App UX/UI</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </section>
+        <div className="flex justify-between w-full">
+          <p className="max-w-[471px] font-['Work_Sans',Helvetica] text-whitewhite-500 text-2xl tracking-[-0.24px] leading-[33.6px]">
+            a product designer focussed on lorem ipsum dolor sit amet lorem ipsum
+            dolor sit amet lorem ipsum dolor sit amet
+          </p>
 
-          <!-- about -->
-          <section id="about" class="white_container">
-            <div class="section_heading">
-              <img src="./images/Rectangle.svg" />
-              <div class="heading_line"></div>
-              <h2>About</h2>
-              <div class="heading_line"></div>
-              <img src="./images/Rectangle.svg" />
-            </div>
-            <div class="inner">
-              <p>Welcome to our website!</p>
-            </div>
-          </section>
-          <include src="./footer.html"></include>
+          <div className="flex flex-col gap-2">
+            <h2 className="font-['Work_Sans',Helvetica] font-semibold text-whitewhite-500 text-2xl tracking-[-0.24px] leading-[31.2px]">
+              Let&apos;s Talk
+            </h2>
+            <a
+              href="mailto:hello@joey.co"
+              className="font-['Work_Sans',Helvetica] text-whitewhite-500 text-xl tracking-[-0.20px] leading-7"
+            >
+              hello@joey.co
+            </a>
+          </div>
         </div>
       </div>
+      
     </body>
   </html>
 </html>
