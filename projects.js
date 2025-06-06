@@ -32,7 +32,9 @@ const projects = [
 
   for (let p of projects) {
     htmlContent += `<a class="projectCard" href="#">
-    <img src="${p.imageUrl}" alt="${p.title}" />
+    <div class="image-container">
+      <img src="${p.imageUrl}" alt="${p.title}" />
+    </div>
     <h2>${p.title}</h2>
     <p class="body_md">${p.description}</p>
     <ul class="project-tags">

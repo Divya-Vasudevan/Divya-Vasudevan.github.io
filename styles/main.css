@@ -18,8 +18,8 @@ body {
 }
 
 .page_content {
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 14%;
+  padding-right: 14%;
 }
 
 ul {
@@ -113,22 +113,41 @@ p {
 .projectCard {
   display: flex;
   flex-direction: column;
+  border-radius: 28px;
+  background-color: var(--grey-1000);
+  padding: 12px;
+  overflow: hidden;
+}
+
+.image-container {
+  overflow: hidden;
+  border-radius: 20px;
+  z-index: 1;
 }
 
 .projectCard img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
 }
 
+.projectCard:hover img {
+  transform: scale(1.04);
+}
 
-@media screen and (min-width: 550px) and (max-width: 850px) {
-  
+@media screen and (min-width: 550px) and (max-width: 1000px) {
+  .page_content {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
 }
 
 @media screen and (max-width: 550px) {
-  h1 {
-    font-size: 60px;
+  .page_content {
+    padding-left: 4%;
+    padding-right: 4%;
   }
 
   h2 {
