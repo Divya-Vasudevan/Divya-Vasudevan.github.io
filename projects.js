@@ -31,13 +31,13 @@ const projects = [
   let htmlContent = "";
 
   for (let p of projects) {
-    htmlContent += `<div class="project-card">
-    <h2>${p.title}</h2>
-    <p>${p.description}</p>
+    htmlContent += `<a class="projectCard" href="#">
     <img src="${p.imageUrl}" alt="${p.title}" />
-    <div class="project-tags">
-      ${p.tags.map(tag => `<span>${tag}</span>`).join('')}
-    </div>
-  </div>`;
+    <h2>${p.title}</h2>
+    <p class="body_md">${p.description}</p>
+    <ul class="project-tags">
+      ${p.tags.map(tag => `<li><p class="body_sm">${tag}</p></li>`).join('')}
+    </ul>
+  </a>`;
   }
   document.getElementById("work").innerHTML = htmlContent;

@@ -18,41 +18,35 @@
       <script src="projects.js" defer></script>
     </head>
     <body>
-      <include src="./header.html"></include>
+      <div class="page_content">
+        <include src="./header.html"></include>
 
-      <!-- Banner -->
-      <div className="banner flex flex-col gap-24 py-24 px-24 w-full">
-        <h1 className="font-['Work_Sans',Helvetica] text-whitewhite-500 text-[100px] leading-[90px] tracking-[-2px]">
-          <span className="font-semibold">
-            Hi, I&apos;m <br />
-            Divya Vasudevan
-          </span>
-        </h1>
+        <!-- Banner -->
+        <div id="home">
+          <h1>
+            <span>
+              Hi, I&apos;m <br />
+              Divya Vasudevan
+            </span>
+          </h1>
 
-        <div className="flex justify-between w-full">
-          <p class="body_base">
-            a product designer focussed on lorem ipsum dolor sit amet lorem ipsum
-            dolor sit amet lorem ipsum dolor sit amet
-          </p>
-
-          <div className="flex flex-col gap-2">
-            <h2 className="font-['Work_Sans',Helvetica] font-semibold text-whitewhite-500 text-2xl tracking-[-0.24px] leading-[31.2px]">
-              Let&apos;s Talk
-            </h2>
-            <a
-              href="mailto:hello@joey.co"
-              className="font-['Work_Sans',Helvetica] text-whitewhite-500 text-xl tracking-[-0.20px] leading-7"
-            >
-              hello@joey.co
-            </a>
+          <div>
+            <p class="body_lg">
+              a product designer focussed on lorem ipsum dolor sit amet lorem ipsum
+              dolor sit amet lorem ipsum dolor sit amet
+            </p>
+            <div>
+              <h3>Let&apos;s Talk</h3>
+              <a href="mailto:divya.vasudevan1939@gmail.com">
+                <p class="body_md">divya.vasudevan1939@gmail.com</p>
+              </a>
+            </div>
           </div>
         </div>
+        
+        <!-- Projects listed here -->
+        <section id="work" className="section">
+        </section>
       </div>
-      
-      <!-- Projects listed here -->
-      <section id="work" className="section">
-        <!-- <include src="./projects.js"></include> -->
-      </section>
-
     </body>
 </html>
