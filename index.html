@@ -14,8 +14,10 @@
 
       <link rel="stylesheet" href="styles/main.css" />
       <script src="https://unpkg.com/htmlincludejs"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
       <script src="scripts/main.js" defer></script>
       <script src="projects.js" defer></script>
+      <script src="scripts/cursor.js" defer></script>
     </head>
     <body>
       <div class="page_content">
@@ -24,29 +26,48 @@
         <!-- Banner -->
         <div id="home">
           <h1>
-            <span>
               Hi, I&apos;m <br />
               Divya Vasudevan
-            </span>
           </h1>
 
-          <div>
             <p class="body_lg">
-              a product designer focussed on lorem ipsum dolor sit amet lorem ipsum
-              dolor sit amet lorem ipsum dolor sit amet
+              a product designer shaping meaningful product experiences from 0 to 1
             </p>
-            <div>
-              <h3>Let&apos;s Talk</h3>
-              <a href="mailto:divya.vasudevan1939@gmail.com">
-                <p class="body_md">divya.vasudevan1939@gmail.com</p>
-              </a>
-            </div>
-          </div>
         </div>
-        
+
         <!-- Projects listed here -->
         <section id="work" className="section">
         </section>
+
+        <section id="about" className="section">
+          <h2>About</h2>
+          <p class="body_lg">
+            a product designer shaping meaningful product experiences from 0 to 1</p>
+        </section>
+
+        <section id="contact" className="section">
+          <h2>Let&apos;s Talk</h2>
+
+          <div>
+            <a href="mailto:divya.vasudevan1939@gmail.com">
+              <p class="body_md">divya.vasudevan1939@gmail.com</p>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/divya-vasudevan-1939/">
+              <p class="body_md">LinkedIn</p>
+            </a>
+            <a href="https://www.instagram.com/divya.vasudevan1939/">
+              <p class="body_md">Behance</p>
+            </a>
+            <a href="https://www.instagram.com/divya.vasudevan1939/">
+              <p class="body_md">Dribble</p>
+            </a>
+          </div>
+        </section>
       </div>
+
+      <canvas class="js--canvas"></canvas>
+
     </body>
 </html>

@@ -8,13 +8,27 @@
   --grey-500: #888888;
   --grey-300: #d0d0d0; /*not used?*/
   --grey-100: #e8e8e8; /*not used?*/
+
+  --bg-color: #F5F0E8;
+  --primary-orange: #F5531E;
+  --secondary-purple: #ECD3FE;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  background-color: var(--black);
+  background-color: var(--white);
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 9999;
+  pointer-events: none;
 }
 
 .page_content {
@@ -37,7 +51,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
-  color: var(--white);
+  color: var(--primary-orange);
   margin: 0;
   line-height: 90px;
 }
@@ -46,8 +60,8 @@ h2 {
   font-family: "Yeseva One", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 32px;
-  color: var(--white);
+  font-size: 60px;
+  color: var(--primary-orange);
   margin: 0;
 }
 
@@ -56,7 +70,7 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  color: var(--grey-100);
+  color: var(--grey-1000);
   font-size: 20px;
   margin: 0;
 }
@@ -72,25 +86,25 @@ p {
 .body_lg {
   font-size: 24px;
   line-height: 38px;
-  color: var(--grey-100);
+  color: var(--grey-1000);
 }
 
 .body_md {
   font-size: 20px;
   line-height: 38px;
-  color: var(--grey-100);
+  color: var(--grey-1000);
 }
 
 .body_base {
   font-size: 18px;
   line-height: 26px;
-  color: var(--grey-100);
+  color: var(--grey-1000);
 }
 
 .body_sm {
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-300);
+  color: var(--grey-700);
 }
 
 .page_content {
@@ -98,7 +112,7 @@ p {
 }
 
 #home {
-  padding-top: 15%;
+  padding-top: 18%;
   padding-bottom: 6%;
 }
 
@@ -117,6 +131,8 @@ p {
   background-color: var(--grey-1000);
   padding: 12px;
   overflow: hidden;
+  /* cursor: pointer;
+  cursor: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png') 16 16, auto; */
 }
 
 .image-container {
