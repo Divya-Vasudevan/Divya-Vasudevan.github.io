@@ -92,7 +92,7 @@ function funMouse() {
         false
       );
       canvasContext.lineWidth = 2;
-      canvasContext.strokeStyle = "white";
+      canvasContext.strokeStyle = "#484848";
       canvasContext.stroke();
       canvasContext.closePath();
   
@@ -107,7 +107,7 @@ function funMouse() {
         Math.PI * 2,
         false
       );
-      canvasContext.fillStyle = "white";
+      canvasContext.fillStyle = "#484848";
       canvasContext.fill();
       canvasContext.closePath();
   
@@ -151,7 +151,7 @@ function funMouse() {
           false
         );
         canvasContext.lineWidth = 3;
-        canvasContext.strokeStyle = "#7BE524";
+        canvasContext.strokeStyle = "#F5531E";
         canvasContext.stroke();
         canvasContext.closePath();
   
@@ -174,7 +174,7 @@ function funMouse() {
           false
         );
         canvasContext.lineWidth = 2;
-        canvasContext.strokeStyle = "white";
+        canvasContext.strokeStyle = "#484848";
         canvasContext.stroke();
         canvasContext.closePath();
   
@@ -187,7 +187,7 @@ function funMouse() {
           Math.PI * 2,
           false
         );
-        canvasContext.fillStyle = "white";
+        canvasContext.fillStyle = "#484848";
         canvasContext.fill();
         canvasContext.closePath();
   
