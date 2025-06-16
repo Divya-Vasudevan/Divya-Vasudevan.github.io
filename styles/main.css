@@ -110,6 +110,12 @@ p {
   background-color: var(--bg-color);
 }
 
+.wavy {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--secondary-purple);
+}
+
 #home {
   padding-top: 250px;
   padding-bottom: 80px;
