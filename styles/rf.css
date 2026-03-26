@@ -1,0 +1,317 @@
+/* =============================================================
+   RF CASE STUDY — PAGE-SPECIFIC STYLES
+   Builds on top of tokens + base + components + fanatics.css
+   (fanatics.css provides all shared case-study patterns).
+   Scope: rf.html only.
+   data-theme="rf" resolves to the same blue palette as
+   data-theme="fanatics": --accent-dark #375A89, etc.
+   ============================================================= */
+
+
+/* -------------------------------------------------------------
+   2×2 APPROACH STEPS GRID
+   4 step cards laid out in two rows of two.
+   Step label / title (serif 20px) / body text.
+   ------------------------------------------------------------- */
+.cs-approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--color-line-stroke);
+  margin-top: 32px;
+}
+
+.cs-approach-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  border-right: 1px solid var(--color-line-stroke);
+  border-bottom: 1px solid var(--color-line-stroke);
+}
+
+/* Remove right border from even cards (right column) */
+.cs-approach-card:nth-child(even) {
+  border-right: none;
+}
+
+/* Remove bottom border from last row */
+.cs-approach-card:nth-child(3),
+.cs-approach-card:nth-child(4) {
+  border-bottom: none;
+}
+
+.cs-approach-card__step {
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  font-weight: 400;
+  color: var(--color-zinc-400);
+}
+
+.cs-approach-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  line-height: var(--lh-h3);
+  font-weight: 600;
+  color: var(--color-zinc-900);
+}
+
+.cs-approach-card__body {
+  font-family: var(--font-body);
+  font-size: var(--text-body-base);
+  line-height: var(--lh-body-base);
+  color: var(--color-zinc-600);
+}
+
+@media (max-width: 799px) {
+  .cs-approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-approach-card {
+    border-right: none;
+    border-bottom: 1px solid var(--color-line-stroke);
+  }
+
+  /* Restore bottom border on the 3rd card when stacked */
+  .cs-approach-card:nth-child(3) {
+    border-bottom: 1px solid var(--color-line-stroke);
+  }
+
+  .cs-approach-card:last-child {
+    border-bottom: none;
+  }
+}
+
+
+/* -------------------------------------------------------------
+   INSIGHT ITEMS
+   Full-width stacked items with title + body, separated by
+   horizontal rules (no card chrome).
+   ------------------------------------------------------------- */
+.cs-insight-list {
+  list-style: none;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 720px;
+}
+
+.cs-insight-item {
+  padding: 0;
+}
+
+.cs-insight-item__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  line-height: var(--lh-h3);
+  font-weight: 600;
+  color: var(--color-zinc-900);
+  margin-bottom: 12px;
+}
+
+.cs-insight-item__body {
+  font-family: var(--font-body);
+  font-size: var(--text-body-base);
+  line-height: var(--lh-body-base);
+  color: var(--color-zinc-600);
+}
+
+
+/* -------------------------------------------------------------
+   CONSTRAINT NOTE
+   Highlighted callout block for constraints / caveats.
+   No quote marks — uses accent border + very light tint.
+   ------------------------------------------------------------- */
+.cs-note {
+  background: var(--accent-lighter);
+  border-left: 3px solid var(--accent-dark);
+  padding: 20px 24px;
+  margin-top: 32px;
+  border-radius: 0 2px 2px 0;
+  max-width: 720px;
+}
+
+.cs-note__text {
+  font-family: var(--font-body);
+  font-size: var(--text-body-base);
+  line-height: var(--lh-body-base);
+  color: var(--color-zinc-600);
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* -------------------------------------------------------------
+   RESEARCH FINDING CARDS
+   4 full-width stacked cards. Each card contains a finding
+   number, title, inline quote, and labelled pain/opportunity rows.
+   ------------------------------------------------------------- */
+.cs-finding-list {
+  list-style: none;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cs-finding-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px;
+  border: 1px solid var(--color-line-stroke);
+  border-radius: 2px;
+  background-color: var(--color-white);
+}
+
+/* Override the global cs-quote style when nested inside a finding card.
+   Oversized ghosted quotation mark; text overlaps slightly into the mark. */
+.cs-finding-item .cs-quote {
+  position: relative;
+  background: none;
+  border-left: none;
+  padding: 0 0 0 54px;
+  margin-top: 0;
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: var(--text-body-base);
+  line-height: var(--lh-body-base);
+  color: var(--color-zinc-600);
+}
+
+.cs-finding-item .cs-quote::before {
+  content: '\201C';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-family: var(--font-heading);
+  font-size: 96px;
+  line-height: 1;
+  color: var(--accent-dark);
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.cs-finding-item__number {
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  font-weight: 600;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.cs-finding-item__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h3);
+  line-height: var(--lh-h3);
+  font-weight: 600;
+  color: var(--color-zinc-900);
+}
+
+/* Side-by-side Pain Point / Opportunity columns */
+.cs-finding-item__meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border-top: 1px solid var(--color-line-stroke);
+  padding-top: 16px;
+}
+
+.cs-finding-item__meta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cs-finding-item__meta-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  font-weight: 600;
+  color: var(--color-zinc-400);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Pain point label — red + warning icon */
+.cs-finding-item__meta-row:not(.cs-finding-item__meta-row--opportunity) .cs-finding-item__meta-label {
+  color: var(--accent-dark);
+}
+
+.cs-finding-item__meta-row:not(.cs-finding-item__meta-row--opportunity) .cs-finding-item__meta-label::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: currentColor;
+  flex-shrink: 0;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cline x1='2' y1='2' x2='10' y2='10' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3Cline x1='10' y1='2' x2='2' y2='10' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cline x1='2' y1='2' x2='10' y2='10' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3Cline x1='10' y1='2' x2='2' y2='10' stroke='black' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* Opportunity label — green + lightbulb icon; body stays grey */
+.cs-finding-item__meta-row--opportunity .cs-finding-item__meta-label {
+  color: #2d7d4f;
+}
+
+.cs-finding-item__meta-row--opportunity .cs-finding-item__meta-label::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: currentColor;
+  flex-shrink: 0;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpolyline points='1.5,6.5 4.5,9.5 10.5,2.5' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpolyline points='1.5,6.5 4.5,9.5 10.5,2.5' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.cs-finding-item__meta-body {
+  font-family: var(--font-body);
+  font-size: var(--text-body-s);
+  line-height: var(--lh-body-base);
+  color: var(--color-zinc-600);
+}
+
+@media (max-width: 799px) {
+  .cs-finding-item {
+    padding: 20px;
+  }
+
+  .cs-finding-item__meta {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* -------------------------------------------------------------
+   IMAGE BLOCKS — REAL IMAGES
+   Override fanatics.css height: 100% so images size naturally.
+   margin and cs-image-stack are handled in fanatics.css.
+   ------------------------------------------------------------- */
+.cs-image-block img {
+  height: auto;
+}
+
+
+/* -------------------------------------------------------------
+   IMAGE ASPECT-RATIO VARIANTS
+   --pivot: 820×490 (used for design process images)
+   ------------------------------------------------------------- */
+.cs-image-block--pivot {
+  aspect-ratio: 820 / 490;
+}
+
+

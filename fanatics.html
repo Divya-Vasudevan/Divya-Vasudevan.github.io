@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fanatics: Breaking Mobile App — Divya Vasudevan</title>
+    <meta
+      name="description"
+      content="Designing an intuitive mobile experience for collectors on the Fanatics Breaking platform — a case study by Divya Vasudevan."
+    />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/components.css" />
+    <link rel="stylesheet" href="/styles/fanatics.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+    <header class="site-header" role="banner">
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav__inner">
+          <a href="/" class="nav__logo" aria-label="Divya Vasudevan — home"
+            >Divya·Vasudevan</a
+          >
+          <ul class="nav__links" role="list">
+            <li><a href="../#work" class="nav__link">Work</a></li>
+            <li><a href="../#about" class="nav__link">About</a></li>
+            <li><a href="../#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- ============================================================
+         1. HERO
+         Tags · title · subtitle · meta (Duration / Tools)
+         ============================================================ -->
+      <section
+        class="section section--cs"
+        data-theme="fanatics"
+        aria-labelledby="cs-title"
+      >
+        <div class="section__inner">
+          <p class="cs-tags" aria-label="Project category">
+            Cross platform · Live auction
+          </p>
+
+          <h1 id="cs-title" class="text-h1 cs-hero__title">
+            Fanatics: <em class="accent">Breaking</em> Mobile App
+          </h1>
+
+          <p class="cs-hero__subtitle">
+            Designing an intuitive mobile experience for collectors on the
+            Fanatics platform.
+          </p>
+
+          <dl class="cs-meta">
+            <div class="cs-meta__item">
+              <dt class="cs-meta__label">Duration</dt>
+              <dd class="cs-meta__value">6 Months</dd>
+            </div>
+            <div class="cs-meta__item">
+              <dt class="cs-meta__label">Tools</dt>
+              <dd class="cs-meta__value">Figma · Miro · Linear</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         2. HERO IMAGE
+         ============================================================ -->
+      <section
+        class="section section--cs section--cs-image"
+        data-theme="fanatics"
+        aria-label="Project hero image"
+      >
+        <div class="section__inner">
+          <figure class="cs-image-block" aria-label="Fanatics Breaking mobile app hero image — live auction and home feed screens">
+            <img
+              src="images/Fanatics/project page header image.jpg"
+              alt="Fanatics Breaking mobile app — two screens showing the live auction and home feed on a navy background"
+              width="820"
+              height="415"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         3. BACKGROUND
+         Two-column: A Collector's World | Built on Patchwork Tools
+         ============================================================ -->
+      <section
+        class="section section--cs"
+        data-theme="fanatics"
+        aria-labelledby="background-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header">
+            <span class="section-header__label">Background</span>
+          </div>
+
+          <h2 id="background-heading" class="text-h2 cs-section-heading">
+            A Collector's <em class="accent">World</em> Built on
+            <em class="accent">Patchwork Tools</em>
+          </h2>
+          <div class="cs-2col mt-20">
+            <div class="cs-2col__col">
+              <p>
+                Fanatics Collectibles was building a purpose-built experience
+                for "breaking"—the live-stream practice of opening packs of
+                trading cards while an audience watches and participates.
+                Collectors could obtain cards based on predefined rules by
+                purchasing slots or bidding in live auctions.
+              </p>
+
+              <p>
+                Historically, breakers cobbled together a patchwork of tools:
+                Twitch for streaming, spreadsheets to track winners. There was
+                no platform designed specifically for the breaking community.
+              </p>
+            </div>
+            <div class="cs-2col__col">
+              <p>
+                A few competitors—such as Whatnot—had emerged, but none fully
+                met the community's needs. Fanatics saw the gap and set out to
+                fill it with a dedicated platform built for how breakers and
+                collectors actually operate.
+              </p>
+              <p>
+                Our team was brought in to design and build the mobile app that
+                would complement the web experience Fanatics' engineering team
+                was already developing—a parallel track with its own unique
+                challenges.
+              </p>
+            </div>
+          </div>
+
+          <blockquote class="cs-quote">
+            "There was no platform purpose-built for breaks. Fanatics set out to
+            fill that gap—and we were brought in to design the mobile experience
+            from the ground up."
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         4. FOUNDATION — WHERE WE STARTED
+         Blue tint bg · domain knowledge · 2-col analysis
+         ============================================================ -->
+      <section
+        class="section section--cs section--accent-lighter"
+        data-theme="fanatics"
+        aria-labelledby="foundation-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header">
+            <span class="section-header__label">Where We Started</span>
+          </div>
+
+          <h2 id="foundation-heading" class="text-h2">
+            Building a Foundation of <em class="accent">Domain Knowledge</em>
+          </h2>
+
+          <p class="cs-body mt-20">
+            Before designing a single screen, our team needed to understand the
+            industry. Through resources provided by the Fanatics team, a
+            thorough review of the web work completed to date, and structured
+            knowledge-sharing sessions, we developed a clearer picture of the
+            problem space and the users we were designing for.
+          </p>
+
+          <!-- Image: overview / research visual -->
+          <figure
+            class="cs-image-block mt-32"
+            aria-label="Domain knowledge research overview"
+          >
+            <img
+              src="images/Fanatics/learning-miro.png"
+              alt="Fanatics Breaking mobile app — two screens showing the live auction and home feed on a navy background"
+            />
+          </figure>
+
+          <!-- Sub-points: The Critical Path | A Two-Phase Approach -->
+          <div class="cs-2col cs-2col--sm mt-32">
+            <div class="cs-2col__col">
+              <h3 class="text-h3">The Critical Path</h3>
+              <p>
+                Based on our growing understanding of the product, we mapped a
+                critical path to capture the essential user flows. The
+                live-stream experience quickly emerged as both the most complex
+                and the most critical flow to get right—it was the heart of the
+                entire product.
+              </p>
+            </div>
+            <div class="cs-2col__col">
+              <h3 class="text-h3">A Two-Phase Approach</h3>
+              <p>
+                We structured the work into two phases with a clear handoff
+                point. Version 1 targeted the key flows within three months,
+                following the web team's lead. Version 2 allowed us to explore
+                concepts and experiments with fewer constraints—territory the
+                web team hadn't yet designed or built.
+              </p>
+            </div>
+          </div>
+
+          <!-- Image: critical path / two-phase diagram -->
+          <figure
+            class="cs-image-block mt-32"
+            aria-label="Critical path and two-phase project overview diagram"
+          >
+            <img
+              src="images/Fanatics/critical path-miro.png"
+              alt="Fanatics Breaking mobile app — two screens showing the live auction and home feed on a navy background"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         5. THE MAIN CHALLENGE
+         One Screen. Two Very Different People.
+         ============================================================ -->
+      <section
+        class="section section--cs"
+        data-theme="fanatics"
+        aria-labelledby="challenge-heading"
+      >
+        <div class="section__inner">
+          <!-- 5a. Personas -->
+          <div class="section-header">
+            <span class="section-header__label">The Main Challenge</span>
+          </div>
+
+          <h2 id="challenge-heading" class="text-h2">
+            One Screen. <em class="accent">Two Very Different People.</em>
+          </h2>
+
+          <p class="cs-body mt-20">
+            The live-stream experience had to serve two fundamentally different
+            users simultaneously—within the constrained real estate of a mobile
+            interface. The design challenge was ensuring both personas got
+            exactly what they needed without compromising the experience of the
+            other.
+          </p>
+
+          <div class="cs-2col mt-32">
+            <div class="cs-2col__col">
+              <h3 class="text-h3">The <em class="accent">Viewer</em></h3>
+              <p>
+                Primarily interested in watching rather than bidding. Their
+                attention is on the stream itself, the live chat, and current
+                bid details—passive engagement that still requires clear,
+                accessible information about what's happening in the break at
+                any given moment.
+              </p>
+            </div>
+            <div class="cs-2col__col">
+              <h3 class="text-h3">The <em class="accent">Participant</em></h3>
+              <p>
+                Actively purchasing slots or bidding on cards in real time.
+                Their focus is on break details, the stream, and the actions
+                required for live bidding—a high-stakes, time-sensitive flow
+                where friction or confusion could mean a missed opportunity.
+              </p>
+            </div>
+          </div>
+
+          <blockquote class="cs-quote">
+            How do we ensure both personas get what they need within the limited
+            real estate of a mobile interface—without designing two entirely
+            separate experiences?
+          </blockquote>
+
+          <!-- 5b. Designing the Live Stream View -->
+          <div
+            class="cs-subsection"
+            aria-label="Designing the live stream view sub-section"
+          >
+            <div class="section-header">
+              <span class="section-header__label"
+                >Designing the Live Stream View</span
+              >
+            </div>
+
+            <h2 class="text-h2">
+              From Low-Fi to the <em class="accent">Right Concept</em>
+            </h2>
+
+            <p class="cs-body mt-20">
+              The live-stream view was where we began our exploration. After
+              organizing the essential content and feature requirements, we
+              created low-fidelity wireframes and iterated rapidly based on team
+              feedback. From there, we developed several distinct
+              higher-fidelity concepts to evaluate which direction to move
+              forward with.
+            </p>
+
+            <!-- Image: low-fi to concept exploration -->
+            <figure
+              class="cs-image-block mt-32"
+              aria-label="Low-fidelity wireframes to high-fidelity concept exploration"
+            >
+              <img
+                src="images/Fanatics/high fid-wires.jpg"
+                alt="Fanatics Breaking mobile app — two screens showing the live auction and home feed on a navy background"
+              />
+            </figure>
+          </div>
+
+          <!-- 5c. Confirmed Designs -->
+          <div
+            class="cs-subsection"
+            aria-label="Confirmed V1 designs sub-section"
+          >
+            <div class="section-header">
+              <span class="section-header__label">Confirmed Designs</span>
+            </div>
+
+            <h2 class="text-h2">
+              We moved ahead with a
+              <em class="accent">fixed bottom bar</em> that does the heavy
+              lifting
+            </h2>
+
+            <p class="cs-body mt-20">
+              A persistent bottom bar keeps critical actions—bidding and
+              buying—within easy reach on every tab. It surfaces what's
+              happening in the break at all times and provides a dedicated space
+              for interactions that occur outside the video stream, giving both
+              personas exactly what they need without cluttering the main view.
+            </p>
+
+            <p class="cs-body mt-20">
+              With a concept selected, we built out the final V1
+              designs—high-fidelity wireframes covering the key flows. Delivered
+              without a finalized brand (Fanatics hadn't defined one for the app
+              during our engagement), these designs used placeholder copy and
+              visuals while communicating full UX intent.
+            </p>
+
+            <!-- Images: confirmed design screens -->
+            <div class="cs-image-stack mt-32">
+              <figure
+                class="cs-image-block"
+                aria-label="Final V1 confirmed design screens — live stream view"
+              >
+                <img
+                  src="images/Fanatics/v1.jpg"
+                  alt="Fanatics Breaking mobile app — two screens showing the live auction and home feed on a navy background"
+                />
+              </figure>
+
+              <figure
+                class="cs-image-block"
+                aria-label="Bottom bar component close-up"
+              >
+                <img
+                  src="images/Fanatics/v1-2.jpg"
+                  alt="Fanatics Breaking mobile app — two screens showing the live auction and home feed on a navy background"
+                />
+              </figure>
+
+              <figure
+                class="cs-image-block"
+                aria-label="Final V1 confirmed design screens — bidding and buying flow"
+              >
+                <img
+                  src="images/Fanatics/v1-1.jpg"
+                  alt="Fanatics Breaking mobile app — two screens showing the live auction and home feed on a navy background"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <!-- 5d. Version 2 — Future Explorations -->
+          <div
+            class="cs-subsection"
+            aria-label="Version 2 future explorations sub-section"
+          >
+            <div class="section-header">
+              <span class="section-header__label"
+                >Version 2 — Future Explorations</span
+              >
+            </div>
+
+            <h2 class="text-h2">
+              Pushing the <em class="accent">Envelope</em>
+            </h2>
+
+            <p class="cs-body mt-20">
+              While supporting developers through V1 implementation, we explored
+              further concepts to enhance the experience. Most V2 explorations
+              focused on the live-stream view and bidding and buying flows—the
+              core of what makes breaking unique and engaging for the community.
+            </p>
+
+            <!-- Image: V2 exploration screens -->
+            <figure
+              class="cs-image-block mt-32"
+              aria-label="Version 2 exploratory concept screens"
+            >
+              <img
+                src="images/Fanatics/v2-future.jpg"
+                alt="Fanatics Breaking mobile app — two screens showing the live auction and home feed on a navy background"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         6. TESTING
+         Blue tint bg · Weekly Breaks. Real Feedback.
+         ============================================================ -->
+      <section
+        class="section section--cs section--accent-lighter"
+        data-theme="fanatics"
+        aria-labelledby="testing-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header">
+            <span class="section-header__label">Testing</span>
+          </div>
+
+          <h2 id="testing-heading" class="text-h2">
+            Weekly Breaks. <em class="accent">Real Feedback.</em>
+          </h2>
+
+          <p class="cs-body mt-20">
+            We conducted weekly "breaks" with the internal team to test what we
+            were building, ensure a seamless experience, and surface high-level
+            issues before they became entrenched. These sessions proved
+            invaluable for refining the bidding and buying flows and identifying
+            edge cases we hadn't anticipated.
+          </p>
+
+          <p class="cs-body mt-20">
+            As we could not conduct user testing due to privacy concerns, every
+            assumption about user needs and behaviour was documented so the
+            Fanatics team could validate them quickly when future testing was
+            planned.
+          </p>
+
+          <!-- Image: testing sessions / documentation -->
+          <figure
+            class="cs-image-block mt-32"
+            aria-label="Weekly break testing sessions and assumption documentation"
+          >
+            <img
+              src="images/Fanatics/assumptions.jpg"
+              alt="Fanatics Breaking mobile app — two screens showing the live auction and home feed on a navy background"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         7. CROSS-PLATFORM & OUTCOMES
+         Beyond Mobile · What We Delivered
+         ============================================================ -->
+      <section
+        class="section section--cs"
+        data-theme="fanatics"
+        aria-labelledby="platform-heading"
+      >
+        <div class="section__inner">
+          <!-- 7a. Beyond Mobile -->
+          <div class="section-header">
+            <span class="section-header__label">Web &amp; Mobile Parity</span>
+          </div>
+
+          <h2 id="platform-heading" class="text-h2">
+            Beyond Mobile: <em class="accent">A Cross-Platform Perspective.</em>
+          </h2>
+
+          <p class="cs-body mt-20">
+            As the project progressed, our scope expanded. We integrated more
+            closely with the Fanatics product and design teams, moving beyond
+            the mobile app to approach the work from a platform-wide
+            perspective.
+          </p>
+
+          <p class="cs-body mt-20">
+            A significant part of our final delivery was designing a consistent,
+            cross-platform bidding and buying experience. Together with the
+            Fanatics team, we analyzed the different types of breaks, mapped all
+            critical components, and created designs that ensured compatibility
+            across web and mobile while covering every relevant scenario.
+          </p>
+
+          <!-- Image: cross-platform parity designs -->
+          <figure
+            class="cs-image-block mt-32"
+            aria-label="Cross-platform bidding and buying designs — web and mobile parity, auction view"
+          >
+            <img
+              src="images/Fanatics/web-mobile parity-Auction.jpg"
+              alt="Fanatics Breaking mobile app — two screens showing the live auction and home feed on a navy background"
+            />
+          </figure>
+          <figure
+            class="cs-image-block mt-32"
+            aria-label="Cross-platform bidding and buying designs — web and mobile parity, fixed price view"
+          >
+            <img
+              src="images/Fanatics/web-mobile parity-Fixed Price.jpg"
+              alt="Fanatics Breaking mobile app — two screens showing the live auction and home feed on a navy background"
+            />
+          </figure>
+
+          <!-- 7b. Outcomes -->
+          <div
+            class="cs-subsection"
+            aria-label="Outcomes and big wins sub-section"
+          >
+            <div class="section-header">
+              <span class="section-header__label">Outcomes &amp; Big Wins</span>
+            </div>
+
+            <h2 class="text-h2">
+              What We <em class="accent">Delivered</em>
+            </h2>
+
+            <p class="cs-body mt-20">
+              In the end, this engagement produced outcomes that extended well
+              beyond the original brief—touching product direction, team
+              capability, and the foundation of a scalable design system.
+            </p>
+
+            <div
+              class="cs-outcomes-grid"
+              role="list"
+              aria-label="Project outcomes"
+            >
+              <article class="cs-outcome-card" role="listitem">
+                <span class="cs-outcome-card__tag">Delivery</span>
+                <h3 class="cs-outcome-card__title">
+                  End-to-End Mobile Experience
+                </h3>
+                <p class="cs-outcome-card__body">
+                  A complete mobile app experience enabling users to fully
+                  participate in the breaking experience—from browsing upcoming
+                  breaks to live bidding and post-break results.
+                </p>
+              </article>
+
+              <article class="cs-outcome-card" role="listitem">
+                <span class="cs-outcome-card__tag">System</span>
+                <h3 class="cs-outcome-card__title">
+                  Pattern Library Foundation
+                </h3>
+                <p class="cs-outcome-card__body">
+                  We delivered the scaffolding of a pattern library that allows
+                  designers to work faster and more consistently, giving
+                  Fanatics a base to expand into a full design system in the
+                  future.
+                </p>
+              </article>
+
+              <article class="cs-outcome-card" role="listitem">
+                <span class="cs-outcome-card__tag">Relationship</span>
+                <h3 class="cs-outcome-card__title">
+                  Earned Trust &amp; Expanded Scope
+                </h3>
+                <p class="cs-outcome-card__body">
+                  As we became deeply embedded within the Fanatics team, our
+                  work grew far beyond the mobile app we were originally brought
+                  in to support—a reflection of the trust we built over six
+                  months.
+                </p>
+              </article>
+
+              <article class="cs-outcome-card" role="listitem">
+                <span class="cs-outcome-card__tag">Strategic</span>
+                <h3 class="cs-outcome-card__title">Team Capability Uplift</h3>
+                <p class="cs-outcome-card__body">
+                  We helped the Fanatics team level up through stronger
+                  structure, improved design processes, and a broader
+                  cross-platform approach—leaving them better equipped than when
+                  we arrived.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         8. NEXT PROJECT
+         ============================================================ -->
+      <section
+        class="section section--cs cs-next-project"
+        data-theme="fanatics"
+        aria-label="Next project"
+      >
+        <div class="section__inner cs-next-project__inner">
+          <a
+            href="portfoliyo.html"
+            class="cs-next-project__link"
+            aria-label="Next project: An Intuitive Experience for Property Management"
+          >
+            <span class="cs-next-project__label">Next Project</span>
+            <span class="cs-next-project__title">
+              An Intuitive Experience for
+              <em class="accent">Property Management</em>
+            </span>
+          </a>
+          <span class="cs-next-project__arrow" aria-hidden="true">→</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         9. CONTACT FOOTER
+         ============================================================ -->
+      <section
+        class="section"
+        data-theme="fanatics"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header">
+            <span class="section-header__label">Get in Touch</span>
+          </div>
+
+          <div class="contact-layout">
+            <div class="contact-layout__left">
+              <h2 id="contact-heading" class="contact-layout__heading">
+                Let's work on something<br />
+                <em class="accent">worth building</em>
+              </h2>
+              <p class="contact-layout__body">
+                Whether you're launching a new product, rethinking an existing
+                one, or need a design partner who can move fast without losing
+                quality—I'd like to hear about it.
+              </p>
+            </div>
+
+            <dl class="contact-links">
+              <div class="contact-link-row">
+                <dt class="contact-link-row__label">Email</dt>
+                <dd class="contact-link-row__value">
+                  <a href="mailto:divya.vasudevan@gmail.com"
+                    >divya.vasudevan@gmail.com</a
+                  >
+                </dd>
+              </div>
+              <div class="contact-link-row">
+                <dt class="contact-link-row__label">LinkedIn</dt>
+                <dd class="contact-link-row__value">
+                  <a
+                    href="https://www.linkedin.com/in/divya-vasudevan/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn profile (opens in new tab)"
+                    >/in/divya-vasudevan</a
+                  >
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+/* =============================================================
+   DESIGN TOKENS
+   Source of truth: Figma · Portfolio Website Design System
+   DO NOT edit values here manually — all values come directly
+   from the Figma variable collections.
+   ============================================================= */
+
+/* -------------------------------------------------------------
+   BASE COLOR PALETTE
+   Collection: Base Colors (single mode)
+   Used across all pages and sections.
+   ------------------------------------------------------------- */
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-400: #9f9fa9;
+  --color-zinc-600: #52525c;
+  --color-zinc-900: #18181b;
+
+  /* Semantic alias — use this for all dividers / borders */
+  --color-line-stroke: var(--color-zinc-200);
+}
+
+/* -------------------------------------------------------------
+   ACCENT COLOR THEMES
+   Collection: Accent Colors (multi-mode, 5 modes)
+   Default mode → Home. Override per-section with data-theme.
+
+   Usage:
+     <section data-theme="home">       → warm terracotta
+     <section data-theme="fanatics">   → cool blue
+     <section data-theme="rolai">      → cool blue
+     <section data-theme="portfoliyo"> → teal green
+     <section data-theme="rf">         → cool blue (same as fanatics/rolai for now)
+   ------------------------------------------------------------- */
+
+/* Home (default — always set on :root so pages work without data-theme) */
+:root,
+[data-theme="home"] {
+  --accent-lighter: #fbf4ef;
+  --accent-light: #f3dfd4;
+  --accent-dark: #b85c2e;
+}
+
+[data-theme="fanatics"] {
+  --accent-lighter: #ecf1f9;
+  --accent-light: #d9e5f5;
+  --accent-dark: #375a89;
+}
+
+[data-theme="rolai"] {
+  --accent-lighter: #ecf1f9;
+  --accent-light: #d9e5f5;
+  --accent-dark: #375a89;
+}
+
+/* Portfoliyo — own entry, same colors as fanatics/rolai for now */
+[data-theme="portfoliyo"] {
+  --accent-lighter: #f1fbfa;
+  --accent-light: #ddf1f0;
+  --accent-dark: #017170;
+}
+
+/* RF — own entry, same colors as fanatics/rolai for now */
+[data-theme="rf"] {
+  --accent-lighter: #f7f0f1;
+  --accent-light: #f0d8dc;
+  --accent-dark: #92162b;
+}
+
+/* -------------------------------------------------------------
+   TYPOGRAPHY SCALE
+   Collection: Text-size
+   Desktop values set on :root. Overridden at Tablet + Mobile.
+   All values in px as extracted from Figma.
+   ------------------------------------------------------------- */
+:root {
+  /* Font sizes */
+  --text-hero: 72px; /* Above-the-fold hero only */
+  --text-h1: 40px;
+  --text-h2: 32px;
+  --text-h3: 24px;
+  --text-body-m: 20px;
+  --text-body-base: 18px;
+  --text-body-s: 16px;
+  --text-caption: 14px;
+  --text-menu: 12px; /* Always 12px — never scale */
+
+  /* Line heights */
+  --lh-h1: 52px;
+  --lh-h2: 38px;
+  --lh-h3: 32px;
+  --lh-body-m: 20px;
+  --lh-body-base: 28px;
+  --lh-body-s: 16px;
+}
+
+/* Tablet overrides — 800px to 1220px */
+@media (max-width: 1220px) {
+  :root {
+    --text-hero: 60px;
+    --text-h1: 32px;
+    --text-h2: 30px;
+    --text-h3: 22px;
+    --text-body-m: 20px;
+    --text-body-base: 16px;
+    --text-body-s: 14px;
+    --text-caption: 12px;
+    /* --text-menu stays 12px */
+
+    --lh-h1: 44px;
+    --lh-h2: 38px;
+    --lh-h3: 28px;
+    --lh-body-m: 20px;
+    --lh-body-base: 28px;
+    --lh-body-s: 14px;
+  }
+}
+
+/* Mobile overrides — up to 799px */
+@media (max-width: 799px) {
+  :root {
+    --text-hero: 48px;
+    --text-h1: 28px;
+    --text-h2: 24px;
+    --text-h3: 20px;
+    --text-body-m: 18px;
+    --text-body-base: 16px;
+    --text-body-s: 14px;
+    --text-caption: 12px;
+    /* --text-menu stays 12px */
+
+    --lh-h1: 40px;
+    --lh-h2: 32px;
+    --lh-h3: 26px;
+    --lh-body-m: 18px;
+    --lh-body-base: 24px;
+    --lh-body-s: 14px;
+  }
+}
+
+/* -------------------------------------------------------------
+   SPACING TOKENS
+   Collection: Spacing
+   Desktop values set on :root. Overridden at Tablet + Mobile.
+   All values in px as extracted from Figma.
+   ------------------------------------------------------------- */
+:root {
+  --space-section-v: 100px; /* Vertical padding for main sections */
+  --space-section-h: 200px; /* Horizontal padding for main sections */
+  --space-max-width: 900px; /* Content inner max-width — never changes */
+  --space-caption-head: 20px; /* Gap: section label → heading */
+  --space-cs-v: 50px; /* Vertical padding for case-study sections */
+  --space-cs-content: 0px; /* Case-study content inner padding */
+}
+
+@media (max-width: 1220px) {
+  :root {
+    --space-section-v: 80px;
+    --space-section-h: 32px;
+    --space-caption-head: 20px;
+    --space-cs-v: 32px;
+  }
+}
+
+@media (max-width: 799px) {
+  :root {
+    --space-section-v: 50px;
+    --space-section-h: 20px;
+    --space-caption-head: 12px;
+    --space-cs-v: 20px;
+  }
+}

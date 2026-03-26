@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfoliyo: Property Management UX — Divya Vasudevan</title>
+    <meta
+      name="description"
+      content="A two-week sprint to refine a property management platform for landlords and property managers—making it investor-ready and genuinely usable. A case study by Divya Vasudevan."
+    />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/components.css" />
+    <!-- Shared case-study patterns (image blocks, meta, quote, 2-col, etc.) -->
+    <link rel="stylesheet" href="/styles/fanatics.css" />
+    <!-- Portfoliyo-specific components (discovery grid, short image, etc.) -->
+    <link rel="stylesheet" href="/styles/portfoliyo.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ============================================================
+         NAVIGATION
+         ============================================================ -->
+    <header class="site-header" role="banner">
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav__inner">
+          <a href="/" class="nav__logo" aria-label="Divya Vasudevan — home"
+            >Divya·Vasudevan</a
+          >
+          <ul class="nav__links" role="list">
+            <li><a href="../#work" class="nav__link">Work</a></li>
+            <li><a href="../#about" class="nav__link">About</a></li>
+            <li><a href="../#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- ============================================================
+           1. HERO
+           Tags · title · subtitle · meta
+           ============================================================ -->
+      <section
+        class="section section--cs"
+        data-theme="portfoliyo"
+        aria-labelledby="cs-title"
+      >
+        <div class="section__inner">
+          <p class="cs-tags" aria-label="Project categories">
+            Information Architecture · Mobile UI/UX
+          </p>
+
+          <h1 id="cs-title" class="text-h1 cs-hero__title">
+            Designing an Intuitive Experience For
+            <em class="accent">Property Management</em>
+          </h1>
+
+          <p class="cs-hero__subtitle">
+            A two-week sprint to refine a property management platform for
+            landlords and property managers—making it investor-ready and
+            genuinely usable.
+          </p>
+
+          <dl class="cs-meta">
+            <div class="cs-meta__item">
+              <dt class="cs-meta__label">Duration</dt>
+              <dd class="cs-meta__value">2 Weeks</dd>
+            </div>
+            <div class="cs-meta__item">
+              <dt class="cs-meta__label">Tools</dt>
+              <dd class="cs-meta__value">Figma</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           2. HERO IMAGE
+           ============================================================ -->
+      <section class="section section--cs section--cs-image" data-theme="portfoliyo">
+        <div class="section__inner">
+          <figure
+            class="cs-image-block"
+            aria-label="Portfoliyo property management platform overview"
+          >
+            <img
+              src="images/portfoliyo/project page header image.jpg"
+              alt="Portfoliyo property management platform overview screenshot"
+              width="820"
+              height="415"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           3. BACKGROUND
+           2-col body + pull quote
+           ============================================================ -->
+      <section
+        class="section section--cs"
+        data-theme="portfoliyo"
+        aria-labelledby="background-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header">
+            <span class="section-header__label">Background</span>
+          </div>
+
+          <h2 id="background-heading" class="text-h2 cs-section-heading">
+            A Working Product.
+            <em class="accent">Looking for Clarity</em>
+          </h2>
+
+          <div class="cs-2col mt-20">
+            <div class="cs-2col__col">
+              <p>
+                I joined an early-stage founder with a junior designer to refine
+                a property management platform that was already built and
+                functional. The founder had completed market research, defined
+                the feature set, and shipped an initial version—but the product
+                needed a sharper UX and a more polished interface to be
+                genuinely investor-ready.
+              </p>
+              <p>
+                My role was straightforward: help make the product more
+                intuitive, tighten the user experience, and collaborate with a
+                UI designer to deliver a cohesive design in two weeks.
+              </p>
+            </div>
+            <div class="cs-2col__col">
+              <p>
+                The founder knew the market. They had clarity on what the
+                product needed to do. What they didn't have was the design
+                expertise to make those features feel effortless—or the
+                bandwidth to structure the product so that two very different
+                user types could navigate it without friction.
+              </p>
+              <p>
+                This wasn't a blank-slate engagement. It was a focused
+                refinement sprint: understand what's built, clarify what's
+                confusing, and redesign what matters most.
+              </p>
+            </div>
+          </div>
+
+          <blockquote class="cs-quote">
+            "What they needed was support in refining the user experience and
+            interface design to make the product more intuitive and
+            investor-ready."
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           4. DISCOVERY & UNDERSTANDING
+           3-col process steps + image
+           ============================================================ -->
+      <section
+        class="section section--cs section--accent-lighter"
+        data-theme="portfoliyo"
+        aria-labelledby="discovery-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header">
+            <span class="section-header__label"
+              >Discovery &amp; Understanding</span
+            >
+          </div>
+
+          <h2 id="discovery-heading" class="text-h2 cs-section-heading">
+            Understanding What Was
+            <em class="accent">Already Built</em>
+          </h2>
+
+          <p class="cs-body">
+            We began with a discovery call to understand the product's current
+            state, its functionality, and the founder's goals for the redesign.
+            The session included a full walkthrough of the existing build,
+            allowing us to identify usability gaps, clarify requirements, and
+            align on priorities for the short engagement ahead.
+          </p>
+
+          <div
+            class="cs-discovery-grid"
+            role="list"
+            aria-label="Discovery process steps"
+          >
+            <div class="cs-discovery-item" role="listitem">
+              <h3 class="cs-discovery-item__title">Discovery Call</h3>
+              <p class="cs-discovery-item__body">
+                Walkthrough of the existing product, feature set, and business
+                goals to align on scope and priorities.
+              </p>
+            </div>
+            <div class="cs-discovery-item" role="listitem">
+              <h3 class="cs-discovery-item__title">Usability Audit</h3>
+              <p class="cs-discovery-item__body">
+                Identify gaps in the current interface, navigation, and
+                flows—focusing on where users would get stuck or confused.
+              </p>
+            </div>
+            <div class="cs-discovery-item" role="listitem">
+              <h3 class="cs-discovery-item__title">Requirements</h3>
+              <p class="cs-discovery-item__body">
+                Define what success looks like: investor-ready, intuitive, and
+                structured for two distinct user types.
+              </p>
+            </div>
+          </div>
+          <figure
+            class="cs-image-block mt-32"
+            aria-label="Discovery findings and usability audit overview"
+          >
+            <img
+              src="images/portfoliyo/requirements.jpg"
+              alt="Discovery findings and usability audit overview"
+              width="820"
+              height="300"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           5. USER PERSONAS
+           Intro copy + 2-col personas
+           ============================================================ -->
+      <section
+        class="section section--cs"
+        data-theme="portfoliyo"
+        aria-labelledby="personas-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header">
+            <span class="section-header__label">User Personas</span>
+          </div>
+
+          <h2 id="personas-heading" class="text-h2 cs-section-heading">
+            Landlords vs.
+            <em class="accent">Property Managers</em>
+          </h2>
+
+          <p class="cs-body">
+            Two distinct user groups emerged during discovery—and their needs
+            were fundamentally different.
+          </p>
+
+          <div class="cs-2col mt-32">
+            <div class="cs-2col__col">
+              <h3 class="text-h3">Landlords</h3>
+              <p>
+                Manage their own properties and finances directly. They need
+                full visibility into rent payments, maintenance schedules,
+                tenant communication, and financial reporting—all in one place.
+                Their relationship to the product is personal: it's their
+                portfolio, their tenants, their income.
+              </p>
+            </div>
+            <div class="cs-2col__col">
+              <h3 class="text-h3">Property Managers</h3>
+              <p>
+                Oversee multiple landlords' portfolios simultaneously. They need
+                to switch between different landlord accounts seamlessly, but
+                with restricted access to sensitive financial information. Their
+                relationship to the product is professional: it's a tool for
+                managing clients, not their own assets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           6. COMPETITIVE RESEARCH
+           Body + 2-col differentiators
+           ============================================================ -->
+      <section
+        class="section section--cs"
+        data-theme="portfoliyo"
+        aria-labelledby="competitive-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header">
+            <span class="section-header__label">Competitive Research</span>
+          </div>
+
+          <h2 id="competitive-heading" class="text-h2 cs-section-heading">
+            What Made This
+            <em class="accent">Worth Building</em>
+          </h2>
+
+          <p class="cs-body">
+            I conducted a quick competitor review to analyze how other property
+            management tools approached their user experience, feature sets, and
+            workflows. The goal wasn't to copy what existed—it was to understand
+            where the whitespace was, and where this product could genuinely
+            differentiate.
+          </p>
+
+          <div class="cs-2col mt-32">
+            <div class="cs-2col__col">
+              <h3 class="text-h3">Proactive Maintenance Alerts</h3>
+              <p>
+                Rather than waiting for things to break, the platform surfaces
+                common property issues before they become urgent. This proactive
+                approach helps users stay ahead of maintenance—saving time,
+                money, and tenant frustration.
+              </p>
+            </div>
+            <div class="cs-2col__col">
+              <h3 class="text-h3">Dedicated Property Manager Views</h3>
+              <p>
+                Most tools treat property managers as glorified landlords. This
+                platform recognized they're a distinct user type with specific
+                needs: account switching, client management, and restricted
+                financial access—all baked into the architecture from the start.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           7. DESIGN PROCESS
+           IA / flows + image | Wireframes + collaboration + image
+           ============================================================ -->
+      <section
+        class="section section--cs section--accent-lighter"
+        data-theme="portfoliyo"
+        aria-labelledby="process-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header">
+            <span class="section-header__label">Design Process</span>
+          </div>
+
+          <h2 id="process-heading" class="text-h2 cs-section-heading">
+            Structure First.
+            <em class="accent">Polish After.</em>
+          </h2>
+
+          <p class="cs-body">
+            With personas defined and competitive insights in hand, the real
+            work began: reorganizing the product's content and features to make
+            navigation simple, intuitive, and aligned with how each user type
+            actually thinks about their work.
+          </p>
+          <p class="cs-body">
+            I redesigned the product's information architecture to group
+            features logically and make it easy for users to locate what they
+            needed. Next, I mapped user flows to clarify key interactions and
+            surface edge cases—from onboarding to account switching to
+            restricted access scenarios.
+          </p>
+
+          <figure
+            class="cs-image-block mt-32"
+            aria-label="Redesigned information architecture and user flows"
+          >
+            <img
+              src="images/portfoliyo/info architecture.jpg"
+              alt="Redesigned information architecture and user flows"
+              width="820"
+              height="250"
+            />
+          </figure>
+
+          <!-- -------------------------------------------------------
+               Sub-section: Wireframes, UI & Collaboration
+               ------------------------------------------------------- -->
+          <div class="cs-subsection" aria-labelledby="wireframes-heading">
+            <div class="section-header">
+              <span class="section-header__label"
+                >Wireframes, UI &amp; Collaboration</span
+              >
+            </div>
+
+            <h2 id="wireframes-heading" class="text-h2 cs-section-heading">
+              Parallel Design,
+              <em class="accent">Real Momentum.</em>
+            </h2>
+
+            <p class="cs-body">
+              With the structure and flows validated, I moved into wireframing
+              the main sections and features. These wireframes weren't
+              pixel-perfect—they were conversation starters. We reviewed them
+              with the client regularly to refine details, validate decisions,
+              and keep momentum high.
+            </p>
+            <p class="cs-body">
+              While I focused on experience and wireframes, my colleague worked
+              in parallel on the UI design for approved sections. The client
+              implemented designs progressively as we delivered them. This kept
+              feedback loops short, allowed the team to see progress daily, and
+              ensured we didn't build in a vacuum.
+            </p>
+
+            <div class="cs-image-stack mt-32">
+              <figure class="cs-image-block">
+                <img
+                  src="images/portfoliyo/wireframes.jpg"
+                  alt="Wireframes"
+                  width="820"
+                  height="300"
+                />
+              </figure>
+              <figure class="cs-image-block">
+                <img
+                  src="images/portfoliyo/UI-1.jpg"
+                  alt="Wireframes and collaborative UI designs"
+                  width="820"
+                  height="300"
+                />
+              </figure>
+              <figure class="cs-image-block">
+                <img
+                  src="images/portfoliyo/UI-2.jpg"
+                  alt="Wireframes and collaborative UI designs"
+                  width="820"
+                  height="300"
+                />
+              </figure>
+              <figure class="cs-image-block">
+                <img
+                  src="images/portfoliyo/UI.jpg"
+                  alt="Wireframes and collaborative UI designs"
+                  width="820"
+                  height="300"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           8. OUTCOMES
+           Body + 2-col outcome cards
+           ============================================================ -->
+      <section
+        class="section section--cs"
+        data-theme="portfoliyo"
+        aria-labelledby="outcomes-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header">
+            <span class="section-header__label">Outcomes &amp; Big Wins</span>
+          </div>
+
+          <h2 id="outcomes-heading" class="text-h2 cs-section-heading">
+            What We <em class="accent">Delivered</em>
+          </h2>
+
+          <p class="cs-body">
+            By the end of the engagement, we delivered a cohesive, user-friendly
+            product experience that aligned with both business and user goals.
+            The founder felt confident presenting the new designs to
+            investors—which was always the real success metric for this sprint.
+          </p>
+
+          <div
+            class="cs-outcomes-grid"
+            role="list"
+            aria-label="Project outcomes"
+          >
+            <article class="cs-outcome-card" role="listitem">
+              <span class="cs-outcome-card__tag">Experience</span>
+              <h3 class="cs-outcome-card__title">Investor-Ready Designs</h3>
+              <p class="cs-outcome-card__body">
+                The redesigned product gave the founder confidence to pitch
+                investors with a platform that looked professional, felt
+                intuitive, and clearly demonstrated market differentiation.
+              </p>
+            </article>
+            <article class="cs-outcome-card" role="listitem">
+              <span class="cs-outcome-card__tag">Delivery</span>
+              <h3 class="cs-outcome-card__title">Rapid Turnaround</h3>
+              <p class="cs-outcome-card__body">
+                Delivered a complete UX overhaul—from discovery to final
+                designs—in just two weeks, proving that the right process and
+                clear priorities can produce investor-quality work on a startup
+                timeline.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- ============================================================
+           9. NEXT PROJECT STRIP
+           ============================================================ -->
+      <section
+        class="section section--cs cs-next-project"
+        data-theme="portfoliyo"
+        aria-label="Next case study"
+      >
+        <div class="section__inner cs-next-project__inner">
+          <a
+            href="rolai.html"
+            class="cs-next-project__link"
+            aria-label="Next project: Designing an Enterprise AI Platform"
+          >
+            <span class="cs-next-project__label">Next Project</span>
+            <span class="cs-next-project__title">
+              Designing an <em class="accent">Enterprise AI</em> Platform
+            </span>
+          </a>
+          <span class="cs-next-project__arrow" aria-hidden="true">→</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           10. CONTACT FOOTER
+           ============================================================ -->
+      <section
+        class="section"
+        data-theme="portfoliyo"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header">
+            <span class="section-header__label">Get in Touch</span>
+          </div>
+
+          <div class="contact-layout">
+            <div class="contact-layout__left">
+              <h2 id="contact-heading" class="contact-layout__heading">
+                Let's work on something<br />
+                <em class="accent">worth building</em>
+              </h2>
+              <p class="contact-layout__body">
+                Whether you're launching a new product, rethinking an existing
+                one, or need a design partner who can move fast without losing
+                quality—I'd like to hear about it.
+              </p>
+            </div>
+
+            <dl class="contact-links">
+              <div class="contact-link-row">
+                <dt class="contact-link-row__label">Email</dt>
+                <dd class="contact-link-row__value">
+                  <a href="mailto:divya.vasudevan@gmail.com"
+                    >divya.vasudevan@gmail.com</a
+                  >
+                </dd>
+              </div>
+              <div class="contact-link-row">
+                <dt class="contact-link-row__label">LinkedIn</dt>
+                <dd class="contact-link-row__value">
+                  <a
+                    href="https://www.linkedin.com/in/divya-vasudevan/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn profile (opens in new tab)"
+                    >/in/divya-vasudevan</a
+                  >
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

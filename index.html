@@ -1,276 +1,390 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VedVistaar</title>
-  <link rel="icon" type="image/svg+xml" href="./images/sq logo.svg">
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <img src="./images/logo.svg" alt="Logo" class="logo-img">
-      </div>
-      <nav class="nav-links">
-        <a href="#courses">Courses</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Divya Vasudevan is a product designer shaping meaningful product experiences from 0 to 1 for the past 7+ years."
+    />
+    <title>Divya Vasudevan — Product Designer</title>
 
-  <main>
-    <section class="hero hero-banner">
-      <div class="container">
-        <div class="hero-copy">
-          <span class="pill"><span aria-hidden="true">🏆</span> Upcoming Event</span>
-          <h1>Abacus and Vedic Math Inter School Competition</h1>
-          <p class="lead">Join us for the most awaited event of the year. Watch young minds showcase extraordinary skills and compete for the championship title.</p>
-          <div class="actions">
-            <button class="btn btn-solid" id="primary-action">View Competition Details</button>
-          </div>
-        </div>
-        <div class="info-card" aria-label="Competition stats">
-          <div class="info-card__frame">
-            <div class="info-card__inner">
-              <div class="info-row">
-                <div>
-                  <p class="info-label">Location</p>
-                  <p class="info-value">Delhi Public School, Electronic City</p>
-                </div>
-              </div>
-              <div class="info-row">
-                <div>
-                  <p class="info-label">Event Date</p>
-                  <p class="info-value">Feb 1, 2026</p>
-                </div>
-              </div>
-              <div class="info-row">
-                <div>
-                  <p class="info-label">Event Timing</p>
-                  <p class="info-value">9am to 1pm</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Design system stylesheets — order is required -->
+    <link rel="stylesheet" href="styles/tokens.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+       SKIP LINK — keyboard / screen-reader navigation shortcut
+       ========================================================= -->
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-    <section id="courses" class="section">
-      <div class="container">
-        <h2>Our Courses</h2>
-        <div class="courses-grid">
-          <article class="course-card">
-            <h3>Abacus</h3>
-            <p>This is a highly structured, time tested and globally accepted programme in many countries. It activates the brain, enhances calculation speed and accuracy. Abacus developed on "Zhusuan Methodology" originated in China.</p>
-            <p class="course-details"><strong>The course has 10 levels.</strong></p>
-            <p class="course-eligibility"><strong>Eligibility:</strong> LKG TO STD 8</p>
-          </article>
-          <article class="course-card">
-            <h3>Vedic Math</h3>
-            <p>Vedic Math is a unique system based on simple rules and principles called sutras which enable mathematical problems to be solved easily and efficiently. Verification of calculation can be done with speed and accuracy. Vedic Math was discovered by The Shankaracharya of Puri in the Vedas as Ganitha Sutras. The aim of Vedic math is to present Mathematics as a unified body of knowledge and reduce the burden on the students.</p>
-            <p class="course-eligibility"><strong>Eligibility:</strong> STD 4 TO STD 9</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section alt">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-text">
-            <h2>About Us</h2>
-            <p>We began our journey in 2002 and have since expanded to multiple schools and locations across Bangalore. Thanks to our high-quality training, one out of every three students consistently wins in abacus competitions. Our trainers have also earned recognition, receiving awards in trainer-level competitions.</p>
-
-            <h3>Why Choose us</h3>
-            <ul>
-              <li>Online support for the students with no extra cost.</li>
-              <li>Any training for attending competition at no extra cost.</li>
-              <li>April and May additional online coaching at no extra cost.</li>
-              <li>All courses are conducted by teachers with over 15 years of experience in the field.</li>
-              <li>Personal attention to every child and adequate practice are given.</li>
-            </ul>
-          </div>
-
-          <div class="skills-panel">
-            <h3>Skills your child will develop</h3>
-            <p class="skills-lead">Our programs build comprehensive cognitive abilities that enhance academic performance and confidence</p>
-            <div class="skills-list">
-              <div class="skill-card">
-                <div class="skill-icon" aria-hidden="true">🏆</div>
-                <div class="skill-text">
-                  <p class="skill-title">Success</p>
-                  <p class="skill-desc">Achieve excellence through structured learning</p>
-                </div>
-              </div>
-              <div class="skill-card">
-                <div class="skill-icon" aria-hidden="true">👁️</div>
-                <div class="skill-text">
-                  <p class="skill-title">Visualization</p>
-                  <p class="skill-desc">Mental imagery and spatial reasoning</p>
-                </div>
-              </div>
-              <div class="skill-card">
-                <div class="skill-icon" aria-hidden="true">🧠</div>
-                <div class="skill-text">
-                  <p class="skill-title">Memory</p>
-                  <p class="skill-desc">Enhanced recall and retention abilities</p>
-                </div>
-              </div>
-              <div class="skill-card">
-                <div class="skill-icon" aria-hidden="true">🎯</div>
-                <div class="skill-text">
-                  <p class="skill-title">Concentration</p>
-                  <p class="skill-desc">Focused attention and mental clarity</p>
-                </div>
-              </div>
-              <div class="skill-card">
-                <div class="skill-icon" aria-hidden="true">🎧</div>
-                <div class="skill-text">
-                  <p class="skill-title">Listening Skills</p>
-                  <p class="skill-desc">Active listening and comprehension</p>
-                </div>
-              </div>
-              <div class="skill-card">
-                <div class="skill-icon" aria-hidden="true">⚡</div>
-                <div class="skill-text">
-                  <p class="skill-title">Speed &amp; Accuracy</p>
-                  <p class="skill-desc">Rapid calculation with precision</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <div class="contact-info">
-          <p><strong>Contact Person:</strong> Mrs. P.Nachiar</p>
-          <p><strong>Phone:</strong> <a href="tel:9886564626">9886564626</a></p>
-          <p><strong>Email:</strong> <a href="mailto:nachiarp@gmail.com">nachiarp@gmail.com</a></p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Competition Details Modal -->
-  <div id="competition-modal" class="modal" aria-hidden="true">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-      <button class="modal-close" aria-label="Close modal">&times;</button>
-      <h2>Competition Details</h2>
-      <div class="modal-body">
-        <div class="detail-section">
-          <p><strong>Competition Date:</strong> 1st February, 2026 Sunday</p>
-          <p><strong>Venue:</strong> Delhi Public School, Electronic City, Bangalore</p>
-          <p><strong>Time Schedule:</strong> 9 a.m. to 1 p.m.</p>
-        </div>
-
-        <div class="detail-section">
-          <h3>Schedule</h3>
-          <ul>
-            <li><strong>Competition:</strong> 9 a.m. to 10 a.m.</li>
-            <li><strong>Break:</strong> 10 a.m. to 12 p.m.</li>
-            <li><strong>Results & Prize distribution:</strong> 12 p.m. to 1 p.m.</li>
-            <li><strong>Reporting time:</strong> 8:45 a.m.</li>
+    <!-- =========================================================
+       HEADER / NAV
+       Sticky. Logo hides on mobile; links center instead.
+       ========================================================= -->
+    <header class="site-header" role="banner">
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav__inner">
+          <a href="/" class="nav__logo" aria-label="Divya Vasudevan — home">
+            Divya·Vasudevan
+          </a>
+          <ul class="nav__links" role="list">
+            <li><a href="#work" class="nav__link">Work</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
         </div>
+      </nav>
+    </header>
 
-        <div class="detail-section">
-          <h3>Registration</h3>
-          <p>Print and fill the form and submit it to the respective abacus/class teachers along with the competition fee.</p>
-          
-        </div>
-
-        <div class="detail-section">
-          <h3>Download Documents</h3>
-          <div class="downloads-grid">
-            <div class="download-group">
-              <h4>Application Form</h4>
-              <a href="./Documents/Application_Form.pdf" target="_blank" download class="download-btn">
-                <span>📄</span> Application Form (PDF)
-              </a>
-            </div>
-            <div class="download-group">
-              <h4>Practice Papers by Level</h4>
-              <div class="download-buttons">
-                <a href="./Documents/kg18.xlsx" download class="download-btn">
-                  KG Level
-                </a>
-                <a href="./Documents/first18.xlsx" download class="download-btn">
-                  First Level 
-                </a>
-                <a href="./Documents/first19.xlsx" download class="download-btn">
-                  First Level (new)
-                </a>
-                <a href="./Documents/second18.xlsx" download class="download-btn">
-                  Second Level 
-                </a>
-                <a href="./Documents/second19.xlsx" download class="download-btn">
-                  Second Level (new)
-                </a>
-                <a href="./Documents/THIRD18.xlsx" download class="download-btn">
-                  Third Level
-                </a>
-                <a href="./Documents/FOURTH18.xlsx" download class="download-btn">
-                  Fourth Level
-                </a>
-                <a href="./Documents/FIFTH18.xlsx" download class="download-btn">
-                  Fifth Level
-                </a>
-                <a href="./Documents/SIXTH18.xlsx" download class="download-btn">
-                  Sixth Level
-                </a>
-                <a href="./Documents/SEVENTH18.xlsx" download class="download-btn">
-                  Seventh Level
-                </a>
-                <a href="./Documents/eighth18.xlsx" download class="download-btn">
-                  Eighth Level
-                </a>
-                <a href="./Documents/vedicrevision.pdf" target="_blank" class="download-btn">
-                    Vedic Math Revision (PDF)
-                  </a>
-                  <a href="./Documents/Model_paper_2009_1_to_82012 (1).xls" download class="download-btn">
-                    Level 1-8 Practice Papers
-                  </a>
-              </div>
-            </div>
+    <!-- =========================================================
+       MAIN CONTENT
+       ========================================================= -->
+    <main id="main">
+      <!-- -------------------------------------------------------
+         HERO
+         ------------------------------------------------------- -->
+      <section
+        class="section"
+        data-theme="home"
+        id="hero"
+        aria-labelledby="hero-heading"
+      >
+        <div class="section__inner">
+          <h1 class="hero__heading" id="hero-heading">
+            Hi I'm Divya<br />
+            a <em class="accent">product designer</em>,
+          </h1>
+          <p class="hero__subtitle">
+            shaping meaningful product experiences from 0 to 1 for the past 7+
+            years.
+          </p>
+          <div class="hero__actions">
+            <a href="#work" class="btn btn--primary">View Case Studies</a>
+            <a href="#about" class="btn btn--ghost">About Me &rarr;</a>
           </div>
         </div>
+      </section>
 
-        <div class="detail-section">
-          <h3>What to Bring</h3>
-          <p>Students should bring 4 pencils, abacus & hall ticket. Rubber, sharpener, water bottle, writing pads, bags & any other material will not be allowed inside the hall.</p>
+      <hr class="divider" aria-hidden="true" />
+
+      <!-- -------------------------------------------------------
+         WORK / SELECTED PROJECTS
+         ------------------------------------------------------- -->
+      <section
+        class="section"
+        data-theme="home"
+        id="work"
+        aria-labelledby="work-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header" aria-hidden="true">
+            <span class="section-header__label">Work</span>
+          </div>
+
+          <h2 class="text-h1 work__heading" id="work-heading">
+            Selected <em class="accent">Projects</em>
+          </h2>
+
+          <ul class="projects-grid" role="list">
+            <!-- Card 01 — links to Rolai case study -->
+            <li class="project-card project-card--link">
+              <div class="project-card__meta">
+                <span class="project-card__number" aria-hidden="true">01</span>
+                <ul
+                  class="project-card__tags"
+                  role="list"
+                  aria-label="Project categories"
+                >
+                  <li><span class="tag">Product Design</span></li>
+                  <li><span class="tag">B2B</span></li>
+                </ul>
+              </div>
+              <h3 class="project-card__title">
+                <a href="rolai.html" class="project-card__link">
+                  Designing an
+                  <em class="accent">Enterprise&nbsp;AI</em> Platform
+                </a>
+              </h3>
+              <div
+                class="project-card__image"
+                role="img"
+                aria-label="Enterprise AI Platform — project preview"
+              >
+                <img
+                  src="images/home page rolai.jpg"
+                  alt="Fanatics Breaking mobile app — live stream and home screen views on a navy background"
+                  loading="lazy"
+                />
+              </div>
+            </li>
+
+            <!-- Card 02 — links to RF case study -->
+            <li class="project-card project-card--link">
+              <div class="project-card__meta">
+                <span class="project-card__number" aria-hidden="true">02</span>
+                <ul
+                  class="project-card__tags"
+                  role="list"
+                  aria-label="Project categories"
+                >
+                  <li><span class="tag">Product Design</span></li>
+                  <li><span class="tag">Enterprise</span></li>
+                </ul>
+              </div>
+              <h3 class="project-card__title">
+                <a href="rf.html" class="project-card__link">
+                  Building the <em class="accent">Training&nbsp;Manual</em> into
+                  the product
+                </a>
+              </h3>
+              <div
+                class="project-card__image"
+                role="img"
+                aria-label="Training Manual — project preview"
+              >
+                <img
+                  src="images/home page image-rf.jpg"
+                  alt="Fanatics Breaking mobile app — live stream and home screen views on a navy background"
+                  loading="lazy"
+                />
+              </div>
+            </li>
+
+            <!-- Card 03 — links to Fanatics case study -->
+            <li class="project-card project-card--link">
+              <div class="project-card__meta">
+                <span class="project-card__number" aria-hidden="true">03</span>
+                <ul
+                  class="project-card__tags"
+                  role="list"
+                  aria-label="Project categories"
+                >
+                  <li><span class="tag">Cross Platform</span></li>
+                  <li><span class="tag">Live Auction</span></li>
+                </ul>
+              </div>
+              <h3 class="project-card__title">
+                <a href="fanatics.html" class="project-card__link">
+                  A <em class="accent">Mobile&nbsp;App</em> for Live Card
+                  Breaking
+                </a>
+              </h3>
+              <div class="project-card__image project-card__image--navy">
+                <img
+                  src="images/project-03-card-breaking.jpg"
+                  alt="Fanatics Breaking mobile app — live stream and home screen views on a navy background"
+                  loading="lazy"
+                />
+              </div>
+            </li>
+
+            <!-- Card 04 — links to Portfoliyo case study -->
+            <li class="project-card project-card--link">
+              <div class="project-card__meta">
+                <span class="project-card__number" aria-hidden="true">04</span>
+                <ul
+                  class="project-card__tags"
+                  role="list"
+                  aria-label="Project categories"
+                >
+                  <li><span class="tag">AI</span></li>
+                  <li><span class="tag">Mobile SaaS</span></li>
+                </ul>
+              </div>
+              <h3 class="project-card__title">
+                <a href="portfoliyo.html" class="project-card__link">
+                  An <em class="accent">Intuitive&nbsp;Experience</em> for
+                  Property Management
+                </a>
+              </h3>
+              <div
+                class="project-card__image"
+                role="img"
+                aria-label="Property Management — project preview"
+              >
+                <img
+                  src="images/home page-portfoliyo.jpg"
+                  alt="Fanatics Breaking mobile app — live stream and home screen views on a navy background"
+                  loading="lazy"
+                />
+              </div>
+            </li>
+          </ul>
         </div>
+      </section>
 
-        <div class="detail-section">
-          <h3>Practice</h3>
-          <p>Practice for the competition will be given at no extra cost.</p>
-          <p>Student should practice for the completed level. If the student is currently doing 5th level, he/she should practice for 4th level and appear for 4th level in the competition.</p>
-          <p>Each practice paper should be done for 8 minutes. Number of correct sums done in 8 minutes by the student will decide the winner.</p>
+      <!-- -------------------------------------------------------
+         ABOUT
+         accent-light background (#F3DFD4 on home theme)
+         ------------------------------------------------------- -->
+      <section
+        class="section section--accent-lighter"
+        data-theme="home"
+        id="about"
+        aria-labelledby="about-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header" aria-hidden="true">
+            <span class="section-header__label">About</span>
+          </div>
+
+          <h2 class="text-h1 about__heading" id="about-heading">
+            I thrive on<br />
+            <em class="accent">unraveling</em> complexity.
+          </h2>
+
+          <!-- Two-column bio -->
+          <div class="about-body">
+            <div>
+              <p>
+                I'm a product designer based in Bangalore with a Master's in
+                Interaction Design from CCS, Detroit. My experience has largely
+                been with early-stage startups, where I've designed products
+                from the ground up.
+              </p>
+              <p>
+                Currently, I'm at Incubyte, where I craft thoughtful,
+                user-centric design solutions for clients while also playing an
+                active role in growing and mentoring the design team.
+              </p>
+            </div>
+            <div>
+              <p>
+                Outside of work, you can often find me lost in a novel, drawn to
+                characters and worlds that stay with me long after the final
+                page.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="text-h2 about__subheading">
+            Design <em class="accent">Philosophy</em>.
+          </h3>
+
+          <!-- 3 × 2 philosophy grid -->
+          <ul class="philosophy-grid" role="list">
+            <li class="philosophy-card">
+              <span class="philosophy-card__number" aria-hidden="true">01</span>
+              <strong class="philosophy-card__title">Always be learning</strong>
+              <p class="philosophy-card__body">
+                Design evolves, and so should we.
+              </p>
+            </li>
+
+            <li class="philosophy-card">
+              <span class="philosophy-card__number" aria-hidden="true">02</span>
+              <strong class="philosophy-card__title">Simplicity is key</strong>
+              <p class="philosophy-card__body">
+                I aim to make complex things feel effortless.
+              </p>
+            </li>
+
+            <li class="philosophy-card">
+              <span class="philosophy-card__number" aria-hidden="true">03</span>
+              <strong class="philosophy-card__title">Adapt as needed</strong>
+              <p class="philosophy-card__body">
+                I believe in flexible thinking over following rigid blueprints.
+              </p>
+            </li>
+
+            <li class="philosophy-card">
+              <span class="philosophy-card__number" aria-hidden="true">04</span>
+              <strong class="philosophy-card__title"
+                >Design together, not alone</strong
+              >
+              <p class="philosophy-card__body">
+                I believe the best ideas emerge through collaboration and
+                inviting feedback.
+              </p>
+            </li>
+
+            <li class="philosophy-card">
+              <span class="philosophy-card__number" aria-hidden="true">05</span>
+              <strong class="philosophy-card__title">Understand First</strong>
+              <p class="philosophy-card__body">
+                No design before the problem and constraints are clear.
+              </p>
+            </li>
+
+            <li class="philosophy-card">
+              <span class="philosophy-card__number" aria-hidden="true">06</span>
+              <strong class="philosophy-card__title"
+                >Iterate Until It's Right</strong
+              >
+              <p class="philosophy-card__body">
+                I stay close through implementation, track what works and what
+                doesn't.
+              </p>
+            </li>
+          </ul>
         </div>
+      </section>
 
-        <div class="detail-section">
-          <h3>Results</h3>
-          <p>The results are announced for each level separately.</p>
-          <p>Addition & subtraction sums will carry two marks and multiplication & division sums will carry one mark.</p>
+      <hr class="divider" aria-hidden="true" />
+
+      <!-- -------------------------------------------------------
+         CONTACT / FOOTER
+         ------------------------------------------------------- -->
+      <section
+        class="section"
+        data-theme="home"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
+        <div class="section__inner">
+          <div class="section-header" aria-hidden="true">
+            <span class="section-header__label">Get in Touch</span>
+          </div>
+
+          <div class="contact-layout">
+            <!-- Left: heading + body copy -->
+            <div>
+              <h2
+                class="contact-layout__heading contact__heading"
+                id="contact-heading"
+              >
+                Let's work on something<br />
+                <em class="accent">worth building</em>
+              </h2>
+              <p class="contact-layout__body">
+                Whether you're launching a new product, rethinking an existing
+                one, or need a design partner who can move fast without losing
+                quality&mdash;I'd like to hear about it.
+              </p>
+            </div>
+
+            <!-- Right: contact links as a description list -->
+            <dl class="contact-links" aria-label="Contact information">
+              <div class="contact-link-row">
+                <dt class="contact-link-row__label">Email</dt>
+                <dd class="contact-link-row__value">
+                  <a href="mailto:divya.vasudevan@gmail.com">
+                    divya.vasudevan@gmail.com
+                  </a>
+                </dd>
+              </div>
+
+              <div class="contact-link-row">
+                <dt class="contact-link-row__label">LinkedIn</dt>
+                <dd class="contact-link-row__value">
+                  <a
+                    href="https://www.linkedin.com/in/divya-vasudevan/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn profile (opens in new tab)"
+                  >
+                    /in/divya-vasudevan
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div>
         </div>
-
-        <div class="detail-section">
-          <h3>Contact</h3>
-          <p>Any further queries/clarifications required please call <a href="tel:9886564626">9886564626</a>.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="./script.js"></script>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
-
