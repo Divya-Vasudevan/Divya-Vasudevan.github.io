@@ -1,715 +1,357 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enterprise AI Platform — Divya Vasudevan</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
-    <meta
-      name="description"
-      content="Designing an enterprise AI productivity platform from idea to multi-sector product—a case study by Divya Vasudevan."
-    />
-    <link rel="stylesheet" href="/styles/tokens.css" />
-    <link rel="stylesheet" href="/styles/base.css" />
-    <link rel="stylesheet" href="/styles/components.css" />
-    <!-- Shared case-study patterns (image blocks, meta, quote, 2-col, etc.) -->
-    <link rel="stylesheet" href="/styles/fanatics.css" />
-    <!-- Rolai-specific components (steps, feature grid, bullet list, etc.) -->
-    <link rel="stylesheet" href="/styles/rolai.css" />
-  </head>
-  <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rolai — Enterprise AI Platform · Divya Vasudevan</title>
+  <meta name="description" content="From idea and early wireframes to a multi-sector AI productivity platform — built, tested, and evolved over two years.">
 
-    <!-- ============================================================
-         NAVIGATION
-         ============================================================ -->
-    <header class="site-header" role="banner">
-      <nav class="nav" aria-label="Main navigation">
-        <div class="nav__inner">
-          <a href="/" class="nav__logo" aria-label="Divya Vasudevan — home"
-            >Divya·Vasudevan</a
-          >
-          <ul class="nav__links" role="list">
-            <li><a href="../#work" class="nav__link">Work</a></li>
-            <li><a href="../#about" class="nav__link">About</a></li>
-            <li><a href="../#contact" class="nav__link">Contact</a></li>
-          </ul>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/case-study.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="cs-nav__inner">
+      <a href="index.html" class="nav__logo">DIVYA VASUDEVAN</a>
+      <a href="index.html#work" class="cs-nav__back">← All work</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="cs-hero">
+    <div class="cs-hero__eyebrow" data-reveal="hero" style="animation-delay:.05s;">Enterprise AI · Product Design</div>
+    <h1 class="cs-hero__title" data-reveal="hero" style="animation-delay:.13s;">Designing an <em>Enterprise AI</em> Platform</h1>
+    <p class="cs-hero__lede" data-reveal="hero" style="animation-delay:.22s;">From idea and early wireframes to a multi-sector AI productivity platform — built, tested, and evolved over two years.</p>
+
+    <div class="cs-hero__meta" data-reveal="hero" style="animation-delay:.32s;">
+      <div>
+        <div class="cs-hero__meta-label">Role</div>
+        <div class="cs-hero__meta-value">Product Designer</div>
+      </div>
+      <div>
+        <div class="cs-hero__meta-label">Duration</div>
+        <div class="cs-hero__meta-value">2 years</div>
+      </div>
+      <div>
+        <div class="cs-hero__meta-label">Tools</div>
+        <div class="cs-hero__meta-value">Figma · Claude · ChatGPT</div>
+      </div>
+      <div>
+        <div class="cs-hero__meta-label">Platform</div>
+        <div class="cs-hero__meta-value">Web app</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVER -->
+  <div class="cs-cover" data-reveal>
+    <div class="cs-cover__frame">
+      <img src="images/rolai/cover.png" alt="Rolai chat landing on blue">
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <main class="cs-body">
+
+    <!-- BACKGROUND -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">Background</div>
+      <div class="cs-section__content">
+        <h2 class="cs-section__title cs-section__title--gap">An Idea, Some Wireframes, and a <em>Wide Open Problem.</em></h2>
+        <div class="cs-two-col">
+          <p>The founder of Rolai came to us with a compelling premise: an AI-powered productivity platform for small businesses. The core proposition was three-layered — a chat interface for interacting with leading LLM models, a curated library of ready-to-use prompts for everyday business tasks, and a Knowledge Store that would act as context to make every response more accurate and relevant.</p>
+          <p>What made this engagement distinctive from the start was the honest uncertainty around it. We were designing for a broad audience in a space most users weren't yet familiar with. There was no validated playbook. The founder wasn't locked into a single user group, which meant we had to treat every feature decision as a hypothesis — and every client conversation as a research opportunity.</p>
         </div>
-      </nav>
-    </header>
+        <blockquote class="cs-quote">
+          <p>"With the average user not yet familiar with the capabilities of AI, our process centered on building a working prototype quickly — so people could see, not just imagine, what was possible."</p>
+        </blockquote>
+      </div>
+    </section>
 
-    <main id="main-content">
-      <!-- ============================================================
-           1. HERO
-           Tags · title · subtitle · meta
-           ============================================================ -->
-      <section
-        class="section section--cs"
-        data-theme="rolai"
-        aria-labelledby="cs-title"
-      >
-        <div class="section__inner">
-          <p class="cs-tags" aria-label="Project category">
-            Enterprise AI · Product Design
-          </p>
+    <!-- OUR APPROACH -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">Our approach</div>
+      <div class="cs-section__content cs-section__content--narrow">
+        <h2 class="cs-section__title">Designed For <em>Uncertainty</em></h2>
+        <p class="cs-section__lede">We began with foundational discovery, conducting competitor research and reviewing the existing work. The client had created a few initial wireframes, which gave us a clear understanding of the requirements and a solid starting point for the project.</p>
+      </div>
+    </section>
 
-          <h1 id="cs-title" class="text-h1 cs-hero__title">
-            Designing an <em class="accent">Enterprise AI</em> Platform
-          </h1>
+    <figure class="cs-figure" data-reveal>
+      <div class="cs-figure__frame">
+        <img src="images/rolai/competitor-research.png" alt="Competitor research board comparing make.com, n8n, gumloop and cassidy">
+      </div>
+      <figcaption class="cs-figure__caption">Competitor research across make.com, n8n, gumloop and cassidy to map the landscape.</figcaption>
+    </figure>
 
-          <p class="cs-hero__subtitle">
-            From idea and early wireframes to a multi-sector AI productivity
-            platform—built, tested, and evolved over two years.
-          </p>
+    <figure class="cs-figure cs-figure--last" data-reveal>
+      <div class="cs-figure__frame">
+        <img src="images/rolai/early-wireframes.png" alt="Early Rolai wireframe explorations across home, dashboard and settings screens">
+      </div>
+      <figcaption class="cs-figure__caption">Reviewing the client's initial wireframes and mapping the requirements they implied.</figcaption>
+    </figure>
 
-          <dl class="cs-meta">
-            <div class="cs-meta__item">
-              <dt class="cs-meta__label">Duration</dt>
-              <dd class="cs-meta__value">2 Years</dd>
-            </div>
-            <div class="cs-meta__item">
-              <dt class="cs-meta__label">Tools</dt>
-              <dd class="cs-meta__value">Figma · Claude · ChatGPT</dd>
-            </div>
-          </dl>
+    <section class="cs-section cs-section--noborder" data-reveal>
+      <div></div>
+      <div class="cs-section__content cs-section__content--narrow">
+        <p class="cs-section__lede">A traditional, structured design process wasn't the right fit for a product with this much ambiguity. Instead, we built a tight, adaptive loop — one that could turn a founder's client conversation into a live feature in days, not weeks.</p>
+        <blockquote class="cs-quote">
+          <p>"The goal wasn't to design the perfect product upfront. It was to get something real in front of real people as fast as possible — and let their reactions shape what came next."</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="cs-section cs-section--noborder" data-reveal>
+      <div></div>
+      <div class="cs-process">
+        <div class="cs-process__step">
+          <div class="cs-process__num">01</div>
+          <h3 class="cs-process__heading">Client Signal</h3>
+          <p class="cs-process__body">Founder meets a prospect, identifies a need or friction point in their workflow.</p>
         </div>
-      </section>
-
-      <!-- ============================================================
-           2. HERO IMAGE
-           ============================================================ -->
-      <section
-        class="section section--cs section--cs-image"
-        data-theme="rolai"
-        aria-label="Project hero image"
-      >
-        <div class="section__inner">
-          <figure class="cs-image-block">
-            <img
-              src="images/Rolai/project page header image.jpg"
-              alt="Wireframes and collaborative UI designs"
-              width="820"
-              height="300"
-            />
-          </figure>
+        <div class="cs-process__step">
+          <div class="cs-process__num">02</div>
+          <h3 class="cs-process__heading">Rapid Design &amp; Dev</h3>
+          <p class="cs-process__body">Build the feature in days. Move fast, stay functional, keep it demoable.</p>
         </div>
-      </section>
-
-      <!-- ============================================================
-           3. BACKGROUND
-           Full-width H2 · 2-column body · quote
-           ============================================================ -->
-      <section
-        class="section section--cs"
-        data-theme="rolai"
-        aria-labelledby="background-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header">
-            <span class="section-header__label">Background</span>
-          </div>
-
-          <h2 id="background-heading" class="text-h2 cs-section-heading">
-            An Idea, Some Wireframes, and a
-            <em class="accent">Wide Open Problem.</em>
-          </h2>
-
-          <div class="cs-2col mt-20">
-            <div class="cs-2col__col">
-              <p>
-                The founder of Rolai came to us with a compelling premise: an
-                AI-powered productivity platform built for small businesses. The
-                core proposition was three-layered—a chat interface for
-                interacting with leading LLM models, a curated library of
-                ready-to-use prompts for everyday business tasks, and a
-                Knowledge Store that would act as context to make every response
-                more accurate and relevant.
-              </p>
-            </div>
-            <div class="cs-2col__col">
-              <p>
-                What made this engagement distinctive from the start was the
-                honest uncertainty around it. We were designing for a broad
-                audience in a space most users weren't yet familiar with. There
-                was no validated playbook. The founder wasn't locked into a
-                single user group, which meant we had to treat every feature
-                decision as a hypothesis—and every client conversation as a
-                research opportunity.
-              </p>
-            </div>
-          </div>
-
-          <blockquote class="cs-quote">
-            With the average user not yet familiar with the capabilities of AI,
-            our process centered on building a working prototype quickly—so
-            people could see, not just imagine, what was possible.
-          </blockquote>
+        <div class="cs-process__step">
+          <div class="cs-process__num">03</div>
+          <h3 class="cs-process__heading">Review &amp; Experiment</h3>
+          <p class="cs-process__body">The team uses the feature internally while the founder demos it to prospects.</p>
         </div>
-      </section>
-
-      <!-- ============================================================
-           4. OUR APPROACH
-           "Designed For Uncertainty" · intro body · quote · 4-step grid
-           ============================================================ -->
-      <section
-        class="section section--cs"
-        data-theme="rolai"
-        aria-labelledby="approach-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header">
-            <span class="section-header__label">Our Approach</span>
-          </div>
-
-          <h2 id="approach-heading" class="text-h2">
-            Designed For <em class="accent">Uncertainty</em>
-          </h2>
-
-          <p class="cs-body mt-20">
-            We began with foundational discovery, conducting competitor research
-            and reviewing the existing work. The client had created a few
-            initial wireframes, which gave us a clear understanding of the
-            requirements and a solid starting point for the project.
-          </p>
-
-          <figure class="cs-image-block mt-32">
-            <img
-              src="images/Rolai/older work.jpg"
-              alt="Wireframes and collaborative UI designs"
-              width="820"
-              height="300"
-            />
-          </figure>
-
-          <p class="cs-body mt-20">
-            A traditional, structured design process wasn't the right fit for a
-            product with this much ambiguity. Instead, we built a tight,
-            adaptive loop—one that could turn a founder's client conversation
-            into a live feature in days, not weeks.
-          </p>
-
-          <blockquote class="cs-quote">
-            The goal wasn't to design the perfect product upfront. It was to get
-            something real in front of real people as fast as possible—and let
-            their reactions shape what came next.
-          </blockquote>
-
-          <ol
-            class="cs-steps-grid mt-32"
-            aria-label="Our four-step design process"
-            role="list"
-          >
-            <li class="cs-step" role="listitem">
-              <span class="cs-step__number" aria-hidden="true">01</span>
-              <h3 class="cs-step__title">Client Signal</h3>
-              <p class="cs-step__body">
-                Founder meets a prospect, identifies a need or friction point in
-                their workflow.
-              </p>
-            </li>
-            <li class="cs-step" role="listitem">
-              <span class="cs-step__number" aria-hidden="true">02</span>
-              <h3 class="cs-step__title">Rapid Design &amp; Dev</h3>
-              <p class="cs-step__body">
-                Build the feature in days. Move fast, stay functional, keep it
-                demoable.
-              </p>
-            </li>
-            <li class="cs-step" role="listitem">
-              <span class="cs-step__number" aria-hidden="true">03</span>
-              <h3 class="cs-step__title">Review &amp; Experiment</h3>
-              <p class="cs-step__body">
-                The team uses the feature internally while the founder demos it
-                to prospects.
-              </p>
-            </li>
-            <li class="cs-step" role="listitem">
-              <span class="cs-step__number" aria-hidden="true">04</span>
-              <h3 class="cs-step__title">Iterate or Set Aside</h3>
-              <p class="cs-step__body">
-                Fix and adapt based on reaction. Polish what lands. Shelve what
-                doesn't.
-              </p>
-            </li>
-          </ol>
+        <div class="cs-process__step">
+          <div class="cs-process__num">04</div>
+          <h3 class="cs-process__heading">Iterate or Set Aside</h3>
+          <p class="cs-process__body">Fix and adapt based on reaction. Polish what lands. Shelve what doesn't.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ============================================================
-           5. THE CORE PLATFORM
-           Feature intro · 2×2 feature card grid · 4 platform screens
-           ============================================================ -->
-      <section
-        class="section section--cs section--accent-lighter"
-        data-theme="rolai"
-        aria-labelledby="platform-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header">
-            <span class="section-header__label">The Core Platform</span>
+    <!-- THE CORE PLATFORM -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">The core platform</div>
+      <div class="cs-section__content">
+        <h2 class="cs-section__title">Core Features In One <em>Coherent Experience.</em></h2>
+        <p class="cs-section__lede cs-section__lede--gap">The initial platform was built around four interconnected capabilities, each designed to make AI genuinely accessible and useful for small business users who had never thought of themselves as "AI users."</p>
+        <div class="cs-features">
+          <div class="cs-feature-card">
+            <h3 class="cs-feature-card__heading">Chat</h3>
+            <p class="cs-feature-card__body">Direct access to leading LLM models through a clean, intuitive chat interface. Users could converse naturally, without needing to understand the technology underneath — just the results it could produce.</p>
           </div>
-
-          <h2 id="platform-heading" class="text-h2">
-            Core Features In One <em class="accent">Coherent Experience.</em>
-          </h2>
-
-          <p class="cs-body mt-20">
-            The initial platform was built around four interconnected
-            capabilities, each designed to make AI genuinely accessible and
-            useful for small business users who had never thought of themselves
-            as "AI users."
-          </p>
-
-          <div class="cs-features-grid" aria-label="Core platform features">
-            <article class="cs-feature-card">
-              <h3 class="cs-feature-card__title">Chat</h3>
-              <p class="cs-feature-card__body">
-                Direct access to leading LLM models through a clean, intuitive
-                chat interface. Users could converse naturally, without needing
-                to understand the technology underneath—just the results it
-                could produce.
-              </p>
-            </article>
-
-            <article class="cs-feature-card">
-              <h3 class="cs-feature-card__title">Prompt Library</h3>
-              <p class="cs-feature-card__body">
-                A curated collection of ready-to-use prompts covering the most
-                common day-to-day business tasks. Built for users who didn't
-                know where to start, and powerful enough for those who did.
-              </p>
-            </article>
-
-            <article class="cs-feature-card">
-              <h3 class="cs-feature-card__title">Knowledge</h3>
-              <p class="cs-feature-card__body">
-                A contextual layer that gave the platform its accuracy
-                advantage—users could upload their own materials and connect
-                external sources so every AI response was grounded in their
-                specific business reality.
-              </p>
-            </article>
-
-            <article class="cs-feature-card">
-              <h3 class="cs-feature-card__title">Agents</h3>
-              <p class="cs-feature-card__body">
-                As the platform matured, AI agents allowed users to delegate
-                more complex, multi-step tasks—extending the core chat and
-                prompt capabilities into more autonomous, reliable workflows.
-              </p>
-            </article>
+          <div class="cs-feature-card">
+            <h3 class="cs-feature-card__heading">Prompt Library</h3>
+            <p class="cs-feature-card__body">A curated collection of ready-to-use prompts covering the most common day-to-day business tasks. Built for users who didn't know where to start, and powerful enough for those who did.</p>
           </div>
-
-          <!-- Core platform screens — 4 sequential image placeholders -->
-          <div class="cs-image-stack mt-32">
-            <figure
-              class="cs-image-block"
-              aria-label="Core platform — Chat interface screens"
-            >
-              <img
-                src="images/Rolai/UI.jpg"
-                alt="Wireframes and collaborative UI designs"
-                width="820"
-                height="300"
-              />
-            </figure>
-
-            <figure
-              class="cs-image-block"
-              aria-label="Core platform — Prompt Library screens"
-            >
-              <img
-                src="images/Rolai/UI-6.jpg"
-                alt="Wireframes and collaborative UI designs"
-                width="820"
-                height="300"
-              />
-            </figure>
-
-            <figure
-              class="cs-image-block"
-              aria-label="Core platform — Knowledge store screens"
-            >
-              <img
-                src="images/Rolai/UI-3.jpg"
-                alt="Wireframes and collaborative UI designs"
-                width="820"
-                height="300"
-              />
-            </figure>
-
-            <figure
-              class="cs-image-block"
-              aria-label="Core platform — AI Agents screens"
-            >
-              <img
-                src="images/Rolai/UI-9.jpg"
-                alt="Wireframes and collaborative UI designs"
-                width="820"
-                height="300"
-              />
-            </figure>
+          <div class="cs-feature-card">
+            <h3 class="cs-feature-card__heading">Knowledge</h3>
+            <p class="cs-feature-card__body">A contextual layer that gave the platform its accuracy advantage — users could upload their own materials and connect external sources so every AI response was grounded in their specific business reality.</p>
+          </div>
+          <div class="cs-feature-card">
+            <h3 class="cs-feature-card__heading">Agents</h3>
+            <p class="cs-feature-card__body">As the platform matured, AI agents allowed users to delegate more complex, multi-step tasks — extending the core chat and prompt capabilities into more autonomous, reliable workflows.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ============================================================
-           6. THE CATALYST
-           "A Mortgage Client Changed Everything" · body · bullet list · images
-           ============================================================ -->
-      <section
-        class="section section--cs"
-        data-theme="rolai"
-        aria-labelledby="catalyst-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header">
-            <span class="section-header__label">The Catalyst</span>
+    <!-- FEATURE WALKTHROUGH: CHAT -->
+    <div class="cs-walk" data-reveal>
+      <div class="cs-walk__frame"><img src="images/rolai/chat-landing.png" alt="Chat landing page"></div>
+      <div>
+        <div class="cs-walk__tag">Chat</div>
+        <p class="cs-walk__body">The chat landing page is your central space to interact, explore, and create. Here, you can seamlessly engage with the agents you've built as well as a range of available models. You can also use voice transcription, making conversations faster and more natural.</p>
+      </div>
+    </div>
+
+    <div class="cs-walk" data-reveal>
+      <div class="cs-walk__frame"><img src="images/rolai/chat-sources.png" alt="Chat conversation with sources panel"></div>
+      <div>
+        <div class="cs-walk__tag">Chat</div>
+        <p class="cs-walk__body">The chat conversation lets you view the sources behind each response, so you always know what information is informing your AI.</p>
+      </div>
+    </div>
+
+    <!-- FEATURE WALKTHROUGH: AGENTS -->
+    <div class="cs-walk" data-reveal>
+      <div class="cs-walk__frame"><img src="images/rolai/agents-gallery.png" alt="Agents gallery"></div>
+      <div>
+        <div class="cs-walk__tag">Agents</div>
+        <p class="cs-walk__body">Agents are intelligent AI assistants you can create to handle specific tasks or workflows. You can star agents to make them easily accessible from the side panel, allowing you to quickly start a chat with your frequently used agents from anywhere in the product.</p>
+      </div>
+    </div>
+
+    <div class="cs-walk cs-walk--last" data-reveal>
+      <div class="cs-walk__frame"><img src="images/rolai/create-agent.png" alt="Create agent screen"></div>
+      <div>
+        <div class="cs-walk__tag">Agents</div>
+        <p class="cs-walk__body">Agents use your instructions, connected apps, and added knowledge sources (like files and webpages) to generate responses and take action.</p>
+      </div>
+    </div>
+
+    <!-- THE CATALYST -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">The catalyst</div>
+      <div class="cs-section__content">
+        <h2 class="cs-section__title">A Mortgage Client <em>Changed Everything</em></h2>
+        <p class="cs-section__lede cs-section__lede--gap">The basic platform was working — but a new client engagement forced us to think at a different scale. A mortgage company came to us with needs that went far beyond chat and prompts. They needed to batch-process hundreds of PDFs, extract specific data fields, auto-fill forms, and operate through a custom interface built for their exact workflow. In response we built:</p>
+        <div class="cs-strip-3">
+          <div class="cs-strip-3__cell">
+            <h3 class="cs-strip-3__heading">Custom Prompts</h3>
+            <p class="cs-strip-3__body">More elaborate than standard prompts, built to accept specific inputs and return structured outputs tailored to the client's process.</p>
           </div>
-
-          <h2 id="catalyst-heading" class="text-h2">
-            A Mortgage Client <em class="accent">Changed Everything</em>
-          </h2>
-
-          <p class="cs-body mt-20">
-            The basic platform was working—but a new client engagement forced us
-            to think at a different scale. A mortgage company came to us with
-            needs that went far beyond chat and prompts. They needed to
-            batch-process hundreds of PDFs, extract specific data fields,
-            auto-fill forms, and operate through a custom interface built for
-            their exact workflow. In response we built:
-          </p>
-
-          <ul
-            class="cs-list"
-            aria-label="What we built in response to the mortgage client"
-          >
-            <li class="cs-list__item">
-              <strong>Custom Prompts</strong>More elaborate than standard
-              prompts, built to accept specific inputs and return structured
-              outputs tailored to the client's process
-            </li>
-            <li class="cs-list__item">
-              <strong>Flows V1</strong>Chained prompts together so a multi-step
-              task could be triggered and completed with a single click
-            </li>
-            <li class="cs-list__item">
-              <strong>Knowledge Integrations</strong>Connected the platform to
-              external data sources like Google Drive and SharePoint,
-              eliminating the friction of manual uploads
-            </li>
-          </ul>
-
-          <!-- Catalyst screens — 2 sequential image placeholders -->
-          <div class="cs-image-stack mt-32">
-            <figure
-              class="cs-image-block"
-              aria-label="Catalyst — custom prompts and Flows V1 screens"
-            >
-              <img
-                src="images/Rolai/UI-1.jpg"
-                alt="Wireframes and collaborative UI designs"
-                width="820"
-                height="300"
-              />
-            </figure>
-
-            <figure
-              class="cs-image-block"
-              aria-label="Catalyst — knowledge integrations screens"
-            >
-              <img
-                src="images/Rolai/UI-7.jpg"
-                alt="Wireframes and collaborative UI designs"
-                width="820"
-                height="300"
-              />
-            </figure>
+          <div class="cs-strip-3__cell">
+            <h3 class="cs-strip-3__heading">Flows V1</h3>
+            <p class="cs-strip-3__body">Chained prompts together so a multi-step task could be triggered and completed with a single click.</p>
+          </div>
+          <div class="cs-strip-3__cell">
+            <h3 class="cs-strip-3__heading">Knowledge Integrations</h3>
+            <p class="cs-strip-3__body">Connected the platform to external data sources like Google Drive and SharePoint, eliminating the friction of manual uploads.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ============================================================
-           7. THE PIVOTS
-           Intro · Pivot 1 (with image) · Pivot 2 (with list + image)
-           ============================================================ -->
-      <section
-        class="section section--cs"
-        data-theme="rolai"
-        aria-labelledby="pivots-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header">
-            <span class="section-header__label">The Pivots</span>
+    <div class="cs-walk" data-reveal>
+      <div class="cs-walk__frame"><img src="images/rolai/knowledge-files.png" alt="Knowledge files screen"></div>
+      <div>
+        <div class="cs-walk__tag">Knowledge</div>
+        <p class="cs-walk__body">Knowledge lets users bring in content from multiple sources, enabling the AI to search and respond with richer, more relevant context.</p>
+      </div>
+    </div>
+
+    <div class="cs-walk cs-walk--last" data-reveal>
+      <div class="cs-walk__frame"><img src="images/rolai/integrations.png" alt="Integrations modal with apps and MCP"></div>
+      <div>
+        <div class="cs-walk__tag">Integrations</div>
+        <p class="cs-walk__body">Users can connect multiple accounts across applications and MCP to automate common workflows seamlessly across touchpoints.</p>
+      </div>
+    </div>
+
+    <!-- THE PIVOTS -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">The pivots</div>
+      <div class="cs-section__content cs-section__content--narrow">
+        <h2 class="cs-section__title">Two Turning Points That <em>Changed Flows.</em></h2>
+        <p class="cs-section__lede">Flows started as a client-specific solution. Then we asked the harder question: what if every client could use them? That question — and a significant technical challenge that followed — led to two pivots that fundamentally changed the platform.</p>
+      </div>
+    </section>
+
+    <!-- PIVOT 1 -->
+    <section class="cs-section cs-section--noborder" data-reveal>
+      <div class="cs-section__label cs-section__label--faint">Pivot 1</div>
+      <div class="cs-section__content cs-section__content--narrow">
+        <h3 class="cs-section__sub">Expanding <em>Flows</em></h3>
+        <p class="cs-section__p">We fleshed out Flows from a chain of prompts into a full automation engine — sequences of tasks spanning multiple applications, triggered by events, schedules, or manual action. A client-specific tool became a platform-wide capability.</p>
+      </div>
+    </section>
+
+    <div class="cs-walk cs-walk--last" data-reveal>
+      <div class="cs-walk__frame"><img src="images/rolai/ai-flow.png" alt="AI flow with a custom AI action driven by a natural-language prompt"></div>
+      <div>
+        <div class="cs-walk__tag">AI Flows</div>
+        <p class="cs-walk__body">AI flows let users automate their work by connecting different applications with natural language instructions.</p>
+      </div>
+    </div>
+
+    <!-- PIVOT 2 -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label cs-section__label--faint">Pivot 2</div>
+      <div class="cs-section__content cs-section__content--narrow">
+        <h3 class="cs-section__sub">Deterministic <em>Flows</em></h3>
+        <p class="cs-section__p">AI-powered flows — where AI interpreted natural language instructions at runtime — introduced hallucinations, misinterpretations, and hours of debugging. We rebuilt them with deterministic logic: user-defined, predictable, and reliable.</p>
+        <p class="cs-section__p" style="margin-bottom:40px;">While deterministic flows ensured reliability, the user experience of building those flows was lacking. We recognised the need to enable AI-assisted flow creation so users wouldn't have to bear the burden of learning how to build them themselves.</p>
+        <h4 class="cs-value-label">Core Value</h4>
+        <div class="cs-strip-4">
+          <div class="cs-strip-4__cell"><p>User defines the exact logic — no AI interpretation at runtime</p></div>
+          <div class="cs-strip-4__cell"><p>Predictable execution — flows do exactly what was designed, every time</p></div>
+          <div class="cs-strip-4__cell"><p>Client trust built on reliability — not just capability</p></div>
+          <div class="cs-strip-4__cell"><p>Easy to debug — transparent logic means problems are findable and fixable</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cs-walk" data-reveal>
+      <div class="cs-walk__frame"><img src="images/rolai/deterministic-flow.png" alt="Deterministic flow with explicit conditional steps"></div>
+      <div>
+        <div class="cs-walk__tag">Deterministic Flows</div>
+        <p class="cs-walk__body">Instead of relying on prompts that could be misinterpreted, flows now use structured configurations to improve reliability. Variables can also be used to reference outputs from previous actions, enabling more consistent and connected workflows.</p>
+      </div>
+    </div>
+
+    <div class="cs-walk" data-reveal>
+      <div class="cs-walk__frame"><img src="images/rolai/ai-assisted-flow.png" alt="AI-assisted flow builder proposing changes from a natural-language request"></div>
+      <div>
+        <div class="cs-walk__tag">Deterministic Flows</div>
+        <p class="cs-walk__body">Because deterministic flows can be difficult for the average user to build, an AI-assisted approach was introduced. Users can simply describe what they want in natural language, and the AI will plan, confirm, and build the flow for them.</p>
+      </div>
+    </div>
+
+    <div class="cs-walk" data-reveal>
+      <div class="cs-walk__frame"><img src="images/rolai/flow-activity.png" alt="Flow activity and run history"></div>
+      <div>
+        <div class="cs-walk__tag">Flow Activity</div>
+        <p class="cs-walk__body">Flow activity is captured so users can view run history and track execution over time. They can also chat with their flow activity, using past runs as context to ask questions and get more informed answers.</p>
+      </div>
+    </div>
+
+    <div class="cs-walk cs-walk--last" data-reveal>
+      <div class="cs-walk__frame"><img src="images/rolai/human-approval.png" alt="Human approval step within a running flow"></div>
+      <div>
+        <div class="cs-walk__tag">Human Approval</div>
+        <p class="cs-walk__body">Certain key actions require human approval before proceeding. Within flows, users can review and edit the content before approving, ensuring greater control and accuracy.</p>
+      </div>
+    </div>
+
+    <!-- OUTCOMES -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">Outcomes &amp; big wins</div>
+      <div class="cs-section__content">
+        <h2 class="cs-section__title">What We <em>Delivered</em></h2>
+        <p class="cs-section__lede cs-section__lede--gap">After two years of rapid iteration, the platform had grown from an idea and initial wireframes into a live, multi-sector AI productivity tool with happy users reporting real, measurable time saved.</p>
+        <div class="cs-stats">
+          <div class="cs-stat">
+            <div class="cs-stat__label">Growth</div>
+            <h3 class="cs-stat__heading">3+ Sectors Onboarded</h3>
+            <p class="cs-stat__body">The platform expanded beyond its initial small-business focus to serve clients across multiple industries — each engagement broadening the platform's capabilities rather than fragmenting them.</p>
           </div>
-
-          <h2 id="pivots-heading" class="text-h2">
-            Two Turning Points That <em class="accent">Changed Flows.</em>
-          </h2>
-
-          <p class="cs-body mt-20">
-            Flows started as a client-specific solution. Then we asked the
-            harder question: what if every client could use them? That
-            question—and a significant technical challenge that followed—led to
-            two pivots that fundamentally changed the platform.
-          </p>
-
-          <!-- Pivot 1 -->
-          <div class="cs-subsection" aria-label="Pivot 1 — Expanding Flows">
-            <div class="section-header">
-              <span class="section-header__label">Pivot 1</span>
-            </div>
-
-            <h2 class="text-h2">
-              Expanding <em class="accent">Flows</em>
-            </h2>
-
-            <p class="cs-body mt-20">
-              We fleshed out Flows from a chain of prompts into a full
-              automation engine—sequences of tasks spanning multiple
-              applications, triggered by events, schedules, or manual action. A
-              client-specific tool became a platform-wide capability.
-            </p>
-
-            <figure
-              class="cs-image-block mt-32"
-              aria-label="Pivot 1 — Flows automation engine interface"
-            >
-              <img
-                src="images/Rolai/UI-4.jpg"
-                alt="Wireframes and collaborative UI designs"
-                width="820"
-                height="300"
-              />
-            </figure>
-          </div>
-
-          <!-- Pivot 2 -->
-          <div class="cs-subsection" aria-label="Pivot 2 — Deterministic Flows">
-            <div class="section-header">
-              <span class="section-header__label">Pivot 2</span>
-            </div>
-
-            <h2 class="text-h2">
-              Deterministic <em class="accent">Flows</em>
-            </h2>
-
-            <p class="cs-body mt-20">
-              AI-powered flows—where AI interpreted natural language
-              instructions at runtime—introduced hallucinations,
-              misinterpretations, and hours of debugging. We rebuilt them with
-              deterministic logic: user-defined, predictable, and reliable.
-            </p>
-
-            <p class="cs-body mt-20">
-              While deterministic flows ensured reliability, the user experience
-              of building those flows was lacking. We recognised the need to
-              enable AI-assisted flow creation so users wouldn't have to bear
-              the burden of learning how to build them themselves.
-            </p>
-
-            <h3 class="cs-list-heading">Core Value</h3>
-
-            <ul class="cs-list cs-list--4col" aria-label="Core value of deterministic flows">
-              <li class="cs-list__item">
-                User defines the exact logic — no AI interpretation at runtime
-              </li>
-              <li class="cs-list__item">
-                Predictable execution — flows do exactly what was designed,
-                every time
-              </li>
-              <li class="cs-list__item">
-                Client trust built on reliability — not just capability
-              </li>
-              <li class="cs-list__item">
-                Easy to debug — transparent logic means problems are findable
-                and fixable
-              </li>
-            </ul>
-
-            <div class="cs-image-stack mt-32">
-              <figure
-                class="cs-image-block"
-                aria-label="Pivot 2 — deterministic Flows builder interface"
-              >
-                <img
-                  src="images/Rolai/UI-10.jpg"
-                  alt="Wireframes and collaborative UI designs"
-                  width="820"
-                  height="300"
-                />
-              </figure>
-              <figure
-                class="cs-image-block"
-                aria-label="Pivot 2 — deterministic Flows builder interface"
-              >
-                <img
-                  src="images/Rolai/UI-2.jpg"
-                  alt="Wireframes and collaborative UI designs"
-                  width="820"
-                  height="300"
-                />
-              </figure>
-              <figure
-                class="cs-image-block"
-                aria-label="Pivot 2 — deterministic Flows builder interface"
-              >
-                <img
-                  src="images/Rolai/UI-8.jpg"
-                  alt="Wireframes and collaborative UI designs"
-                  width="820"
-                  height="300"
-                />
-              </figure>
-              <figure
-                class="cs-image-block"
-                aria-label="Pivot 2 — deterministic Flows builder interface"
-              >
-                <img
-                  src="images/Rolai/UI-5.jpg"
-                  alt="Wireframes and collaborative UI designs"
-                  width="820"
-                  height="300"
-                />
-              </figure>
-            </div>
+          <div class="cs-stat">
+            <div class="cs-stat__label">Impact</div>
+            <h3 class="cs-stat__heading">Hours Saved for End Users</h3>
+            <p class="cs-stat__body">Users across sectors reported meaningful, measurable time savings as a direct result of using Rolai — validation that the platform was solving real problems, not just demonstrating AI novelty.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ============================================================
-           8. OUTCOMES & BIG WINS
-           "What We Delivered" · intro · 2-col outcome cards
-           ============================================================ -->
-      <section
-        class="section section--cs"
-        data-theme="rolai"
-        aria-labelledby="outcomes-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header">
-            <span class="section-header__label">Outcomes &amp; Big Wins</span>
-          </div>
+  </main>
 
-          <h2 id="outcomes-heading" class="text-h2">
-            What We <em class="accent">Delivered</em>
-          </h2>
-
-          <p class="cs-body mt-20">
-            After two years of rapid iteration, the platform had grown from an
-            idea and initial wireframes into a live, multi-sector AI
-            productivity tool with happy users reporting real, measurable time
-            saved.
-          </p>
-
-          <div
-            class="cs-outcomes-grid"
-            role="list"
-            aria-label="Project outcomes"
-          >
-            <article class="cs-outcome-card" role="listitem">
-              <span class="cs-outcome-card__tag">Growth</span>
-              <h3 class="cs-outcome-card__title">3+ Sectors Onboarded</h3>
-              <p class="cs-outcome-card__body">
-                The platform expanded beyond its initial small-business focus to
-                serve clients across multiple industries—each engagement
-                broadening the platform's capabilities rather than fragmenting
-                them.
-              </p>
-            </article>
-
-            <article class="cs-outcome-card" role="listitem">
-              <span class="cs-outcome-card__tag">Impact</span>
-              <h3 class="cs-outcome-card__title">Hours Saved for End Users</h3>
-              <p class="cs-outcome-card__body">
-                Users across sectors reported meaningful, measurable time
-                savings as a direct result of using Rolai—validation that the
-                platform was solving real problems, not just demonstrating AI
-                novelty.
-              </p>
-            </article>
-          </div>
+  <!-- NEXT PROJECT -->
+  <section class="cs-next">
+    <a href="hbr.html" class="cs-next__link" data-reveal>
+      <div class="cs-next__row">
+        <div>
+          <div class="cs-next__label">Next project</div>
+          <div class="cs-next__title">HBR Design Sprint</div>
         </div>
-      </section>
+        <div class="cs-next__arrow">↗</div>
+      </div>
+    </a>
+  </section>
 
-      <hr class="divider" />
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© 2026 Divya Vasudevan</span>
+      <a href="index.html#contact" style="color:var(--text-meta);text-decoration:none;">Get in touch ↗</a>
+    </div>
+  </footer>
 
-      <!-- ============================================================
-           9. NEXT PROJECT
-           ============================================================ -->
-      <section
-        class="section section--cs cs-next-project"
-        data-theme="rolai"
-        aria-label="Next project"
-      >
-        <div class="section__inner cs-next-project__inner">
-          <a
-            href="rf.html"
-            class="cs-next-project__link"
-            aria-label="Next project: Building the Training Manual into the product"
-          >
-            <span class="cs-next-project__label">Next Project</span>
-            <span class="cs-next-project__title">
-              Building the <em class="accent">Training Manual</em> into the
-              Product
-            </span>
-          </a>
-          <span class="cs-next-project__arrow" aria-hidden="true">→</span>
-        </div>
-      </section>
-
-      <!-- ============================================================
-           10. CONTACT FOOTER
-           ============================================================ -->
-      <section
-        class="section"
-        data-theme="rolai"
-        id="contact"
-        aria-labelledby="contact-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header">
-            <span class="section-header__label">Get in Touch</span>
-          </div>
-
-          <div class="contact-layout">
-            <div class="contact-layout__left">
-              <h2 id="contact-heading" class="contact-layout__heading">
-                Let's work on something<br />
-                <em class="accent">worth building</em>
-              </h2>
-              <p class="contact-layout__body">
-                Whether you're launching a new product, rethinking an existing
-                one, or need a design partner who can move fast without losing
-                quality—I'd like to hear about it.
-              </p>
-            </div>
-
-            <dl class="contact-links">
-              <div class="contact-link-row">
-                <dt class="contact-link-row__label">Email</dt>
-                <dd class="contact-link-row__value">
-                  <a href="mailto:divya.vasudevan@gmail.com"
-                    >divya.vasudevan@gmail.com</a
-                  >
-                </dd>
-              </div>
-              <div class="contact-link-row">
-                <dt class="contact-link-row__label">LinkedIn</dt>
-                <dd class="contact-link-row__value">
-                  <a
-                    href="https://www.linkedin.com/in/divya-vasudevan/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn profile (opens in new tab)"
-                    >/in/divya-vasudevan</a
-                  >
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
+  <script src="js/main.js"></script>
+</body>
 </html>

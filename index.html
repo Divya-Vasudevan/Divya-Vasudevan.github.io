@@ -1,258 +1,267 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Divya Vasudevan — UX / Product Designer</title>
     <meta
       name="description"
-      content="Divya Vasudevan is a product designer shaping meaningful product experiences from 0 to 1 for the past 7+ years."
+      content="Divya Vasudevan — product design generalist with 7+ years of experience turning ambiguous, early-stage ideas into shipped products."
     />
-    <title>Divya Vasudevan — Product Designer</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg" />
-    <!-- Design system stylesheets — order is required -->
-    <link rel="stylesheet" href="styles/tokens.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/components.css" />
-    <link rel="stylesheet" href="styles/home.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- =========================================================
-       SKIP LINK — keyboard / screen-reader navigation shortcut
-       ========================================================= -->
-    <a class="skip-link" href="#main">Skip to main content</a>
-
-    <!-- =========================================================
-       HEADER / NAV
-       Sticky. Logo hides on mobile; links center instead.
-       ========================================================= -->
-    <header class="site-header" role="banner">
-      <nav class="nav" aria-label="Main navigation">
-        <div class="nav__inner">
-          <a href="/" class="nav__logo" aria-label="Divya Vasudevan — home">
-            Divya·Vasudevan
-          </a>
-          <ul class="nav__links" role="list">
-            <li><a href="#work" class="nav__link">Work</a></li>
-            <li><a href="#about" class="nav__link">About</a></li>
-            <li><a href="#contact" class="nav__link">Contact</a></li>
-          </ul>
+    <!-- NAV -->
+    <header class="nav">
+      <div class="nav__inner">
+        <a href="#top" class="nav__logo">DIVYA VASUDEVAN</a>
+        <div class="tabs" role="tablist" aria-label="View">
+          <button
+            id="tab-work"
+            class="tab tab--active"
+            role="tab"
+            aria-label="Work"
+            title="Work"
+            data-view="work"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+              <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              <path d="M2 13h20"></path>
+            </svg>
+          </button>
+          <button
+            id="tab-experiments"
+            class="tab"
+            role="tab"
+            aria-label="Experiments"
+            title="Experiments"
+            data-view="experiments"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 3h6"></path>
+              <path
+                d="M10 3v6.5L4.6 18.4A2 2 0 0 0 6.3 21.5h11.4a2 2 0 0 0 1.7-3.1L14 9.5V3"
+              ></path>
+              <path d="M7.5 14.5h9"></path>
+            </svg>
+          </button>
         </div>
-      </nav>
+      </div>
     </header>
 
-    <!-- =========================================================
-       MAIN CONTENT
-       ========================================================= -->
-    <main id="main">
-      <!-- -------------------------------------------------------
-         HERO
-         ------------------------------------------------------- -->
-      <section
-        class="section"
-        data-theme="home"
-        id="hero"
-        aria-labelledby="hero-heading"
-      >
-        <div class="section__inner">
-          <h1 class="hero__heading" id="hero-heading">
-            Hi I'm Divya<br />
-            a <em class="accent">product designer</em>,
-          </h1>
-          <p class="hero__subtitle">
-            shaping meaningful product experiences from 0 to 1 for the past 7+
-            years.
-          </p>
-          <div class="hero__actions">
-            <a href="#work" class="btn btn--primary">View Case Studies</a>
-            <a href="#about" class="btn btn--ghost">About Me &rarr;</a>
-          </div>
+    <!-- WORK VIEW -->
+    <main id="view-work" class="view">
+      <!-- HERO -->
+      <section id="top" class="hero">
+        <div
+          class="eyebrow eyebrow--accent"
+          data-reveal="hero"
+          style="animation-delay: 0.05s"
+        >
+          UX / Product Designer
+        </div>
+        <h1
+          class="hero__title"
+          data-reveal="hero"
+          style="animation-delay: 0.13s"
+        >
+          Hi, I'm Divya
+          <div>Vasudevan</div>
+        </h1>
+        <p class="hero__lede" data-reveal="hero" style="animation-delay: 0.24s">
+          A product design generalist with 7+ years of experience turning
+          ambiguous, early-stage ideas into shipped products.
+        </p>
+        <div
+          class="hero__cta"
+          data-reveal="hero"
+          style="animation-delay: 0.34s"
+        >
+          <a href="#work" class="btn btn--primary">View the work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
         </div>
       </section>
 
-      <hr class="divider" aria-hidden="true" />
+      <!-- WORK -->
+      <section id="work" class="work">
+        <div class="section-label" data-reveal><span>Selected Work</span></div>
 
-      <!-- -------------------------------------------------------
-         WORK / SELECTED PROJECTS
-         ------------------------------------------------------- -->
-      <section
-        class="section"
-        data-theme="home"
-        id="work"
-        aria-labelledby="work-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header" aria-hidden="true">
-            <span class="section-header__label">Work</span>
-          </div>
-
-          <h2 class="text-h1 work__heading" id="work-heading">
-            Selected <em class="accent">Projects</em>
-          </h2>
-
-          <ul class="projects-grid" role="list">
-            <!-- Card 01 — links to Rolai case study -->
-            <li class="project-card project-card--link">
-              <div class="project-card__meta">
-                <span class="project-card__number" aria-hidden="true">01</span>
-                <ul
-                  class="project-card__tags"
-                  role="list"
-                  aria-label="Project categories"
-                >
-                  <li><span class="tag">AI</span></li>
-                  <li><span class="tag">Product Design</span></li>
-                </ul>
-              </div>
-              <h3 class="project-card__title">
-                <a href="rolai.html" class="project-card__link">
-                  Designing an
-                  <em class="accent">Enterprise&nbsp;AI</em> Platform
-                </a>
-              </h3>
-              <div
-                class="project-card__image"
-                role="img"
-                aria-label="Enterprise AI Platform — project preview"
-              >
-                <img
-                  src="images/home page rolai.jpg"
-                  alt="Fanatics Breaking mobile app — live stream and home screen views on a navy background"
-                  loading="lazy"
-                />
-              </div>
-            </li>
-
-            <!-- Card 02 — links to RF case study -->
-            <li class="project-card project-card--link">
-              <div class="project-card__meta">
-                <span class="project-card__number" aria-hidden="true">02</span>
-                <ul
-                  class="project-card__tags"
-                  role="list"
-                  aria-label="Project categories"
-                >
-                  <li><span class="tag">Research</span></li>
-                  <li><span class="tag">Enterprise</span></li>
-                </ul>
-              </div>
-              <h3 class="project-card__title">
-                <a href="rf.html" class="project-card__link">
-                  Building the <em class="accent">Training&nbsp;Manual</em> into
-                  the product
-                </a>
-              </h3>
-              <div
-                class="project-card__image"
-                role="img"
-                aria-label="Training Manual — project preview"
-              >
-                <img
-                  src="images/home page image-rf.jpg"
-                  alt="Fanatics Breaking mobile app — live stream and home screen views on a navy background"
-                  loading="lazy"
-                />
-              </div>
-            </li>
-
-            <!-- Card 03 — links to Fanatics case study -->
-            <li class="project-card project-card--link">
-              <div class="project-card__meta">
-                <span class="project-card__number" aria-hidden="true">03</span>
-                <ul
-                  class="project-card__tags"
-                  role="list"
-                  aria-label="Project categories"
-                >
-                  <li><span class="tag">Cross Platform</span></li>
-                  <li><span class="tag">Live Auction</span></li>
-                </ul>
-              </div>
-              <h3 class="project-card__title">
-                <a href="fanatics.html" class="project-card__link">
-                  A <em class="accent">Mobile&nbsp;App</em> for Live Card
-                  Breaking
-                </a>
-              </h3>
-              <div class="project-card__image project-card__image--navy">
-                <img
-                  src="images/project-03-card-breaking.jpg"
-                  alt="Fanatics Breaking mobile app — live stream and home screen views on a navy background"
-                  loading="lazy"
-                />
-              </div>
-            </li>
-
-            <!-- Card 04 — links to Portfoliyo case study -->
-            <li class="project-card project-card--link">
-              <div class="project-card__meta">
-                <span class="project-card__number" aria-hidden="true">04</span>
-                <ul
-                  class="project-card__tags"
-                  role="list"
-                  aria-label="Project categories"
-                >
-                  <!-- <li><span class="tag">IA</span></li> -->
-                  <li><span class="tag">Mobile UX</span></li>
-                </ul>
-              </div>
-              <h3 class="project-card__title">
-                <a href="portfoliyo.html" class="project-card__link">
-                  An <em class="accent">Intuitive&nbsp;Experience</em> for
-                  Property Management
-                </a>
-              </h3>
-              <div
-                class="project-card__image"
-                role="img"
-                aria-label="Property Management — project preview"
-              >
-                <img
-                  src="images/home page-portfoliyo.jpg"
-                  alt="Fanatics Breaking mobile app — live stream and home screen views on a navy background"
-                  loading="lazy"
-                />
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- -------------------------------------------------------
-         ABOUT
-         accent-light background (#F3DFD4 on home theme)
-         ------------------------------------------------------- -->
-      <section
-        class="section section--accent-lighter"
-        data-theme="home"
-        id="about"
-        aria-labelledby="about-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header" aria-hidden="true">
-            <span class="section-header__label">About</span>
-          </div>
-
-          <h2 class="text-h1 about__heading" id="about-heading">
-            I thrive on<br />
-            <em class="accent">unraveling</em> complexity.
-          </h2>
-
-          <!-- Two-column bio -->
-          <div class="about-body">
-            <div>
-              <p>
-                I'm a product designer based in Bangalore with a Master's in
-                Interaction Design from CCS, Detroit. My experience has largely
-                been with early-stage startups, where I've designed products
-                from the ground up.
-              </p>
-              <p>
-                Currently, I'm at Incubyte, where I craft thoughtful,
-                user-centric design solutions for clients while also playing an
-                active role in growing and mentoring the design team.
-              </p>
+        <div class="projects">
+          <a href="rolai.html" class="project" data-reveal>
+            <div class="project__media">
+              <img src="images/cs1.png" alt="Enterprise AI Platform" />
             </div>
-            <div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="project__num">01</span>
+                <span class="project__cat">Enterprise AI · Product Design</span>
+              </div>
+              <h3 class="project__title">Enterprise AI Platform</h3>
+              <p class="project__desc">
+                From idea and early wireframes to a multi-sector AI productivity
+                platform — built, tested, and evolved over two years.
+              </p>
+              <div class="project__link">
+                View case study<span class="project__arrow">↗</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="hbr.html" class="project" data-reveal>
+            <div class="project__media">
+              <img src="images/cs5.png" alt="HBR Design Sprint" />
+            </div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="project__num">02</span>
+                <span class="project__cat">Design Sprint · Mobile</span>
+              </div>
+              <h3 class="project__title">HBR Design Sprint</h3>
+              <p class="project__desc">
+                A 5-week sprint exploring brand-worthy mobile concepts to engage
+                a younger, global audience for Harvard Business Review.
+              </p>
+              <div class="project__link">
+                View case study<span class="project__arrow">↗</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="rf.html" class="project" data-reveal>
+            <div class="project__media">
+              <img src="images/cs2.png" alt="Training Manual In-Product" />
+            </div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="project__num">03</span>
+                <span class="project__cat">Enterprise UX · Product Design</span>
+              </div>
+              <h3 class="project__title">Training Manual In-Product</h3>
+              <p class="project__desc">
+                Embedding a fragmented legal-ops training manual directly into
+                the product — turning onboarding complexity into a guided,
+                product-native flow.
+              </p>
+              <div class="project__link">
+                View case study<span class="project__arrow">↗</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="fanatics.html" class="project" data-reveal>
+            <div class="project__media">
+              <img src="images/cs3.png" alt="Fanatics: Breaking app" />
+            </div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="project__num">04</span>
+                <span class="project__cat">Live Auction · Cross-Platform</span>
+              </div>
+              <h3 class="project__title">Fanatics: Breaking app</h3>
+              <p class="project__desc">
+                Designing an intuitive mobile experience for collectors on the
+                Fanatics breaking platform.
+              </p>
+              <div class="project__link">
+                View case study<span class="project__arrow">↗</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="portfoliyo.html" class="project" data-reveal>
+            <div class="project__media">
+              <img src="images/cs4.png" alt="Property Management UX" />
+            </div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="project__num">05</span>
+                <span class="project__cat">Mobile UI/UX · Product Design</span>
+              </div>
+              <h3 class="project__title">Property Management UX</h3>
+              <p class="project__desc">
+                A two-week sprint refining a property management platform for
+                landlords and managers — investor-ready and genuinely usable.
+              </p>
+              <div class="project__link">
+                View case study<span class="project__arrow">↗</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about">
+        <div class="about__inner">
+          <div class="section-label" data-reveal>About</div>
+
+          <div class="about__grid">
+            <div data-reveal>
+              <h2 class="about__statement">
+                I design the first version — and the version that scales.
+              </h2>
+              <div class="about__capabilities">
+                <div class="about__capabilities-label">What I do</div>
+                <ul>
+                  <li>Product strategy &amp; 0→1</li>
+                  <li>AI / LLM interaction design</li>
+                  <li>Prototyping in code</li>
+                  <li>Design systems</li>
+                  <li>User research</li>
+                </ul>
+              </div>
+            </div>
+
+            <div data-reveal style="--reveal-delay: 0.08s">
+              <p>
+                As product designer who started out in development, I found
+                myself increasingly drawn to the questions behind the code: why
+                are we building this? Who is it for? How can we make it easier
+                to use? Watching my front-end colleagues bring interfaces to
+                life sparked my interest in design.
+              </p>
+              <p>
+                I've spent much of my career working with startups, helping
+                teams take products from idea to reality. A few years in agency
+                environments taught me how to adapt quickly, navigate ambiguity,
+                and collaborate with all kinds of people across different
+                industries and stages of growth.
+              </p>
+              <p>
+                I'm a generalist at heart. I enjoy moving between research,
+                strategy, interaction design, systems thinking, and execution —
+                whatever it takes to create experiences that feel intuitive and
+                useful.
+              </p>
               <p>
                 Outside of work, you can often find me lost in a novel, drawn to
                 characters and worlds that stay with me long after the final
@@ -260,131 +269,100 @@
               </p>
             </div>
           </div>
-
-          <h3 class="text-h2 about__subheading">
-            Design <em class="accent">Philosophy</em>.
-          </h3>
-
-          <!-- 3 × 2 philosophy grid -->
-          <ul class="philosophy-grid" role="list">
-            <li class="philosophy-card">
-              <span class="philosophy-card__number" aria-hidden="true">01</span>
-              <strong class="philosophy-card__title">Always be learning</strong>
-              <p class="philosophy-card__body">
-                Design evolves, and so should we.
-              </p>
-            </li>
-
-            <li class="philosophy-card">
-              <span class="philosophy-card__number" aria-hidden="true">02</span>
-              <strong class="philosophy-card__title">Simplicity is key</strong>
-              <p class="philosophy-card__body">
-                I aim to make complex things feel effortless.
-              </p>
-            </li>
-
-            <li class="philosophy-card">
-              <span class="philosophy-card__number" aria-hidden="true">03</span>
-              <strong class="philosophy-card__title">Adapt as needed</strong>
-              <p class="philosophy-card__body">
-                I believe in flexible thinking over following rigid blueprints.
-              </p>
-            </li>
-
-            <li class="philosophy-card">
-              <span class="philosophy-card__number" aria-hidden="true">04</span>
-              <strong class="philosophy-card__title"
-                >Design together, not alone</strong
-              >
-              <p class="philosophy-card__body">
-                I believe the best ideas emerge through collaboration and
-                inviting feedback.
-              </p>
-            </li>
-
-            <li class="philosophy-card">
-              <span class="philosophy-card__number" aria-hidden="true">05</span>
-              <strong class="philosophy-card__title">Understand First</strong>
-              <p class="philosophy-card__body">
-                No design before the problem and constraints are clear.
-              </p>
-            </li>
-
-            <li class="philosophy-card">
-              <span class="philosophy-card__number" aria-hidden="true">06</span>
-              <strong class="philosophy-card__title"
-                >Iterate Until It's Right</strong
-              >
-              <p class="philosophy-card__body">
-                I stay close through implementation, track what works and what
-                doesn't.
-              </p>
-            </li>
-          </ul>
         </div>
       </section>
 
-      <hr class="divider" aria-hidden="true" />
-
-      <!-- -------------------------------------------------------
-         CONTACT / FOOTER
-         ------------------------------------------------------- -->
-      <section
-        class="section"
-        data-theme="home"
-        id="contact"
-        aria-labelledby="contact-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header" aria-hidden="true">
-            <span class="section-header__label">Get in Touch</span>
-          </div>
-
-          <div class="contact-layout">
-            <!-- Left: heading + body copy -->
-            <div>
-              <h2
-                class="contact-layout__heading contact__heading"
-                id="contact-heading"
-              >
-                Let's work on something<br />
-                <em class="accent">worth building</em>
-              </h2>
-              <p class="contact-layout__body">
-                Whether you're launching a new product, rethinking an existing
-                one, or need a design partner who can move fast without losing
-                quality&mdash;I'd like to hear about it.
-              </p>
-            </div>
-
-            <!-- Right: contact links as a description list -->
-            <dl class="contact-links" aria-label="Contact information">
-              <div class="contact-link-row">
-                <dt class="contact-link-row__label">Email</dt>
-                <dd class="contact-link-row__value">
-                  <a href="mailto:divya.vasudevan@gmail.com">
-                    divya.vasudevan@gmail.com
-                  </a>
-                </dd>
-              </div>
-
-              <div class="contact-link-row">
-                <dt class="contact-link-row__label">LinkedIn</dt>
-                <dd class="contact-link-row__value">
-                  <a
-                    href="https://www.linkedin.com/in/divya-vasudevan/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn profile (opens in new tab)"
-                  >
-                    /in/divya-vasudevan
-                  </a>
-                </dd>
-              </div>
-            </dl>
-          </div>
+      <!-- CONTACT -->
+      <section id="contact" class="contact">
+        <div class="contact__left" data-reveal>
+          <div class="section-label section-label--plain">Get in touch</div>
+          <h2 class="contact__title">Let's<br />talk.</h2>
+        </div>
+        <div class="contact__links" data-reveal style="--reveal-delay: 0.08s">
+          <a href="mailto:divya.vasudevan1939@gmail.com" class="contact__email"
+            >DIVYA.VASUDEVAN1939@GMAIL.COM</a
+          >
+          <a
+            href="https://www.linkedin.com/in/divya-vasudevan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact__social"
+            >LinkedIn ↗</a
+          >
         </div>
       </section>
     </main>
+
+    <!-- EXPERIMENTS VIEW -->
+    <main id="view-experiments" class="view" hidden>
+      <section class="experiments">
+        <div class="eyebrow eyebrow--lab" style="animation-delay: 0s">
+          The Lab
+        </div>
+        <h1 class="experiments__title" style="animation-delay: 0.07s">
+          UX experiments<br />&amp; side quests.
+        </h1>
+        <p class="experiments__lede" style="animation-delay: 0.14s">
+          Off-the-clock explorations — interaction ideas, half-built prototypes,
+          and questions I chase for the fun of it. No clients, no briefs.
+        </p>
+
+        <h3 class="experiment__title"></br></br>Coming Soon...</h3>
+
+        <!-- <div class="experiments__list">
+        <a href="#" class="experiment">
+          <span class="experiment__num">01</span>
+          <div class="experiment__body">
+            <h3 class="experiment__title">Tactile Toggle</h3>
+            <p class="experiment__desc">Switches that respond to velocity and pressure — making a flat web control feel physical.</p>
+          </div>
+        </a>
+        <a href="#" class="experiment">
+          <span class="experiment__num">02</span>
+          <div class="experiment__body">
+            <h3 class="experiment__title">Quiet Reader</h3>
+            <p class="experiment__desc">A reading mode that adapts line length, contrast, and rhythm to ambient light and pace.</p>
+          </div>
+        </a>
+        <a href="#" class="experiment">
+          <span class="experiment__num">03</span>
+          <div class="experiment__body">
+            <h3 class="experiment__title">Spatial Inbox</h3>
+            <p class="experiment__desc">Rethinking the inbox as a depth-sorted space instead of an endless flat list.</p>
+          </div>
+        </a>
+        <a href="#" class="experiment">
+          <span class="experiment__num">04</span>
+          <div class="experiment__body">
+            <h3 class="experiment__title">Talk-to-Fill</h3>
+            <p class="experiment__desc">Completing complex forms by voice, with the UI confirming and correcting in real time.</p>
+          </div>
+        </a>
+        <a href="#" class="experiment">
+          <span class="experiment__num">05</span>
+          <div class="experiment__body">
+            <h3 class="experiment__title">Color Memory</h3>
+            <p class="experiment__desc">A palette tool that learns the colors you reach for and resurfaces them by mood.</p>
+          </div>
+        </a>
+        <a href="#" class="experiment">
+          <span class="experiment__num">06</span>
+          <div class="experiment__body">
+            <h3 class="experiment__title">Gesture Canvas</h3>
+            <p class="experiment__desc">Navigating a creative canvas entirely through trackpad gestures — no chrome, no menus.</p>
+          </div>
+        </a>
+      </div> -->
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>© 2026 Divya Vasudevan</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,653 +1,302 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Building the Training Manual Into the Product — Divya Vasudevan
-    </title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
-    <meta
-      name="description"
-      content="Transforming a fragmented onboarding system into a product-embedded training experience for a financial institution's small claims team. A case study by Divya Vasudevan."
-    />
-    <link rel="stylesheet" href="/styles/tokens.css" />
-    <link rel="stylesheet" href="/styles/base.css" />
-    <link rel="stylesheet" href="/styles/components.css" />
-    <!-- Shared case-study patterns (image blocks, meta, quote, 2-col, etc.) -->
-    <link rel="stylesheet" href="/styles/fanatics.css" />
-    <!-- RF-specific components (approach grid, insight list, constraint note) -->
-    <link rel="stylesheet" href="/styles/rf.css" />
-  </head>
-  <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Training Manual In-Product · Divya Vasudevan</title>
+  <meta name="description" content="Embedding a fragmented legal-ops training manual directly into the product — turning onboarding complexity into a guided, product-native flow.">
 
-    <!-- ============================================================
-         NAVIGATION
-         ============================================================ -->
-    <header class="site-header" role="banner">
-      <nav class="nav" aria-label="Main navigation">
-        <div class="nav__inner">
-          <a href="/" class="nav__logo" aria-label="Divya Vasudevan — home"
-            >Divya·Vasudevan</a
-          >
-          <ul class="nav__links" role="list">
-            <li><a href="../#work" class="nav__link">Work</a></li>
-            <li><a href="../#about" class="nav__link">About</a></li>
-            <li><a href="../#contact" class="nav__link">Contact</a></li>
-          </ul>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/case-study.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="cs-nav__inner">
+      <a href="index.html" class="nav__logo">DIVYA VASUDEVAN</a>
+      <a href="index.html#work" class="cs-nav__back">← All work</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="cs-hero">
+    <div class="cs-hero__eyebrow" data-reveal="hero" style="animation-delay:.05s;">Enterprise UX · Product Design</div>
+    <h1 class="cs-hero__title" data-reveal="hero" style="animation-delay:.13s;">Building the <em>Training Manual</em> Into the Product</h1>
+    <p class="cs-hero__lede" data-reveal="hero" style="animation-delay:.22s;">A major financial institution's small claims team was drowning in onboarding complexity. State-specific rules, court-specific formats, and a fragile system of external manuals made training new hires expensive and error-prone.</p>
+
+    <div class="cs-hero__meta" data-reveal="hero" style="animation-delay:.32s;">
+      <div>
+        <div class="cs-hero__meta-label">Role</div>
+        <div class="cs-hero__meta-value">Product Designer</div>
+      </div>
+      <div>
+        <div class="cs-hero__meta-label">Duration</div>
+        <div class="cs-hero__meta-value">1.5 months</div>
+      </div>
+      <div>
+        <div class="cs-hero__meta-label">Tools</div>
+        <div class="cs-hero__meta-value">Figma</div>
+      </div>
+      <div>
+        <div class="cs-hero__meta-label">Platform</div>
+        <div class="cs-hero__meta-value">Web app</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVER -->
+  <div class="cs-cover" data-reveal>
+    <div class="cs-cover__frame" style="background:#7a1626;">
+      <img src="images/rf/cover.png" alt="Legal-ops contract management product UI on maroon">
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <main class="cs-body">
+
+    <!-- BACKGROUND -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">Background</div>
+      <div class="cs-section__content">
+        <h2 class="cs-section__title cs-section__title--gap">Onboarding New Hires to <em>Complexity</em></h2>
+        <div class="cs-two-col">
+          <p>A well-known financial institution had an internal platform used to manage loan-related processes. A specialised small claims team's job was to prepare legal documents, submit them to court, and serve notices to the relevant parties.</p>
+          <p>The platform's complexity was entrenched: each state — and often individual judges — imposed unique document requirements, formatting standards, and procedural rules. Veteran employees mastered these nuances over years, while new hires faced stacks of manuals yet still struggled and made errors.</p>
         </div>
-      </nav>
-    </header>
+        <blockquote class="cs-quote">
+          <p>"The goal: reduce the time and effort needed for training, and explore ways to streamline the process itself."</p>
+        </blockquote>
+      </div>
+    </section>
 
-    <main id="main-content">
-      <!-- ============================================================
-           1. HERO
-           Tags · title · subtitle · meta
-           ============================================================ -->
-      <section
-        class="section section--cs"
-        data-theme="rf"
-        aria-labelledby="cs-title"
-      >
-        <div class="section__inner">
-          <p class="cs-tags" aria-label="Project categories">
-            Enterprise UX · Product Design
-          </p>
+    <!-- OUR APPROACH -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">Our approach</div>
+      <div class="cs-section__content cs-section__content--narrow">
+        <h2 class="cs-section__title">Fast Scoping, <em>Focused Discovery</em></h2>
+        <p class="cs-section__lede">With a tight deadline and a team spread across states and roles, I built a compressed but rigorous process — optimising for learning quickly and making decisions with confidence.</p>
+      </div>
+    </section>
 
-          <h1 id="cs-title" class="text-h1 cs-hero__title">
-            Building the <em class="accent">Training Manual</em> Into the
-            Product
-          </h1>
-
-          <p class="cs-hero__subtitle">
-            A major financial institution's small claims team was drowning in
-            onboarding complexity. State-specific rules, court-specific formats,
-            and a fragile system of external manuals made training new hires
-            expensive and error-prone.
-          </p>
-
-          <dl class="cs-meta">
-            <div class="cs-meta__item">
-              <dt class="cs-meta__label">Duration</dt>
-              <dd class="cs-meta__value">1.5 Months</dd>
-            </div>
-            <div class="cs-meta__item">
-              <dt class="cs-meta__label">Tools</dt>
-              <dd class="cs-meta__value">Figma</dd>
-            </div>
-          </dl>
+    <section class="cs-section cs-section--noborder" data-reveal>
+      <div></div>
+      <div class="cs-process cs-process--cols-2">
+        <div class="cs-process__step">
+          <div class="cs-process__step-label">Step 01</div>
+          <h3 class="cs-process__heading">Understand the Landscape</h3>
+          <p class="cs-process__body">I met with the supervisor to gain a high-level overview of the workflow and clarify the team's objectives. Collected existing training materials and mapped the current user journey, highlighting points of confusion and identifying gaps where processes occurred outside the platform.</p>
         </div>
-      </section>
-
-      <!-- ============================================================
-           2. HERO IMAGE
-           ============================================================ -->
-      <section class="section section--cs section--cs-image" data-theme="rf">
-        <div class="section__inner">
-          <figure
-            class="cs-image-block"
-            aria-label="RF platform overview — training manual embedded in product flow"
-          >
-            <img
-              src="images/rf/project page header image.jpg"
-              alt="RF platform overview — training manual embedded in product flow"
-              width="820"
-              height="300"
-            />
-          </figure>
+        <div class="cs-process__step">
+          <div class="cs-process__step-label">Step 02</div>
+          <h3 class="cs-process__heading">Narrow the Scope</h3>
+          <p class="cs-process__body">Rather than trying to fix everything, we agreed to focus on 2 states with the highest volume and 3 primary processes (the happy path). This gave us maximum impact within the deadline — and a proof-of-concept that could expand later.</p>
         </div>
-      </section>
-
-      <!-- ============================================================
-           3. BACKGROUND
-           2-col body + goal callout
-           ============================================================ -->
-      <section
-        class="section section--cs"
-        data-theme="rf"
-        aria-labelledby="background-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header">
-            <span class="section-header__label">Background</span>
-          </div>
-
-          <h2 id="background-heading" class="text-h2 cs-section-heading">
-            Onboarding New Hires to
-            <em class="accent">Complexity</em>
-          </h2>
-
-          <div class="cs-2col mt-20">
-            <div class="cs-2col__col">
-              <p>
-                A well-known financial institution had an internal platform used
-                to manage loan-related processes. A specialised small claims
-                team's job was to prepare legal documents, submit them to court,
-                and serve notices to the relevant parties.
-              </p>
-            </div>
-            <div class="cs-2col__col">
-              <p>
-                The platform's complexity was entrenched: each state—and often
-                individual judges—imposed unique document requirements,
-                formatting standards, and procedural rules. Veteran employees
-                mastered these nuances over years, while new hires faced stacks
-                of manuals yet still struggled and made errors.
-              </p>
-            </div>
-          </div>
-
-          <blockquote class="cs-quote">
-            The goal: reduce the time and effort needed for training, and
-            explore ways to streamline the process itself.
-          </blockquote>
+        <div class="cs-process__step">
+          <div class="cs-process__step-label">Step 03</div>
+          <h3 class="cs-process__heading">Talk to the People</h3>
+          <p class="cs-process__body">Conducted 6 user interviews — 1 person per process per state. I spoke to a mix of newer staff and longer-tenured employees used to older tools. A notable gap: I couldn't reach anyone brand new to the role, which I kept in mind throughout the solution design.</p>
         </div>
-      </section>
+        <div class="cs-process__step">
+          <div class="cs-process__step-label">Step 04</div>
+          <h3 class="cs-process__heading">Design &amp; Validate</h3>
+          <p class="cs-process__body">Mapped a flowchart of the moving parts, identified what was static vs. what needed to flex by state and situation, then built high-level screens using the existing design system — enough fidelity to prototype a buildable solution.</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- ============================================================
-           4. OUR APPROACH
-           Body + 2×2 step grid + 2 images
-           ============================================================ -->
-      <section
-        class="section section--cs section--accent-lighter"
-        data-theme="rf"
-        aria-labelledby="approach-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header">
-            <span class="section-header__label">Our Approach</span>
-          </div>
+    <figure class="cs-figure" data-reveal>
+      <div class="cs-figure__frame" style="background:#262b30;">
+        <img src="images/rf/journey-current.png" alt="Detailed current-state journey board mapping every step across the suit process">
+      </div>
+    </figure>
 
-          <h2 id="approach-heading" class="text-h2 cs-section-heading">
-            Fast Scoping,
-            <em class="accent">Focused Discovery</em>
-          </h2>
+    <figure class="cs-figure cs-figure--last" data-reveal>
+      <div class="cs-figure__frame" style="background:#f3f4f6;">
+        <img src="images/rf/journey-highlevel.png" alt="High-level journey flow distinguishing actions inside the product from those outside it">
+      </div>
+      <figcaption class="cs-figure__caption">Mapping the current journey, then the high-level flow — surfacing every step that happened outside the product.</figcaption>
+    </figure>
 
-          <p class="cs-body">
-            With a tight deadline and a team spread across states and roles, I
-            built a compressed but rigorous process — optimising for learning
-            quickly and making decisions with confidence.
-          </p>
+    <!-- FINDINGS -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">Findings</div>
+      <div class="cs-findings">
 
-          <div
-            class="cs-approach-grid"
-            role="list"
-            aria-label="Four-step approach"
-          >
-            <div class="cs-approach-card" role="listitem">
-              <span class="cs-approach-card__step">Step 01</span>
-              <h3 class="cs-approach-card__title">Understand the Landscape</h3>
-              <p class="cs-approach-card__body">
-                I met with the supervisor to gain a high-level overview of the
-                workflow and clarify the team's objectives. Collected existing
-                training materials and mapped the current user journey,
-                highlighting points of confusion and identifying gaps where
-                processes occurred outside the platform.
-              </p>
+        <div class="cs-finding">
+          <div class="cs-finding__label">Finding 01</div>
+          <h3 class="cs-finding__title">Fragmented data sources create calculation risk</h3>
+          <p class="cs-finding__quote">"Transaction history is hardest to deal with — the calculation requires you to look very carefully to ensure they are not overcharging or undercharging the user."</p>
+          <div class="cs-finding__compare">
+            <div>
+              <div class="cs-finding__col-label cs-finding__col-label--pain">✕ Pain point</div>
+              <p class="cs-finding__col-body">Agents cross-reference CATS, ABS, payment history, and multiple Excel spreadsheets to build a single calculation. At least 3 separate calculators exist with no single source of truth.</p>
             </div>
-            <div class="cs-approach-card" role="listitem">
-              <span class="cs-approach-card__step">Step 02</span>
-              <h3 class="cs-approach-card__title">Narrow the Scope</h3>
-              <p class="cs-approach-card__body">
-                Rather than trying to fix everything, we agreed to focus on 2
-                states with the highest volume and 3 primary processes (the
-                happy path). This gave us maximum impact within the deadline —
-                and a proof-of-concept that could expand later.
-              </p>
-            </div>
-            <div class="cs-approach-card" role="listitem">
-              <span class="cs-approach-card__step">Step 03</span>
-              <h3 class="cs-approach-card__title">Talk to the People</h3>
-              <p class="cs-approach-card__body">
-                Conducted 6 user interviews — 1 person per process per state. I
-                spoke to a mix of newer staff and longer-tenured employees used
-                to older tools. A notable gap: I couldn't reach anyone brand new
-                to the role, which I kept in mind throughout the solution
-                design.
-              </p>
-            </div>
-            <div class="cs-approach-card" role="listitem">
-              <span class="cs-approach-card__step">Step 04</span>
-              <h3 class="cs-approach-card__title">Design &amp; Validate</h3>
-              <p class="cs-approach-card__body">
-                Mapped a flowchart of the moving parts, identified what was
-                static vs. what needed to flex by state and situation, then
-                built high-level screens using the existing design system —
-                enough fidelity to prototype a buildable solution.
-              </p>
+            <div>
+              <div class="cs-finding__col-label cs-finding__col-label--opp">✓ Opportunity</div>
+              <p class="cs-finding__col-body">Unified in-product calculator that auto-pulls from CATS + ABS and flags discrepancies before filing.</p>
             </div>
           </div>
-
-          <div
-            class="cs-image-stack mt-32"
-            aria-label="Current state mapping and user journey documentation"
-          >
-            <figure class="cs-image-block">
-              <img
-                src="images/rf/initial end user flow-details.jpg"
-                alt="Current state end user flow — detailed view"
-                width="820"
-                height="300"
-              />
-            </figure>
-            <figure class="cs-image-block">
-              <img
-                src="images/rf/initial end user flow - high level.jpg"
-                alt="Current state end user flow — high level overview"
-                width="820"
-                height="300"
-              />
-            </figure>
-          </div>
-
-          <ol class="cs-finding-list" aria-label="Research findings">
-            <li class="cs-finding-item">
-              <span class="cs-finding-item__number">Finding 01</span>
-              <h3 class="cs-finding-item__title">
-                Fragmented data sources create calculation risk
-              </h3>
-              <blockquote class="cs-quote">
-                Transaction history is hardest to deal with — the calculation
-                requires you to look very carefully to ensure they are not
-                overcharging or undercharging the user.
-              </blockquote>
-              <div class="cs-finding-item__meta">
-                <div class="cs-finding-item__meta-row">
-                  <span class="cs-finding-item__meta-label">Pain Point</span>
-                  <p class="cs-finding-item__meta-body">
-                    Agents cross-reference CATS, ABS, payment history, and
-                    multiple Excel spreadsheets to build a single calculation.
-                    At least 3 separate calculators exist with no single source
-                    of truth.
-                  </p>
-                </div>
-                <div
-                  class="cs-finding-item__meta-row cs-finding-item__meta-row--opportunity"
-                >
-                  <span class="cs-finding-item__meta-label">Opportunity</span>
-                  <p class="cs-finding-item__meta-body">
-                    Unified in-product calculator that auto-pulls from CATS +
-                    ABS and flags discrepancies before filing.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="cs-finding-item">
-              <span class="cs-finding-item__number">Finding 02</span>
-              <h3 class="cs-finding-item__title">
-                Document assembly is entirely manual
-              </h3>
-              <blockquote class="cs-quote">
-                Make sure you get the most recent SCRA. There can be more than
-                one suit package — get the most recent. Rearrange in the right
-                order.
-              </blockquote>
-              <div class="cs-finding-item__meta">
-                <div class="cs-finding-item__meta-row">
-                  <span class="cs-finding-item__meta-label">Pain Point</span>
-                  <p class="cs-finding-item__meta-body">
-                    Building a suit or garnishment packet means hunting files
-                    across product, local folders, Excel, and external systems —
-                    ordering, redacting, and verifying recency by hand.
-                  </p>
-                </div>
-                <div
-                  class="cs-finding-item__meta-row cs-finding-item__meta-row--opportunity"
-                >
-                  <span class="cs-finding-item__meta-label">Opportunity</span>
-                  <p class="cs-finding-item__meta-body">
-                    Guided packet builder: auto-fetch latest SCRA + suit
-                    package, enforce ordering rules, surface recency warnings.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="cs-finding-item">
-              <span class="cs-finding-item__number">Finding 03</span>
-              <h3 class="cs-finding-item__title">
-                The memopad is the only source of critical context
-              </h3>
-              <blockquote class="cs-quote">
-                Check memopad for items that could prevent filing. Check legal
-                review, 100% double check, supervisor legal review, any promise
-                to pay.
-              </blockquote>
-              <div class="cs-finding-item__meta">
-                <div class="cs-finding-item__meta-row">
-                  <span class="cs-finding-item__meta-label">Pain Point</span>
-                  <p class="cs-finding-item__meta-body">
-                    Legal review status, payment arrangements, supervisor
-                    sign-off, and ineligibility flags all live in unstructured
-                    free-text memos. Agents must read and interpret every memo
-                    before acting. Errors cannot be corrected after submission.
-                  </p>
-                </div>
-                <div
-                  class="cs-finding-item__meta-row cs-finding-item__meta-row--opportunity"
-                >
-                  <span class="cs-finding-item__meta-label">Opportunity</span>
-                  <p class="cs-finding-item__meta-body">
-                    Structured eligibility checklist surfaced pre-filing;
-                    auto-parse memo flags into actionable status indicators.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="cs-finding-item">
-              <span class="cs-finding-item__number">Finding 04</span>
-              <h3 class="cs-finding-item__title">
-                Post-filing steps happen entirely outside the product
-              </h3>
-              <blockquote class="cs-quote">
-                Once efiled, get the case number and save the final doc. Update
-                the spreadsheet. A separate team tracks case numbers for mail
-                and adds them to CATS later.
-              </blockquote>
-              <div class="cs-finding-item__meta">
-                <div class="cs-finding-item__meta-row">
-                  <span class="cs-finding-item__meta-label">Pain Point</span>
-                  <p class="cs-finding-item__meta-body">
-                    After filing, case numbers arrive by email, are saved
-                    manually, entered into CATS, and tracked in a separate
-                    spreadsheet — often by a different team with no automated
-                    handoff.
-                  </p>
-                </div>
-                <div
-                  class="cs-finding-item__meta-row cs-finding-item__meta-row--opportunity"
-                >
-                  <span class="cs-finding-item__meta-label">Opportunity</span>
-                  <p class="cs-finding-item__meta-body">
-                    Close the loop: auto-capture case number from court email,
-                    pre-fill CATS fields, and update POTCO without leaving the
-                    product.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ol>
         </div>
-      </section>
 
-      <!-- ============================================================
-           5. INSIGHTS
-           H2 + 3 stacked insight items + constraint note
-           ============================================================ -->
-      <section
-        class="section section--cs"
-        data-theme="rf"
-        aria-labelledby="insights-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header">
-            <span class="section-header__label">Insights</span>
-          </div>
-
-          <h2 id="insights-heading" class="text-h2 cs-section-heading">
-            The Complexity Wasn't in the Steps.
-            <em class="accent">It Was in the Variables.</em>
-          </h2>
-
-          <ul class="cs-insight-list" aria-label="Key research insights">
-            <li class="cs-insight-item">
-              <h3 class="cs-insight-item__title">A Common Skeleton</h3>
-              <p class="cs-insight-item__body">
-                Despite different names and contexts, all three processes
-                followed the same arc: prep documents → notarise → send to court
-                → update status in CATS. The skeleton was consistent. The flesh
-                was not.
-              </p>
-            </li>
-            <li class="cs-insight-item">
-              <h3 class="cs-insight-item__title">
-                State &amp; Court-Level Variance
-              </h3>
-              <p class="cs-insight-item__body">
-                What documents to include, which formats were accepted, whether
-                a calculation needed to be adjusted — all of this could differ
-                by state, by court, or even by the presiding judge. This
-                variation lived in people's heads or scattered manuals, not in
-                the product.
-              </p>
-            </li>
-            <li class="cs-insight-item">
-              <h3 class="cs-insight-item__title">
-                External Processes Were the Real Gap
-              </h3>
-              <p class="cs-insight-item__body">
-                Much of the complexity happened outside CATS entirely —
-                cross-referencing guidance documents, making judgment calls,
-                checking parallel sources. The product didn't support this.
-              </p>
-            </li>
-          </ul>
-
-          <aside class="cs-note" aria-label="Project constraint">
-            <p class="cs-note__text">
-              We could not touch existing functionality — veteran users were
-              accustomed to it, and other teams relied on it. Any solution had
-              to work alongside what already existed, not replace it.
-            </p>
-          </aside>
-        </div>
-      </section>
-
-      <!-- ============================================================
-           6. DESIGN PROCESS
-           "The Pivots" sub-section + "Wireframes and UI" sub-section
-           ============================================================ -->
-      <section
-        class="section section--cs section--accent-lighter"
-        data-theme="rf"
-        aria-labelledby="pivots-heading"
-      >
-        <div class="section__inner">
-          <!-- The Pivots -->
-          <div class="section-header">
-            <span class="section-header__label">The Pivots</span>
-          </div>
-
-          <h2 id="pivots-heading" class="text-h2 cs-section-heading">
-            Two Layers.
-            <em class="accent">One Coherent System.</em>
-          </h2>
-
-          <p class="cs-body">
-            Visualising the full process as a flowchart helped the supervisor
-            articulate their own process more clearly — and helped me structure
-            a solution with two distinct but connected parts.
-          </p>
-          <p class="cs-body">
-            The training manual becomes part of the product itself. Each step in
-            a process is surfaced in sequence — no external reference needed.
-            New hires follow the product; veterans move faster.
-          </p>
-          <p class="cs-body">
-            A separate management interface lets supervisors update which
-            documents are needed, what calculations apply, and what rules are in
-            effect — by state, by court. When rules change, the product reflects
-            it immediately.
-          </p>
-
-          <figure
-            class="cs-image-block mt-32"
-            aria-label="Updated end user flow reflecting the new system design"
-          >
-            <img
-              src="images/rf/updated end user flow.jpg"
-              alt="Updated end user flow reflecting the new system design"
-              width="820"
-              height="300"
-            />
-          </figure>
-
-          <!-- Wireframes and UI -->
-          <div class="cs-subsection" aria-labelledby="wireframes-heading">
-            <div class="section-header">
-              <span class="section-header__label">Wireframes and UI</span>
+        <div class="cs-finding">
+          <div class="cs-finding__label">Finding 02</div>
+          <h3 class="cs-finding__title">Document assembly is entirely manual</h3>
+          <p class="cs-finding__quote">"Make sure you get the most recent SCRA. There can be more than one suit package — get the most recent. Rearrange in the right order."</p>
+          <div class="cs-finding__compare">
+            <div>
+              <div class="cs-finding__col-label cs-finding__col-label--pain">✕ Pain point</div>
+              <p class="cs-finding__col-body">Building a suit or garnishment packet means hunting files across product, local folders, Excel, and external systems — ordering, redacting, and verifying recency by hand.</p>
             </div>
-
-            <h2 id="wireframes-heading" class="text-h2 cs-section-heading">
-              Building the
-              <em class="accent">Key Screens</em>
-            </h2>
-
-            <p class="cs-body">
-              With the structure in place, I built a handful of high-fidelity
-              screens using the institution's existing design system — enough to
-              communicate the vision clearly and give the development team
-              something concrete to build from.
-            </p>
-
-            <figure
-              class="cs-image-block mt-32"
-              aria-label="High-fidelity key screens built on the institution's design system"
-            >
-              <img
-                src="images/rf/UI - Final.jpg"
-                alt="High-fidelity key screens built on the institution's design system"
-                width="820"
-                height="300"
-              />
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================================================
-           7. OUTCOMES
-           Body + 2-col outcome cards
-           ============================================================ -->
-      <section
-        class="section section--cs"
-        data-theme="rf"
-        aria-labelledby="outcomes-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header">
-            <span class="section-header__label">Outcomes &amp; Big Wins</span>
-          </div>
-
-          <h2 id="outcomes-heading" class="text-h2 cs-section-heading">
-            What We <em class="accent">Delivered</em>
-          </h2>
-
-          <p class="cs-body">
-            By end of the engagement, we'd established a two-layer solution
-            designed to grow incrementally — a proof-of-concept that showed how
-            embedded guidance could transform a complex, manual-dependent
-            process into something product-native.
-          </p>
-
-          <div
-            class="cs-outcomes-grid"
-            role="list"
-            aria-label="Project outcomes"
-          >
-            <article class="cs-outcome-card" role="listitem">
-              <span class="cs-outcome-card__tag">System</span>
-              <h3 class="cs-outcome-card__title">A Foundation to Build On</h3>
-              <p class="cs-outcome-card__body">
-                The solution was deliberately scoped as a starting point. The
-                architecture was designed so that new states, new courts, and
-                additional processes could be added incrementally — making
-                future improvements far cheaper to build.
-              </p>
-            </article>
-            <article class="cs-outcome-card" role="listitem">
-              <span class="cs-outcome-card__tag">Impact</span>
-              <h3 class="cs-outcome-card__title">Training Time Reduced</h3>
-              <p class="cs-outcome-card__body">
-                By embedding guidance directly into the product flow, new hires
-                could operate without needing extensive training and access to
-                manuals that needed hours of work to create and maintain.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <hr class="divider" />
-
-      <!-- ============================================================
-           8. NEXT PROJECT STRIP
-           ============================================================ -->
-      <section
-        class="section section--cs cs-next-project"
-        data-theme="rf"
-        aria-label="Next case study"
-      >
-        <div class="section__inner cs-next-project__inner">
-          <a
-            href="fanatics.html"
-            class="cs-next-project__link"
-            aria-label="Next project: A Mobile App for Live Card Breaking"
-          >
-            <span class="cs-next-project__label">Next Project</span>
-            <span class="cs-next-project__title">
-              A <em class="accent">Mobile App</em> for Live Card Breaking
-            </span>
-          </a>
-          <span class="cs-next-project__arrow" aria-hidden="true">→</span>
-        </div>
-      </section>
-
-      <!-- ============================================================
-           9. CONTACT FOOTER
-           ============================================================ -->
-      <section
-        class="section"
-        data-theme="rf"
-        id="contact"
-        aria-labelledby="contact-heading"
-      >
-        <div class="section__inner">
-          <div class="section-header">
-            <span class="section-header__label">Get in Touch</span>
-          </div>
-
-          <div class="contact-layout">
-            <div class="contact-layout__left">
-              <h2 id="contact-heading" class="contact-layout__heading">
-                Let's work on something<br />
-                <em class="accent">worth building</em>
-              </h2>
-              <p class="contact-layout__body">
-                Whether you're launching a new product, rethinking an existing
-                one, or need a design partner who can move fast without losing
-                quality—I'd like to hear about it.
-              </p>
+            <div>
+              <div class="cs-finding__col-label cs-finding__col-label--opp">✓ Opportunity</div>
+              <p class="cs-finding__col-body">Guided packet builder: auto-fetch latest SCRA + suit package, enforce ordering rules, surface recency warnings.</p>
             </div>
-
-            <dl class="contact-links">
-              <div class="contact-link-row">
-                <dt class="contact-link-row__label">Email</dt>
-                <dd class="contact-link-row__value">
-                  <a href="mailto:divya.vasudevan@gmail.com"
-                    >divya.vasudevan@gmail.com</a
-                  >
-                </dd>
-              </div>
-              <div class="contact-link-row">
-                <dt class="contact-link-row__label">LinkedIn</dt>
-                <dd class="contact-link-row__value">
-                  <a
-                    href="https://www.linkedin.com/in/divya-vasudevan/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn profile (opens in new tab)"
-                    >/in/divya-vasudevan</a
-                  >
-                </dd>
-              </div>
-            </dl>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+
+        <div class="cs-finding">
+          <div class="cs-finding__label">Finding 03</div>
+          <h3 class="cs-finding__title">The memopad is the only source of critical context</h3>
+          <p class="cs-finding__quote">"Check memopad for items that could prevent filing. Check legal review, 100% double check, supervisor legal review, any promise to pay."</p>
+          <div class="cs-finding__compare">
+            <div>
+              <div class="cs-finding__col-label cs-finding__col-label--pain">✕ Pain point</div>
+              <p class="cs-finding__col-body">Legal review status, payment arrangements, supervisor sign-off, and ineligibility flags all live in unstructured free-text memos. Agents must read and interpret every memo before acting. Errors cannot be corrected after submission.</p>
+            </div>
+            <div>
+              <div class="cs-finding__col-label cs-finding__col-label--opp">✓ Opportunity</div>
+              <p class="cs-finding__col-body">Structured eligibility checklist surfaced pre-filing; auto-parse memo flags into actionable status indicators.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-finding">
+          <div class="cs-finding__label">Finding 04</div>
+          <h3 class="cs-finding__title">Post-filing steps happen entirely outside the product</h3>
+          <p class="cs-finding__quote">"Once efiled, get the case number and save the final doc. Update the spreadsheet. A separate team tracks case numbers for mail and adds them to CATS later."</p>
+          <div class="cs-finding__compare">
+            <div>
+              <div class="cs-finding__col-label cs-finding__col-label--pain">✕ Pain point</div>
+              <p class="cs-finding__col-body">After filing, case numbers arrive by email, are saved manually, entered into CATS, and tracked in a separate spreadsheet — often by a different team with no automated handoff.</p>
+            </div>
+            <div>
+              <div class="cs-finding__col-label cs-finding__col-label--opp">✓ Opportunity</div>
+              <p class="cs-finding__col-body">Close the loop: auto-capture case number from court email, pre-fill CATS fields, and update POTCO without leaving the product.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INSIGHTS -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">Insights</div>
+      <div class="cs-section__content cs-section__content--narrow">
+        <h2 class="cs-section__title" style="margin-bottom:40px;">The Complexity Wasn't in the Steps. <em>It Was in the Variables.</em></h2>
+        <div class="cs-insights">
+          <div>
+            <h3 class="cs-insights__heading">A Common Skeleton</h3>
+            <p class="cs-insights__body">Despite different names and contexts, all three processes followed the same arc: prep documents → notarise → send to court → update status in CATS. The skeleton was consistent. The flesh was not.</p>
+          </div>
+          <div>
+            <h3 class="cs-insights__heading">State &amp; Court-Level Variance</h3>
+            <p class="cs-insights__body">What documents to include, which formats were accepted, whether a calculation needed to be adjusted — all of this could differ by state, by court, or even by the presiding judge. This variation lived in people's heads or scattered manuals, not in the product.</p>
+          </div>
+          <div>
+            <h3 class="cs-insights__heading">External Processes Were the Real Gap</h3>
+            <p class="cs-insights__body">Much of the complexity happened outside CATS entirely — cross-referencing guidance documents, making judgment calls, checking parallel sources. The product didn't support this.</p>
+          </div>
+        </div>
+        <blockquote class="cs-quote" style="margin-top:40px;">
+          <p>"We could not touch existing functionality — veteran users were accustomed to it, and other teams relied on it. Any solution had to work alongside what already existed, not replace it."</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- THE SOLUTION -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">The solution</div>
+      <div class="cs-section__content cs-section__content--narrow">
+        <h2 class="cs-section__title">Two Layers. <em>One Coherent System.</em></h2>
+        <p class="cs-section__p">Visualising the full process as a flowchart helped the supervisor articulate their own process more clearly — and helped me structure a solution with two distinct but connected parts.</p>
+        <p class="cs-section__p">The training manual becomes part of the product itself. Each step in a process is surfaced in sequence — no external reference needed. New hires follow the product; veterans move faster.</p>
+        <p class="cs-section__p">A separate management interface lets supervisors update which documents are needed, what calculations apply, and what rules are in effect — by state, by court. When rules change, the product reflects it immediately.</p>
+      </div>
+    </section>
+
+    <figure class="cs-figure cs-figure--last" data-reveal>
+      <div class="cs-figure__frame" style="background:#f3f4f6;">
+        <img src="images/rf/redesigned-flow.png" alt="Redesigned future-state flow distinguishing agent actions from system-automated steps">
+      </div>
+      <figcaption class="cs-figure__caption">The redesigned flow — distinguishing agent actions from steps the product could automate.</figcaption>
+    </figure>
+
+    <!-- WIREFRAMES AND UI -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">Wireframes and UI</div>
+      <div class="cs-section__content cs-section__content--narrow">
+        <h2 class="cs-section__title">Building the <em>Key Screens</em></h2>
+        <p class="cs-section__lede">With the structure in place, I built a handful of high-fidelity screens using the institution's existing design system — enough to communicate the vision clearly and give the development team something concrete to build from.</p>
+      </div>
+    </section>
+
+    <figure class="cs-figure cs-figure--last" data-reveal>
+      <div class="cs-figure__frame" style="background:#7a1626;">
+        <img src="images/rf/key-screens.png" alt="High-fidelity key screens: verify eligibility and the guided suit-package builder on maroon">
+      </div>
+      <figcaption class="cs-figure__caption">Verify eligibility and the guided suit-package builder — the training manual surfaced inline, step by step.</figcaption>
+    </figure>
+
+    <!-- OUTCOMES -->
+    <section class="cs-section" data-reveal>
+      <div class="cs-section__label">Outcomes &amp; big wins</div>
+      <div class="cs-section__content">
+        <h2 class="cs-section__title">What We <em>Delivered</em></h2>
+        <p class="cs-section__lede cs-section__lede--gap">By end of the engagement, we'd established a two-layer solution designed to grow incrementally — a proof-of-concept that showed how embedded guidance could transform a complex, manual-dependent process into something product-native.</p>
+        <div class="cs-stats">
+          <div class="cs-stat">
+            <div class="cs-stat__label">System</div>
+            <h3 class="cs-stat__heading">A Foundation to Build On</h3>
+            <p class="cs-stat__body">The solution was deliberately scoped as a starting point. The architecture was designed so that new states, new courts, and additional processes could be added incrementally — making future improvements far cheaper to build.</p>
+          </div>
+          <div class="cs-stat">
+            <div class="cs-stat__label">Impact</div>
+            <h3 class="cs-stat__heading">Training Time Reduced</h3>
+            <p class="cs-stat__body">By embedding guidance directly into the product flow, new hires could operate without needing extensive training and access to manuals that needed hours of work to create and maintain.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- NEXT PROJECT -->
+  <section class="cs-next">
+    <a href="fanatics.html" class="cs-next__link" data-reveal>
+      <div class="cs-next__row">
+        <div>
+          <div class="cs-next__label">Next project</div>
+          <div class="cs-next__title">A mobile app for live card breaking</div>
+        </div>
+        <div class="cs-next__arrow">↗</div>
+      </div>
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© 2026 Divya Vasudevan</span>
+      <a href="index.html#contact" style="color:var(--text-meta);text-decoration:none;">Get in touch ↗</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>

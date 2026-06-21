@@ -1,0 +1,698 @@
+/* ─────────────────────────────────────────────
+   Case study layout — extends styles.css tokens
+   ───────────────────────────────────────────── */
+
+:root { --cs-accent: var(--accent); }
+
+/* ─── Case study nav (different from home tabbed nav) ─── */
+.cs-nav__inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 26px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cs-nav__back {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-meta);
+  text-decoration: none;
+  transition: color .25s, transform .25s;
+}
+.cs-nav__back:hover {
+  color: var(--text);
+  transform: translateX(-3px);
+}
+
+/* ─── Case study hero ─── */
+.cs-hero {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 80px 48px 56px;
+  position: relative;
+}
+.cs-hero__eyebrow {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--cs-accent);
+  margin-bottom: 24px;
+}
+.cs-hero__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: clamp(44px, 6vw, 84px);
+  line-height: 0.98;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  max-width: 980px;
+}
+.cs-hero__title em {
+  color: var(--cs-accent);
+  font-style: normal;
+}
+.cs-hero__lede {
+  font-size: clamp(18px, 1.5vw, 22px);
+  line-height: 1.6;
+  color: var(--text-dim);
+  max-width: 720px;
+  margin-top: 32px;
+}
+.cs-hero__meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 56px;
+  padding-top: 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.cs-hero__meta-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 10px;
+}
+.cs-hero__meta-value {
+  font-size: 16px;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
+
+/* ─── Cover image ─── */
+.cs-cover {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 24px 48px 40px;
+}
+.cs-cover__frame {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #1b3a5e;
+}
+.cs-cover__frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── Case study body container ─── */
+.cs-body {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 48px 40px;
+}
+
+/* ─── Section block (label + content) ─── */
+.cs-section {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 56px;
+  padding: 64px 0;
+  border-top: 1px solid var(--border);
+}
+.cs-section--noborder { border-top: none; padding-top: 40px; }
+.cs-section__label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-meta);
+}
+.cs-section__label--faint { color: var(--text-faint); }
+.cs-section__content { max-width: 880px; }
+.cs-section__content--narrow { max-width: 820px; }
+
+.cs-section__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.cs-section__title em {
+  color: var(--cs-accent);
+  font-style: normal;
+}
+.cs-section__title--gap { margin-bottom: 36px; }
+
+.cs-section__sub {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: clamp(24px, 2.4vw, 32px);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.cs-section__sub em { color: var(--cs-accent); font-style: normal; }
+
+.cs-section__lede {
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+.cs-section__lede--gap { margin-bottom: 44px; }
+
+.cs-section__p {
+  font-size: 19px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 22px;
+}
+.cs-section__p:last-child { margin-bottom: 0; }
+
+.cs-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 56px;
+}
+.cs-two-col p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+.cs-two-col__heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.cs-two-col__body {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* ─── Pull quote ─── */
+.cs-quote {
+  margin-top: 44px;
+  border-left: 3px solid var(--cs-accent);
+  background: rgba(180, 157, 240, 0.06);
+  padding: 26px 32px;
+  border-radius: 0 8px 8px 0;
+}
+.cs-section .cs-quote { margin-top: 36px; }
+.cs-quote p {
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--text-soft);
+}
+
+/* ─── Caption ─── */
+.cs-figure {
+  padding: 8px 0 16px;
+}
+.cs-figure--last { padding-bottom: 40px; }
+.cs-figure__frame {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #cfcfcf;
+}
+.cs-figure__frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cs-figure__caption {
+  font-size: 14px;
+  color: var(--text-faint);
+  margin-top: 14px;
+}
+.cs-figure__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cs-figure--padded .cs-figure__frame { padding: 28px; }
+
+/* ─── Numbered process strip ─── */
+.cs-process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  max-width: 1000px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cs-process__step {
+  padding: 28px 26px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.cs-process__step:last-child { border-right: none; }
+.cs-process__num {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--text-fainter);
+  margin-bottom: 18px;
+}
+.cs-process__heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  line-height: 1.1;
+}
+.cs-process__body {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+/* ─── Process strip — 2-column variant (2x2 grid) ─── */
+.cs-process--cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.cs-process--cols-2 .cs-process__step {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.cs-process--cols-2 .cs-process__step:nth-child(2n) {
+  border-right: none;
+}
+.cs-process--cols-2 .cs-process__step:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+/* ─── Process strip — 3-column variant (single row) ─── */
+.cs-process--cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.cs-process__step-label {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--text-fainter);
+  margin-bottom: 16px;
+}
+
+/* ─── Finding cards (pain point + opportunity) ─── */
+.cs-findings {
+  max-width: 880px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cs-finding {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 34px 36px;
+}
+.cs-finding__label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cs-accent);
+  margin-bottom: 14px;
+}
+.cs-finding__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: clamp(22px, 2.2vw, 28px);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+.cs-finding__quote {
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-dim);
+  border-left: 2px solid rgba(180, 157, 240, 0.5);
+  padding-left: 20px;
+  margin-bottom: 28px;
+}
+.cs-finding__compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.cs-finding__col-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.cs-finding__col-label--pain { color: var(--cs-accent); }
+.cs-finding__col-label--opp  { color: #6FCF8E; }
+.cs-finding__col-body {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+/* ─── Insights stack (sub-heading + paragraph blocks) ─── */
+.cs-insights {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.cs-insights__heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.cs-insights__body {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* ─── Feature cards (2x2 platform overview) ─── */
+.cs-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.cs-feature-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 28px 30px;
+}
+.cs-feature-card__label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cs-accent);
+  margin-bottom: 14px;
+}
+.cs-feature-card__heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.cs-feature-card__body {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* ─── Feature walkthrough (image left, text right) ─── */
+.cs-walk {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+  align-items: center;
+  padding: 24px 0;
+}
+.cs-walk--last { padding-bottom: 56px; }
+.cs-walk__frame {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #0d0e11;
+}
+.cs-walk__frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cs-walk__tag {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cs-accent);
+  margin-bottom: 14px;
+}
+.cs-walk__body {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* ─── 3-column row inside a section (catalyst sub-strip) ─── */
+.cs-strip-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cs-strip-3__cell {
+  padding: 28px 26px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.cs-strip-3__cell:last-child { border-right: none; }
+.cs-strip-3__heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  line-height: 1.1;
+}
+.cs-strip-3__body {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+/* ─── 4-column value strip ─── */
+.cs-value-label {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+.cs-strip-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cs-strip-4__cell {
+  padding: 24px 22px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.cs-strip-4__cell:last-child { border-right: none; }
+.cs-strip-4__cell p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+/* ─── Sprint pills (steps with arrow separators) ─── */
+.cs-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.cs-pills__step {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 40px;
+  padding: 10px 20px;
+}
+.cs-pills__arrow {
+  font-family: 'Oswald', sans-serif;
+  color: var(--text-fainter);
+}
+
+/* ─── Dash-bullet list (themes / key points) ─── */
+.cs-dash-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cs-dash-list li {
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  padding-left: 22px;
+  position: relative;
+}
+.cs-dash-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--cs-accent);
+}
+.cs-dash-list__label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cs-accent);
+  margin-bottom: 16px;
+}
+
+/* ─── Insight quote list (border-left, no background fill) ─── */
+.cs-insight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.cs-insight-list p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  border-left: 2px solid rgba(180, 157, 240, 0.5);
+  padding-left: 22px;
+}
+
+/* ─── Outcomes / stat cards ─── */
+.cs-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.cs-stats--cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.cs-stat {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 30px 32px;
+}
+.cs-stat__label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cs-accent);
+  margin-bottom: 14px;
+}
+.cs-stat__heading {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.cs-stat__body {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* ─── Next project banner ─── */
+.cs-next {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+}
+.cs-next__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 72px 48px;
+}
+.cs-next__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.cs-next__label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-meta);
+  margin-bottom: 16px;
+}
+.cs-next__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: clamp(34px, 4.5vw, 64px);
+  text-transform: uppercase;
+  line-height: 0.98;
+  transition: color .25s;
+}
+.cs-next__arrow {
+  font-family: 'Oswald', sans-serif;
+  color: var(--cs-accent);
+  font-size: 40px;
+  transition: transform .3s var(--easing);
+}
+.cs-next__link:hover .cs-next__title { color: var(--cs-accent); }
+.cs-next__link:hover .cs-next__arrow { transform: translate(6px, -6px); }
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .cs-nav__inner,
+  .cs-hero,
+  .cs-cover,
+  .cs-body,
+  .cs-next__link { padding-left: 24px; padding-right: 24px; }
+
+  .cs-hero { padding-top: 56px; padding-bottom: 36px; }
+  .cs-hero__meta { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+
+  .cs-section {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 48px 0;
+  }
+  .cs-section--noborder { padding-top: 16px; }
+
+  .cs-two-col { grid-template-columns: 1fr; gap: 24px; }
+
+  .cs-walk { grid-template-columns: 1fr; gap: 20px; padding: 20px 0; }
+  .cs-walk--last { padding-bottom: 32px; }
+
+  .cs-process,
+  .cs-strip-3,
+  .cs-strip-4 { grid-template-columns: 1fr; }
+  .cs-process__step,
+  .cs-strip-3__cell,
+  .cs-strip-4__cell {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .cs-process__step:last-child,
+  .cs-strip-3__cell:last-child,
+  .cs-strip-4__cell:last-child { border-bottom: none; }
+
+  .cs-features,
+  .cs-stats { grid-template-columns: 1fr; }
+
+  .cs-process--cols-2 { grid-template-columns: 1fr; }
+  .cs-process--cols-2 .cs-process__step {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .cs-process--cols-2 .cs-process__step:last-child { border-bottom: none; }
+
+  .cs-process--cols-3 { grid-template-columns: 1fr; }
+
+  .cs-stats--cols-3 { grid-template-columns: 1fr; }
+
+  .cs-finding { padding: 26px 22px; }
+  .cs-finding__compare { grid-template-columns: 1fr; gap: 24px; }
+}
