@@ -356,6 +356,14 @@
   line-height: 1.65;
   color: var(--text-muted);
 }
+.cs-finding__body {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0;
+}
 
 /* ─── Insights stack (sub-heading + paragraph blocks) ─── */
 .cs-insights {
